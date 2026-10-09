@@ -269,6 +269,16 @@
       "spritesheetWidth": 1536,
       "spritesheetHeight": 1872
     },
+    "chiikawa--godxxy1229": {
+      "name": "Chiikawa",
+      "spriteVersionNumber": 2,
+      "petJsonSha256": "a1946d4b94d39eccd202b5d1c6b9bd38365712bdc2bfb71ea62e8bbc7d59d8c3",
+      "petJsonBytes": 268,
+      "spritesheetSha256": "18a7bdd4a1f67edb915221fbc2fbd27b33abd0ee94b14082f2516df6e791e337",
+      "spritesheetBytes": 244420,
+      "spritesheetWidth": 1536,
+      "spritesheetHeight": 2288
+    },
     "chispa--giiilberto-nm": {
       "name": "Chispa",
       "spriteVersionNumber": 1,
