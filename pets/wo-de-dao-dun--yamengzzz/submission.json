@@ -1,0 +1,34 @@
+{
+  "slug": "wo-de-dao-dun--yamengzzz",
+  "pet_slug": "wo-de-dao-dun",
+  "author_slug": "yamengzzz",
+  "name": "我的刀盾狗",
+  "author": "YamengZZZ",
+  "author_handle": "YamengZZZ",
+  "author_url": "https://github.com/YamengZZZ",
+  "primary_category": "Memes",
+  "canonical_key": "meme/wo-de-dao-dun",
+  "collections": [],
+  "variant_note": "YamengZZZ 独立 AI 生成并适配的 V2 柴犬版本：完整金色柴犬身体、三角耳朵和毛茸茸的椭圆爪子，保留刀盾，校正各动作身体尺寸、中心与落地基线。不同于 legeling 版的 Cheems 面部与圆蛙身体组合，未复用其运行时图集像素。",
+  "tags": [
+    "wo-de-dao-dun",
+    "cheems",
+    "meme",
+    "dog",
+    "sword",
+    "shield",
+    "v2",
+    "ai-generated"
+  ],
+  "source_type": "ai-generated",
+  "source_url": "",
+  "source_notes": "最终动画素材由本次 Codex 对话独立 AI 生成并由 YamengZZZ 适配投稿，随后修正耳朵、爪子及跨动作尺寸，并整行重新生成左跑以改善双腿交替步态。最终 WebP 无损编码保留本次生成的像素，并依仓库 V2 校验要求在专用静止格复用本次待机首帧。最初形象参考来自用户个人 Dot；原始角色、参考图作者及公开出处不详，不据此声称角色原创或获得原权利人授权。参考图未随包上传，也不作为最终宠物作者署名。未裁剪、描摹或复制仓库 legeling 版本的运行时像素。 左跑八帧以原始高分辨率生成素材重新登记，整行统一等比例放大约 11%，匹配右跑身体高度与落地基线，保留腾空阶段。",
+  "license": "仅限非商业使用，禁止商用 / Non-commercial use only. 最终动画适配署名 YamengZZZ；原始角色及参考图权利归各自权利人，不声称拥有其权利或获得其认可。",
+  "description": "圆滚滚的金色柴犬勇士，右爪握刀、左爪持盾；包含九种任务动作与十六方向环视。",
+  "preview_image": "../../assets/previews/wo-de-dao-dun--yamengzzz/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "0795ab8eb19653875c03163a1cca0935b50b1226b0cb8f86282b22a08a0f1465"
+}
