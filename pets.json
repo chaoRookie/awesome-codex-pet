@@ -949,6 +949,21 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "gpt-dragon-girl--tenghuan123",
+    "name": "GPT龙娘",
+    "localized_names": { "en": "GPT Dragon Girl", "zh": "GPT龙娘" },
+    "author": "tenghuan123",
+    "author_handle": "tenghuan123",
+    "author_url": "https://github.com/tenghuan123",
+    "primary_category": "Mascots",
+    "canonical_key": "original/zipzippipe/gpt-dragon-girl",
+    "variant_note": "tenghuan123 独立制作的 V2 Q 版，包含九组动画和 16 个环视方向；与其他作者的版本使用不同的图集。",
+    "collections": [],
+    "license": "仅限非商业使用。最终宠物图集为 AI 辅助制作的同人适配作品；角色原设定及参考图权利仍归原权利人。",
+    "description": "以白发、紫瞳、龙角、龙翼和浅紫色礼服为特征的 GPT 龙娘 Q 版 Codex 宠物，包含九组任务动画和 16 个环视方向。",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "hajimi--zeyuwang1999",
     "name": "Hajimi",
     "author": "zeyu.wang",
