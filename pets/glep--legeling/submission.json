@@ -1,0 +1,29 @@
+{
+  "slug": "glep--legeling",
+  "pet_slug": "glep",
+  "author_slug": "legeling",
+  "name": "Glep",
+  "author": "legeling",
+  "primary_category": "Others",
+  "canonical_key": "fictional/smiling-friends/glep",
+  "variant_note": "Independently AI-generated pixel-styled wizard interpretation with a black outline, wand, oversized tea cup, nine standard animations, and sixteen look directions.",
+  "tags": [
+    "chibi",
+    "pixel-art",
+    "fan-art",
+    "ai-generated",
+    "community-request"
+  ],
+  "source_type": "ai-generated-fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/242",
+  "license": "Non-commercial use only. Glep and Smiling Friends belong to their respective creators and rights holders. This fan-art submission does not grant rights to the underlying character or reference artwork.",
+  "description": "Glep fan art from Smiling Friends, independently AI-generated with the OpenAI image tool at legeling's direction. The image supplied in issue #242 was used as a visual reference only and is not included in this package. The requested wizard hat, wand, oversized tea cup, and black outline are retained. The exact final spritesheet was reviewed and approved before submission.",
+  "preview_image": "../../assets/previews/glep--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "5381540cddd72a0d6c948f3325b25005a4a837ba3ad5c6989f7fca70e5f404de",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling"
+}

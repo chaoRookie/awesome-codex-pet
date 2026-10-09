@@ -1,0 +1,24 @@
+{
+  "slug": "virtuosa--legeling",
+  "pet_slug": "virtuosa",
+  "canonical_key": "community-request/178",
+  "author_slug": "legeling",
+  "name": "塑心阿尔图罗",
+  "localized_names": {
+    "en": "Virtuosa / Arturia",
+    "zh": "塑心阿尔图罗"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Game Characters",
+  "tags": ["community-request", "arknights", "virtuosa"],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/178",
+  "license": "CC BY-NC 4.0",
+  "description": "按社区参考制作的《明日方舟》塑心阿尔图罗同人宠物，保留黑发、金眼、黑金碎片光环和翼状构造。AI 生成，脚靴补全已获制作审核认可，非官方作品。",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

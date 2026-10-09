@@ -12,7 +12,7 @@
 
 <a href="https://codexpet.top/es"><img src="../../assets/cover/awesome-codex-pet-cover.png" alt="Abrir la galería de Awesome Codex Pet"></a>
 
-![pets: 239](https://img.shields.io/badge/pets-239-2ea44f) ![categories: 11](https://img.shields.io/badge/categories-11-0969da) ![languages: en | zh--CN | ko | ja | es](https://img.shields.io/badge/languages-en%20%7C%20zh--CN%20%7C%20ko%20%7C%20ja%20%7C%20es-8250df) ![code: MIT](https://img.shields.io/badge/code-MIT-111111) ![assets: CC BY--NC 4.0](https://img.shields.io/badge/assets-CC%20BY--NC%204.0-f97316) ![install: one command](https://img.shields.io/badge/install-one%20command-111111) [![Pet previews](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml/badge.svg)](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml)
+![pets: 316](https://img.shields.io/badge/pets-316-2ea44f) ![categories: 11](https://img.shields.io/badge/categories-11-0969da) ![languages: en | zh--CN | ko | ja | es](https://img.shields.io/badge/languages-en%20%7C%20zh--CN%20%7C%20ko%20%7C%20ja%20%7C%20es-8250df) ![code: MIT](https://img.shields.io/badge/code-MIT-111111) ![assets: CC BY--NC 4.0](https://img.shields.io/badge/assets-CC%20BY--NC%204.0-f97316) ![install: one command](https://img.shields.io/badge/install-one%20command-111111) [![Pet previews](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml/badge.svg)](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml)
 
 </div>
 
@@ -45,16 +45,17 @@ pets/<pet-slug>--<author-slug>/
 
 ## Instalación rápida
 
-No necesitas clonar el repositorio. Elige el comando correspondiente a tu sistema. El instalador verifica el manifiesto y los hashes SHA-256, y exige `--force` para reemplazar un paquete existente.
+No necesitas clonar el repositorio. Instala Node.js 20+ y usa el mismo comando npm en cualquier sistema. El instalador verifica el manifiesto y los hashes SHA-256, y exige `--force` para reemplazar un paquete existente.
 
 ```bash
-# macOS / Linux
-curl -fsSL --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.sh | bash -s -- --raw-base https://raw.githubusercontent.com/legeling/awesome-codex-pet/main firefly--lingxiaotian
+# Node.js 20+ · macOS / Linux / Windows
+npx --yes @legeling/codex-pet install firefly--lingxiaotian
 ```
 
-```powershell
-# Windows PowerShell
-powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedirection 5 -TimeoutSec 120 https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.ps1 | iex; Install-CodexPet firefly--lingxiaotian -RawBase 'https://raw.githubusercontent.com/legeling/awesome-codex-pet/main'"
+[CLI: list / search / download / contribute](https://github.com/legeling/awesome-codex-pet/blob/main/docs/cli.md)
+
+```bash
+npx @legeling/codex-pet
 ```
 
 ## Catálogo de mascotas
@@ -68,7 +69,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 </table>
 
 <details>
-<summary>Índice completo (solo texto) · 239</summary>
+<summary>Índice completo (solo texto) · 316</summary>
 
 ### Personajes de videojuegos
 
@@ -84,8 +85,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/citlali--zaytsevzy">Citlali</a> · por <a href="https://github.com/ZaytsevZY">@ZaytsevZY</a> · v2</li>
 <li><a href="../../pets/cyrene--lingxiaotian">Cyrene</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
 <li><a href="../../pets/dimo-stand--god-wu">Dimo</a> · por @god-wu · v1</li>
+<li><a href="../../pets/doro--godxxy1229">Doro</a> · por <a href="https://github.com/godxxy1229">@godxxy1229</a> · v2</li>
 <li><a href="../../pets/doro--lingxiaotian">Doro</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
 <li><a href="../../pets/doro--vaevie">Doro</a> · por <a href="https://github.com/vaevie">@vaevie</a> · v2</li>
+<li><a href="../../pets/evanescia-lunar-blossoming--jasdfgh">Evanescia · Lunar Blossoming</a> · por <a href="https://github.com/Jasdfgh">@Jasdfgh</a> · v2</li>
 <li><a href="../../pets/feixiao--lingxiaotian">Feixiao</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
 <li><a href="../../pets/furina--lingxiaotian">Furina</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
 <li><a href="../../pets/ganyu--chenxin-dlut">Ganyu</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
@@ -100,6 +103,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/little-black-mage--libertis">Little Black Mage</a> · por @libertis · v1</li>
 <li><a href="../../pets/march-7th--chenxin-dlut">March 7th</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
 <li><a href="../../pets/marisa-kirisame--eigentom">Marisa Kirisame</a> · por <a href="https://github.com/EigenTom">@eigentom</a> · v2</li>
+<li><a href="../../pets/maya-fey--kbz1121">Maya Fey</a> · por @kbz1121 · v2</li>
 <li><a href="../../pets/missile--zpzjzj">Missile</a> · por <a href="https://github.com/zpzjzj">@zpzjzj</a> · v2</li>
 <li><a href="../../pets/miyabi--eric-terminal">Miyabi</a> · por <a href="https://codex-pets.net/users/eric-terminal">@eric-terminal</a> · v1</li>
 <li><a href="../../pets/nahida--lingxiaotian">Nahida</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
@@ -122,7 +126,11 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/yoimiya--chenxin-dlut">Yoimiya</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
 <li><a href="../../pets/zani--chenxin-dlut">Zani</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
 <li><a href="../../pets/yae-miko--legeling">八重神子</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/dingding-devil--legeling">叮叮恶魔</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/ye-shunguang-bangboo--huanghan">叶瞬光邦布</a> · por <a href="https://github.com/hanhuang22">@hanhuang22</a> · v2</li>
+<li><a href="../../pets/virtuosa--legeling">塑心阿尔图罗</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/dnf-female-ammo--qunboo">女弹药Q</a> · por <a href="https://github.com/QunBoo">@QunBoo</a> · v1</li>
+<li><a href="../../pets/iuno--legeling">尤诺</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/wukong--jorge-cuevas90003">悟空</a> · por <a href="https://github.com/Jorge-Cuevas90003">@Jorge-Cuevas90003</a> · v2</li>
 <li><a href="../../pets/doudizhu-laonongmin--chenyijing131-art">斗地主老农民</a> · por <a href="https://github.com/chenyijing131-art">@chenyijing131-art</a> · v2</li>
 <li><a href="../../pets/new-covenant-exusiai--chenxin-dlut">新约能天使</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
@@ -131,10 +139,16 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/lin-pianpian-date--legeling">林翩翩（约会）</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/lin-pianpian-flower-street--legeling">林翩翩（花街）</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/lin-pianpian-courtesan--legeling">林翩翩（花魁）</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/hikari-seated--masashitoda1">橘光</a> · por <a href="https://github.com/MasashiToda1">@MasashiToda1</a> · v2</li>
 <li><a href="../../pets/shen-xinghui--legeling">沈星回</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/paimon-best-companion--makashibata">派蒙-最好的伙伴</a> · por @makashibata · v2</li>
+<li><a href="../../pets/neptune--legeling">涅普缇努</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/aimisi--legeling">爱弥斯</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/chillet--legeling">疾旋鼬</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/aventurine-plush-bird--legeling">砂金毛绒鸟</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/arona--legeling">阿罗那</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/youmu--ai-generated">魂魄妖梦</a> · por @ai-generated · v2</li>
+<li><a href="../../pets/zayne--legeling">黎深</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 </ul>
 
 ### Personajes de anime
@@ -143,7 +157,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/zero-two--mingqingmozhao">02</a> · por @mingqingmozhao · v1</li>
 <li><a href="../../pets/anya--chenxin-dlut">Anya</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
 <li><a href="../../pets/asuka--maxg24">Asuka</a> · por <a href="https://codex-pets.net/users/maxg24">@maxg24</a> · v1</li>
+<li><a href="../../pets/buttercup--legeling">Buttercup</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/chibi-rei-pet--bendy">Chibi Rei Pet</a> · por @Bendy · v1</li>
+<li><a href="../../pets/chiikawa--godxxy1229">Chiikawa</a> · por <a href="https://github.com/godxxy1229">@godxxy1229</a> · v2</li>
 <li><a href="../../pets/chotu--makriman">Chotu</a> · por <a href="https://github.com/makriman">@makriman</a> · v2</li>
 <li><a href="../../pets/conan--chenxin-dlut">Conan</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
 <li><a href="../../pets/doraemon--xueshi">Doraemon</a> · por <a href="https://codex-pets.net/users/xueshi">@xueshi</a> · v1</li>
@@ -151,16 +167,22 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/eren--ash-sw">Eren</a> · por <a href="https://codex-pets.net/users/ash-sw">@ash-sw</a> · v1</li>
 <li><a href="../../pets/fang-yuan--kelleszzz">Fang Yuan</a> · por <a href="https://github.com/kelleszzz">@kelleszzz</a> · v2</li>
 <li><a href="../../pets/frieren--lingxiaotian">Frieren</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
+<li><a href="../../pets/fushi--legeling">Fushi</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/genos-pixel--patrickxunuo">Genos Pixel</a> · por <a href="https://github.com/patrickxunuo">@patrickxunuo</a> · v2</li>
 <li><a href="../../pets/zhuzhuxia--ryde-play">GG Bond</a> · por <a href="https://github.com/RYDE-PLAY">@RYDE-PLAY</a> · v2</li>
 <li><a href="../../pets/gojo--lilokhalikfa">Gojo</a> · por <a href="https://codex-pets.net/users/lilokhalikfa">@lilokhalikfa</a> · v1</li>
 <li><a href="../../pets/han-li--metro186">Han Li</a> · por <a href="https://github.com/metro186">@metro186</a> · v2</li>
+<li><a href="../../pets/hanako-kun--legeling">Hanako-kun</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/holo--james991116">Holo</a> · por <a href="https://github.com/James991116">@James991116</a> · v2</li>
 <li><a href="../../pets/ikaros--icarus-alpha">Ikaros</a> · por <a href="https://codex-pets.net/users/icarus-alpha">@icarus-alpha</a> · v1</li>
+<li><a href="../../pets/inori-yuzuriha--legeling">Inori Yuzuriha</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/isekaijoucho--siiverash">Isekaijoucho</a> · por <a href="https://github.com/SiIverAsh">@SiIverAsh</a> · v1</li>
 <li><a href="../../pets/jolyne-cujoh--d2682787206-sys">Jolyne Cujoh</a> · por <a href="https://github.com/d2682787206-sys">@d2682787206-sys</a> · v2</li>
 <li><a href="../../pets/kaguya-luna--enclairfarron">Kaguya Luna</a> · por <a href="https://github.com/enclairfarron">@enclairfarron</a> · v2</li>
 <li><a href="../../pets/kaiju-no-8--terry878">Kaiju No. 8</a> · por @TERRY878 · v2</li>
 <li><a href="../../pets/kid--chenxin-dlut">Kid</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
 <li><a href="../../pets/kid-goku--julianhuang">Kid Goku</a> · por <a href="https://codex-pets.net/users/julianhuang">@julianhuang</a> · v1</li>
+<li><a href="../../pets/kurimanju--legeling">Kurimanju</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/levi--emrecb">Levi</a> · por <a href="https://codex-pets.net/users/emrecb">@emrecb</a> · v1</li>
 <li><a href="../../pets/light-fury--legeling">Light Fury</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/luffy-gear-5--jordsshmords1">Luffy Gear 5</a> · por <a href="https://codex-pets.net/users/jordsshmords1">@jordsshmords1</a> · v1</li>
@@ -173,11 +195,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/miku--lingxiaotian">Miku</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
 <li><a href="../../pets/misaka-network--ldl1234">Misaka Network</a> · por <a href="https://github.com/ldl1234">@ldl1234</a> · v2</li>
 <li><a href="../../pets/nimbus--soraberu">Nimbus</a> · por <a href="https://codex-pets.net/users/soraberu">@soraberu</a> · v1</li>
+<li><a href="../../pets/niu-lai--wynn">Niu Lai</a> · por <a href="https://github.com/zhou-jianwen">@wynn</a> · v2</li>
 <li><a href="../../pets/rem--l1">Rem</a> · por <a href="https://codex-pets.net/users/l1">@l1</a> · v1</li>
 <li><a href="../../pets/rinami--siiverash">Rinami Himesaki</a> · por <a href="https://github.com/SiIverAsh">@SiIverAsh</a> · v1</li>
 <li><a href="../../pets/roxy-pixel--gravity">Roxy Pixel</a> · por @gravity · v1</li>
 <li><a href="../../pets/saber--petdex-zhenyou-ling">Saber</a> · por @真宵 绫. · v1</li>
-<li><a href="../../pets/saiki-kusuo--yjt0416">Saiki Kusuo</a> · por <a href="https://github.com/yjt0416">@yjt0416</a> · v1</li>
+<li><a href="../../pets/saitama-pixel--patrickxunuo">Saitama Pixel</a> · por <a href="https://github.com/patrickxunuo">@patrickxunuo</a> · v2</li>
 <li><a href="../../pets/sakamoto--zpzjzj">Sakamoto</a> · por <a href="https://github.com/zpzjzj">@zpzjzj</a> · v2</li>
 <li><a href="../../pets/gintoki-pixel--yuu-m">Sakata Gintoki</a> · por @Yuu M. · v1</li>
 <li><a href="../../pets/shinchan--chenxin-dlut">Shinchan</a> · por <a href="https://github.com/chenxin-dlut">@chenxin-dlut</a> · v1</li>
@@ -187,17 +210,31 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/toyama-kasumi--lsmd23">Toyama Kasumi</a> · por <a href="https://github.com/lsmd23">@lsmd23</a> · v2</li>
 <li><a href="../../pets/violet--lazenca">Violet</a> · por <a href="https://codex-pets.net/users/lazenca">@lazenca</a> · v1</li>
 <li><a href="../../pets/wakaba-mutsumi--carambola">Wakaba Mutsumi</a> · por @Carambola · v2</li>
+<li><a href="../../pets/uesugi-erii--ricardo-2005">上杉绘梨衣codex宠物</a> · por <a href="https://github.com/Ricardo-2005">@Ricardo-2005</a> · v2</li>
 <li><a href="../../pets/inosuke-hashibira--wangfan002">伊之助 Q版 丰富动作</a> · por @wangfan002 · v1</li>
+<li><a href="../../pets/miku-sea--legeling">初音未来·海色</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/nangong-wan--bpup">南宫婉</a> · por <a href="https://github.com/bpup">@bpup</a> · v2</li>
 <li><a href="../../pets/zenitsu-agatsuma--wangfan002">善逸 Q版 丰富动作</a> · por @wangfan002 · v1</li>
+<li><a href="../../pets/kita-ikuyo--legeling">喜多郁代</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/dashu--legeling">大鼠</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/giyu-tomioka--wangfan002">富冈义勇 Q版 丰富动作</a> · por @wangfan002 · v1</li>
 <li><a href="../../pets/muichiro-tokito--wangfan002">时透无一郎 Q版 空灵动作</a> · por @wangfan002 · v1</li>
+<li><a href="../../pets/asuka--masashitoda1">明日香</a> · por <a href="https://github.com/MasashiToda1">@MasashiToda1</a> · v2</li>
+<li><a href="../../pets/otama--legeling">海贼王小玉</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/tushan-susu--legeling">涂山苏苏</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/tanjiro-kamado--wangfan002">炭治郎 Q版 丰富动作</a> · por @wangfan002 · v1</li>
 <li><a href="../../pets/nezuko-kamado--wangfan002">祢豆子 Q版 丰富动作</a> · por @wangfan002 · v1</li>
 <li><a href="../../pets/luo-xiaohei--legeling">罗小黑</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/luo-xiaohei--makashibata">罗小黑</a> · por @makashibata · v2</li>
 <li><a href="../../pets/fujiwara-chika--klmklmnb">藤原千花</a> · por <a href="https://github.com/klmklmnb">@klmklmnb</a> · v2</li>
+<li><a href="../../pets/nijika--amia">虹夏</a> · por <a href="https://github.com/amiaverse">@amiaverse</a> · v2</li>
+<li><a href="../../pets/hongmao--legeling">虹猫少侠</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/shinobu-kocho--wangfan002">蝴蝶忍 Q版 华丽动作</a> · por @wangfan002 · v1</li>
+<li><a href="../../pets/beatrice--legeling">贝阿朵莉丝</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/alphonse--legeling">阿尔冯斯</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/han-li--legeling">韩立</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/han-li-nascent-soul--legeling">韩立元婴</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/classic-wukong--legeling">齐天大圣孙悟空</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/bocchi--lingxiaotian">Bocchi</a> · por <a href="https://github.com/legeling">@legeling</a> · v1</li>
 </ul>
 
@@ -234,10 +271,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <ul>
 <li><a href="../../pets/aemeath-mini--cunuo">Aemeath Mini</a> · por <a href="https://github.com/cuNuo">@cuNuo</a> · v1</li>
 <li><a href="../../pets/apu--xchangee">Apu</a> · por <a href="https://github.com/xchangee">@xchangee</a> · v1</li>
+<li><a href="../../pets/bearisbug--huanghan">bearisbug</a> · por <a href="https://github.com/hanhuang22">@hanhuang22</a> · v2</li>
+<li><a href="../../pets/capoo--lan-kehan">Bugcat Capoo</a> · por <a href="https://github.com/lan-kehan">@lan-kehan</a> · v1</li>
 <li><a href="../../pets/claude--xiangking">Claude</a> · por <a href="https://github.com/xiangking">@xiangking</a> · v1</li>
+<li><a href="../../pets/clawd--godxxy1229">Clawd</a> · por <a href="https://github.com/godxxy1229">@godxxy1229</a> · v2</li>
 <li><a href="../../pets/twinkle-twinkle--twinkletwinkle">Dashun&#39;s Twinkle Twinkle</a> · por @twinkletwinkle · v1</li>
+<li><a href="../../pets/riceball-maid--qishichuan">DeepSeek钢盆饭团</a> · por <a href="https://github.com/qishichuan">@qishichuan</a> · v2</li>
 <li><a href="../../pets/diaoyi-baobao--d1a0y1bb">Diaoyi Baobao</a> · por <a href="https://github.com/D1a0y1bb">@D1a0y1bb</a> · v1</li>
 <li><a href="../../pets/gpt-muse--opask">GPT-muse</a> · por @opask · v1</li>
+<li><a href="../../pets/gpt-dragon-girl--tenghuan123">GPT龙娘</a> · por <a href="https://github.com/tenghuan123">@tenghuan123</a> · v2</li>
 <li><a href="../../pets/lulu--yogazz">Lulu</a> · por <a href="https://github.com/YoGazz">@YoGazz</a> · v1</li>
 <li><a href="../../pets/saki--rookie-09">Saki</a> · por <a href="https://github.com/rookie-09">@rookie-09</a> · v1</li>
 <li><a href="../../pets/serge-le-lapin--legeling">Serge le Lapin</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
@@ -246,6 +288,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/zhengyin--noonwake">Zhengyin</a> · por <a href="https://pets.usefulmint.com/?utm_source=awesome_codex_pet&utm_medium=directory&utm_campaign=founding_five&utm_content=zhengyin_listing">@noonwake-ai</a> · v2</li>
 <li><a href="../../pets/happynailong--aquaxyy">大笑奶龙</a> · por @aquaxyy · v1</li>
 <li><a href="../../pets/bubu-codebrew-bear--xxhh0822">布布</a> · por <a href="https://github.com/xxhh0822">@xxhh0822</a> · v2</li>
+<li><a href="../../pets/meituan-kangaroo--xiaoyu0103">美团袋鼠</a> · por <a href="https://github.com/xiaoYu0103">@xiaoYu0103</a> · v2</li>
 </ul>
 
 ### Animales
@@ -271,25 +314,30 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/moomew-coder-cat--ping">MooMew Coder</a> · por @ping · v1</li>
 <li><a href="../../pets/panda--jason-bai">Panda</a> · por <a href="https://github.com/Jason-Bai">@Jason-Bai</a> · v1</li>
 <li><a href="../../pets/pixel-duck--flamurmaliqi">Pixel Duck</a> · por <a href="https://github.com/FlamurMaliqi">@FlamurMaliqi</a> · v1</li>
+<li><a href="../../pets/point-fox--legeling">Point Fox</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/rook--klubbyte">Rook</a> · por @klubbyte · v1</li>
 <li><a href="../../pets/miu-meo--lemon-z">SalaryCat</a> · por @lemon-z · v2</li>
 <li><a href="../../pets/salary-cat--zuochunjie">SalaryCat</a> · por <a href="https://github.com/Zuochunjie">@Zuochunjie</a> · v2</li>
 <li><a href="../../pets/shaun--ryde-play">Shaun the Sheep</a> · por <a href="https://github.com/RYDE-PLAY">@RYDE-PLAY</a> · v2</li>
 <li><a href="../../pets/sunny-retriever--legeling">Sunny Retriever</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
-<li><a href="../../pets/teddy--danieloleary">Teddy</a> · por <a href="https://github.com/danieloleary">@danieloleary</a> · v1</li>
+<li><a href="../../pets/teddy--danieloleary">Teddy 5.0</a> · por <a href="https://github.com/danieloleary">@danieloleary</a> · v2</li>
 <li><a href="../../pets/tian-hua-hua--d1a0y1bb">Tian Hua Hua</a> · por <a href="https://github.com/D1a0y1bb">@D1a0y1bb</a> · v1</li>
 <li><a href="../../pets/usachi--jack">乌萨奇</a> · por @jack · v1</li>
 <li><a href="../../pets/yuanbao--legeling">元宝</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/liuboer--legeling">刘波儿</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/dai-dai-nai-you--1wphantom">呆呆奶油</a> · por @1wphantom · v2</li>
 <li><a href="../../pets/tuantuan--jbbom">团团</a> · por <a href="https://github.com/JbBom">@JbBom</a> · v1</li>
 <li><a href="../../pets/duodong--froggie">多栋</a> · por @froggie · v1</li>
 <li><a href="../../pets/naiwa--sandytruant">奶蛙</a> · por <a href="https://github.com/sandytruant">@sandytruant</a> · v2</li>
 <li><a href="../../pets/xiaoba-cat--jack">小八猫</a> · por @jack · v1</li>
 <li><a href="../../pets/xiaomai--brian-3">小麦 XiaoMai</a> · por @brian-3 · v2</li>
+<li><a href="../../pets/little-black-cat--legeling">小黑猫</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/koukou-penguin--hoody">扣扣企鹅</a> · por @hoody · v2</li>
 <li><a href="../../pets/capybara-lulu--jiushu">水豚噜噜</a> · por @jiushu · v1</li>
 <li><a href="../../pets/niumou--jarvis-2">牛哞</a> · por @jarvis-2 · v2</li>
+<li><a href="../../pets/gift--legeling">礼物 / Gift</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/zichao-xiong--z-kzhang">自嘲熊</a> · por @z-kzhang · v1</li>
+<li><a href="../../pets/cockroach--legeling">蟑螂</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/jinmao--legeling">金毛</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/wucanrou--ch">金渐层（午餐肉）</a> · por <a href="https://github.com/huanchu0213-ui">@huanchu0213-ui</a> · v2</li>
 </ul>
@@ -298,6 +346,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 
 <ul>
 <li><a href="../../pets/behemoth--kajdrak2">Behemoth</a> · por <a href="https://github.com/Kajdrak2">@Kajdrak2</a> · v2</li>
+<li><a href="../../pets/flying-hamster-unicorn--legeling">Flying Hamster Unicorn</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/goblin--rkwap">Goblin</a> · por @rkwap · v1</li>
 <li><a href="../../pets/luna-angel-cat--neve">luna_angel cat</a> · por @neve · v2</li>
 <li><a href="../../pets/night-neko--netizenxuan">Night Neko</a> · por <a href="https://github.com/netizenXuan">@netizenXuan</a> · v1</li>
@@ -309,9 +358,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 ### Robots
 
 <ul>
+<li><a href="../../pets/ai-pulse--wxy">AI Pulse</a> · por @wxy · v2</li>
 <li><a href="../../pets/chispa--giiilberto-nm">Chispa</a> · por @giiilberto-nm · v1</li>
 <li><a href="../../pets/codenono--dq02">CodeNoNo</a> · por <a href="https://github.com/Dqd02">@Dqd02</a> · v1</li>
 <li><a href="../../pets/crt-monitor--wxy">CRT Monitor</a> · por @wxy · v2</li>
+<li><a href="../../pets/elber--legeling">ELBER</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/nu-gundam--mzhyui">Nu Gundam</a> · por <a href="https://github.com/mzhyui">@mzhyui</a> · v2</li>
 <li><a href="../../pets/xiaoda--legeling">小达</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 </ul>
 
@@ -322,6 +374,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/tangdouren--carl312">Tangdouren</a> · por <a href="https://github.com/Carl-312">@Carl-312</a> · v1</li>
 <li><a href="../../pets/guga--circus">咕嘎</a> · por @circus · v1</li>
 <li><a href="../../pets/fengge--qzl1-stack">峰哥</a> · por <a href="https://github.com/qzl1-stack">@qzl1-stack</a> · v1</li>
+<li><a href="../../pets/xuxu-baobao--legeling">旭旭宝宝</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/xiang-an--legeling">翔安</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 </ul>
 
@@ -331,37 +384,62 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedire
 <li><a href="../../pets/drill-cat--qimi">Drill Cat</a> · por <a href="https://github.com/qishichuan">@qishichuan</a> · v2</li>
 <li><a href="../../pets/hami--tat">Hami</a> · por <a href="https://github.com/TATcc">@TATcc</a> · v2</li>
 <li><a href="../../pets/katana-cheems--thankyou-cheems">Katana Cheems</a> · por <a href="https://github.com/Thankyou-Cheems">@Thankyou-Cheems</a> · v1</li>
+<li><a href="../../pets/maodie--trahex">Maodie</a> · por <a href="https://github.com/Trahex">@Trahex</a> · v2</li>
 <li><a href="../../pets/pickle-rick--ryde-play">Pickle Rick</a> · por <a href="https://github.com/RYDE-PLAY">@RYDE-PLAY</a> · v2</li>
+<li><a href="../../pets/st-tibo-reset--wynn">St. Tibo Reset</a> · por @wynn · v2</li>
+<li><a href="../../pets/wo-de-dao-dun--yamengzzz">我的刀盾狗</a> · por <a href="https://github.com/YamengZZZ">@YamengZZZ</a> · v2</li>
 <li><a href="../../pets/hance-woniu--korn">旱厕蜗牛</a> · por @korn · v2</li>
 <li><a href="../../pets/niulai--legeling">牛来</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/niulaima--ryde-play">牛来妈</a> · por <a href="https://github.com/RYDE-PLAY">@RYDE-PLAY</a> · v2</li>
 <li><a href="../../pets/maodie--octane0411">耄耋</a> · por <a href="https://github.com/Octane0411">@Octane0411</a> · v2</li>
+<li><a href="../../pets/shanshenbu--logan">閃身步</a> · por <a href="https://github.com/iml885203">@iml885203</a> · v2</li>
 </ul>
 
 ### Objetos y accesorios
 
 <ul>
+<li><a href="../../pets/potato--legeling">Potato</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/spellbook--seymour">Spellbook</a> · por @seymour · v1</li>
 <li><a href="../../pets/tiny-crt--chochou">Tiny CRT</a> · por @chochou · v1</li>
+<li><a href="../../pets/kalandra-mirror--legeling">卡兰德的魔镜</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 </ul>
 
 ### Otros
 
 <ul>
 <li><a href="../../pets/agamemnon--kazecreator">Agamemnon</a> · por <a href="https://github.com/kazecreator">@kazecreator</a> · v2</li>
+<li><a href="../../pets/cherry-empty-hands--legeling">cherry切粒</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/codex-orb--legeling">codex</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/codex-dragon-girl--orient37">Codex龙娘·居家版</a> · por @orient37 · v2</li>
 <li><a href="../../pets/deepseek-girl--legeling">DeepSeek Girl</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/deepseek-whalechan--qimi">DeepSeek Whalechan</a> · por <a href="https://github.com/qishichuan">@qishichuan</a> · v2</li>
+<li><a href="../../pets/glep--legeling">Glep</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/golden-lamp--legeling">Golden Lamp</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/gpt-dragon-girl--legeling">GPT Dragon Girl</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/mini--zhou-jianwen">Mini</a> · por <a href="https://github.com/zhou-jianwen">@zhou-jianwen</a> · v2</li>
+<li><a href="../../pets/my-little-orange-cat--zhou-jianwen">My Little Orange Cat</a> · por <a href="https://github.com/zhou-jianwen">@zhou-jianwen</a> · v2</li>
+<li><a href="../../pets/peach-cat--legeling">Peach Cat</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/sae-itoshi--legeling">Sae Itoshi</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/sylas-ravenshade--legeling">Sylas Ravenshade</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/templar-knight--jorge-cuevas90003">Templar Knight</a> · por <a href="https://github.com/Jorge-Cuevas90003">@Jorge-Cuevas90003</a> · v2</li>
 <li><a href="../../pets/march-7th--legeling">三月七</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/qieli--legeling">切莉</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/gege-basketball--legeling">哥哥</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/lumei--legeling">噜妹</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/vyron--legeling">威龙</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/kuromi--legeling">库洛米</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/wo-de-dao-dun--legeling">我的刀盾</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/xingxingren--legeling">星星人</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/izumi-konata--legeling">泉此方</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/yanlingji--jorge-cuevas90003">焰灵姬</a> · por <a href="https://github.com/Jorge-Cuevas90003">@Jorge-Cuevas90003</a> · v2</li>
 <li><a href="../../pets/yao-true-self-hertz--legeling">瑶-真我赫兹</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/little-v--legeling">电子宠物小v</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/twilight-sparkle--wuye3790">紫悦</a> · por <a href="https://github.com/WuYe3790">@WuYe3790</a> · v2</li>
+<li><a href="../../pets/rourou--zhou-jianwen">肉肉</a> · por @zhou-jianwen · v2</li>
 <li><a href="../../pets/longying--legeling">胧萤</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 <li><a href="../../pets/bond-forger--legeling">邦德·福杰</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/snow-emperor--legeling">雪皇</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
+<li><a href="../../pets/dont-starve-pigman--legeling">饥荒猪人</a> · por <a href="https://github.com/legeling">@legeling</a> · v2</li>
 </ul>
 
 </details>

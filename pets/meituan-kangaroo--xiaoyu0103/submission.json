@@ -1,0 +1,34 @@
+{
+  "slug": "meituan-kangaroo--xiaoyu0103",
+  "pet_slug": "meituan-kangaroo",
+  "author_slug": "xiaoyu0103",
+  "name": "美团袋鼠",
+  "localized_names": {
+    "en": "Meituan Kangaroo",
+    "zh": "美团袋鼠"
+  },
+  "author": "xiaoYu0103",
+  "author_handle": "xiaoYu0103",
+  "author_url": "https://github.com/xiaoYu0103",
+  "primary_category": "Mascots",
+  "canonical_key": "meituan/kangaroo",
+  "tags": [
+    "kangaroo",
+    "mascot",
+    "yellow",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "collections": [],
+  "source_type": "ai-generated fan-art",
+  "source_url": "",
+  "source_notes": "Independently AI-generated Codex pet by the submitter. User-supplied Meituan kangaroo emoji-pack images were used only as appearance references. The production records show AI generation and deterministic atlas assembly, not direct cropping or tracing of reference-image pixels. Reference images are not included in the submission.",
+  "license": "Non-commercial use only. Independently AI-generated fan art inspired by the Meituan kangaroo mascot; the original mascot design and trademarks remain with Meituan.",
+  "description": "An independently AI-generated yellow flocked kangaroo mascot with nine task animations and 16 look directions; its working animation howls at the sky.",
+  "spritesheet_sha256": "0129d13f6bb3bafa2fc48e0cc68a4030e7ee6b8cb7b2fc1cd1b51c9abbb7cdbd",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

@@ -159,10 +159,10 @@ Every detail page keeps the creator, source notes, usage terms, full animation p
 
 The share menu can copy the page URL, a ready-to-post message, or a Markdown link; publish to X or LinkedIn; open the native system share sheet; and hand installation or creation tasks to an AI assistant.
 
-After merge, users can install without cloning the repository:
+After merge, users with Node.js 20+ and npm can install without cloning the repository:
 
 ```bash
-curl -fsSL --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.sh | bash -s -- --raw-base https://raw.githubusercontent.com/legeling/awesome-codex-pet/main pet-slug--author-slug
+npx --yes @legeling/codex-pet install pet-slug--author-slug
 ```
 
 The installer verifies the package against `install-manifest.json`, stages the

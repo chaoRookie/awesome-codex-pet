@@ -1,0 +1,37 @@
+{
+  "slug": "kalandra-mirror--legeling",
+  "pet_slug": "kalandra-mirror",
+  "author_slug": "legeling",
+  "name": "卡兰德的魔镜",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Objects & Props",
+  "canonical_key": "path-of-exile/kalandra-mirror",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "path-of-exile",
+    "mirror",
+    "silver",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/216",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Mirror of Kalandra from Path of Exile, requested with a Path of Exile 2 reference. The linked wiki image returned HTTP 403; production was grounded in the Issue description and approved local concept art, not an unseen original image.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A hovering dark-fantasy hand mirror with an ornate silver frame, pointed crest, carved handle and cool reflective glass. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/kalandra-mirror--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/kalandra-mirror--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/kalandra-mirror--legeling/gifs"
+  },
+  "spritesheet_sha256": "ae50b87a0464944a49e641e82ee93d7a15e6aa8600f39a005ded6aff19ddcba0"
+}

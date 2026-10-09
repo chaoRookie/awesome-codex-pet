@@ -76,7 +76,7 @@ export default function InstallPage() {
         tool: [
           {
             "@type": "HowToTool",
-            name: "ChatGPT with Codex, Bash, or PowerShell",
+            name: "Node.js 20+, npm, and a terminal, or ChatGPT with Codex",
           },
         ],
         step: [
@@ -91,7 +91,7 @@ export default function InstallPage() {
             "@type": "HowToStep",
             position: 2,
             name: "Install the pet",
-            text: "Open the prepared task in ChatGPT or run the Bash or PowerShell command from the pet page.",
+            text: "Open the prepared task in ChatGPT or run the npm command from the pet page with Node.js 20+.",
             url: `${siteConfig.url}/install`,
           },
           {
@@ -120,7 +120,7 @@ export default function InstallPage() {
             name: "Why is my Codex pet not showing after installation?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Confirm that pet.json and spritesheet.webp exist, make sure pet.json.id matches the folder name, restart Codex, and reopen Settings → Pets. Reinstalling an existing pet id requires --force (or -Force in PowerShell).",
+              text: "Confirm that pet.json and spritesheet.webp exist, make sure pet.json.id matches the folder name, restart Codex, and reopen Settings → Pets. Reinstalling an existing pet id requires --force.",
             },
           },
           {

@@ -1,0 +1,37 @@
+{
+  "slug": "elber--legeling",
+  "pet_slug": "elber",
+  "author_slug": "legeling",
+  "name": "ELBER",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Robots",
+  "canonical_key": "lights-are-off/elber",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "robot",
+    "mechanical",
+    "lights-are-off",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/193",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "The requester identifies E.L.B.E.R.R. (Epistemic Logic-Based Engine for Recursive Reasoning) from Lights Are Off's YouTube video I Made a Self-Aware Robot. This package follows the request and approved concept art without claiming ownership of that character.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A curious spindly experimental robot with a pale oval head, enormous black eyes, a toothy grin and exposed articulated mechanisms. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/elber--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/elber--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/elber--legeling/gifs"
+  },
+  "spritesheet_sha256": "a40c86cd25c57c407082544048cc16e1fe9c9e755f42a161228fd752509e1754"
+}

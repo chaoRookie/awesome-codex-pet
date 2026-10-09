@@ -1,0 +1,33 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the community request reference. The requester did not identify the original reference artist; this package does not claim ownership of the referenced character.",
+  "pet_slug": "little-v",
+  "name": "电子宠物小v",
+  "localized_names": {
+    "en": "Little V",
+    "zh": "电子宠物小v"
+  },
+  "primary_category": "Others",
+  "canonical_key": "community-request/little-v",
+  "description": "A soft cream companion with closed smiling eyes, rosy cheeks, and a small belly mark.",
+  "slug": "little-v--legeling",
+  "tags": ["community-request", "3d-toy"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/129",
+  "preview_image": "../../assets/previews/little-v--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/little-v--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/little-v--legeling/gifs"
+  },
+  "spritesheet_sha256": "d6cb0b81448a8e65a84532a269786f0f327b348d122df11d1d7e0c95ced25276"
+}

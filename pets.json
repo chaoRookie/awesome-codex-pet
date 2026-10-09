@@ -3,7 +3,7 @@
     "slug": "firefly--lingxiaotian",
     "name": "Firefly",
     "localized_names": { "en": "Firefly", "zh": "流萤" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -27,7 +27,7 @@
     "slug": "acheron--lingxiaotian",
     "name": "Acheron",
     "localized_names": { "en": "Acheron", "zh": "黄泉" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -59,6 +59,17 @@
     "collections": [],
     "license": "Non-commercial use only.",
     "description": "A compact cinematic Agamemnon pet inspired by Greek mythology and a Nolan-style historical epic, with black steel armor, a tall horsehair crest, gold lion clasps, and an attached segmented vertebral rear structure.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "ai-pulse--wxy",
+    "name": "AI Pulse",
+    "localized_names": { "en": "AI Pulse", "zh": "AI Pulse" },
+    "author": "wxy",
+    "primary_category": "Robots",
+    "canonical_key": "original/wxy/ai-pulse",
+    "collections": [],
+    "license": "Non-commercial personal use only; redistribution and derivatives require permission.",
     "spriteVersionNumber": 2
   },
   {
@@ -101,7 +112,7 @@
     "slug": "arlecchino--lingxiaotian",
     "name": "Arlecchino",
     "localized_names": { "en": "Arlecchino", "zh": "阿蕾奇诺" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -136,6 +147,21 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "bearisbug--huanghan",
+    "name": "bearisbug",
+    "localized_names": { "en": "bearisbug", "zh": "小熊虫" },
+    "author": "huanghan",
+    "author_handle": "hanhuang22",
+    "author_url": "https://github.com/hanhuang22",
+    "primary_category": "Mascots",
+    "canonical_key": "fictional/bearisbug",
+    "variant_note": "An independently AI-generated v2 Codex pet adaptation submitted by huanghan, with nine standard animation rows and 16 look directions; no source-image pixels are included.",
+    "collections": [],
+    "license": "Non-commercial use only. This independently AI-generated fan adaptation is submitted for repository review; no formal permission or redistribution authorization from the character rights holder is claimed or implied. No source-image pixels are included.",
+    "description": "小熊虫，英文名bearisbug，是一只能安于各种现状的生物，但他时常困惑自己是熊还是虫。在生活中，小熊虫总会快速找到舒适的姿势躺下，即便有六只手脚却没有一只喜欢干正事。随遇而安是它的美德，乐观开朗是它的处世之道，作为社恐的它，也经常有情绪敏感的体现。身为一只懒虫，船到桥头自然直是小熊的“虫生格言”。",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "becky--natewanggg",
     "name": "Becky",
     "author": "NateWanggg",
@@ -163,7 +189,7 @@
     "slug": "black-swan--lingxiaotian",
     "name": "Black Swan",
     "localized_names": { "en": "Black Swan", "zh": "黑天鹅" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -210,10 +236,38 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "capoo--lan-kehan",
+    "name": "Bugcat Capoo",
+    "localized_names": { "en": "Bugcat Capoo", "zh": "猫猫虫咖波" },
+    "author": "lan-kehan",
+    "author_handle": "lan-kehan",
+    "author_url": "https://github.com/lan-kehan",
+    "primary_category": "Mascots",
+    "canonical_key": "fictional/bugcat-capoo/capoo",
+    "collections": [],
+    "license": "Non-commercial use only. Bugcat Capoo character rights and trademarks remain with their respective owners.",
+    "description": "An independently AI-generated Codex pet inspired by the blue six-legged Bugcat Capoo character; official reference pixels are not included.",
+    "spriteVersionNumber": 1
+  },
+  {
+    "slug": "buttercup--legeling",
+    "name": "Buttercup",
+    "localized_names": { "en": "Buttercup", "zh": "毛毛" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "community-request/225",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "AI-generated noncommercial fan-art pet of Buttercup from The Powerpuff Girls, preserving the requester reference and approved base.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "castorice--lingxiaotian",
     "name": "Castorice",
     "localized_names": { "en": "Castorice", "zh": "遐蝶" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -235,6 +289,19 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "cherry-empty-hands--legeling",
+    "name": "cherry切粒",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/cherry-empty-hands",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A white floppy-eared Cherry mascot with pink cherry ornaments, heart eye highlights and empty hands.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "chibi-rei-pet--bendy",
     "name": "Chibi Rei Pet",
     "localized_names": { "en": "Rei Ayanami", "zh": "绫波丽" },
@@ -244,6 +311,20 @@
     "collections": ["evangelion"],
     "license": "Source author terms; personal non-commercial use only",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "chiikawa--godxxy1229",
+    "name": "Chiikawa",
+    "author": "godxxy1229",
+    "author_handle": "godxxy1229",
+    "author_url": "https://github.com/godxxy1229",
+    "primary_category": "Anime Characters",
+    "canonical_key": "chiikawa/chiikawa",
+    "variant_note": "A v2 interpretation by godxxy1229 with side-facing walking, a spear work action, page-turning book review, and a complete 16-direction look loop.",
+    "collections": [],
+    "license": "Non-commercial use only. Chiikawa character copyright: Nagano. Character and franchise rights remain with their respective rights holders. No affiliation or endorsement. No license to the underlying character rights is asserted.",
+    "description": "An unofficial Chiikawa companion for Codex. https://github.com/godxxy1229/chiikawa-codex-pet",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "chispa--giiilberto-nm",
@@ -309,6 +390,20 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "clawd--godxxy1229",
+    "name": "Clawd",
+    "author": "godxxy1229",
+    "author_handle": "godxxy1229",
+    "author_url": "https://github.com/godxxy1229",
+    "primary_category": "Mascots",
+    "canonical_key": "anthropic/claude",
+    "variant_note": "A separately produced v2 Clawd interpretation by godxxy1229, with rectangular limbs, keyboard typing, a magnifier review action, and a complete 16-direction look loop. Distinct from the existing claude--xiangking v1 package.",
+    "collections": [],
+    "license": "Non-commercial use only. Clawd character copyright: Anthropic. No affiliation or endorsement. No license to the underlying character rights is asserted.",
+    "description": "An unofficial Claude-inspired companion for Codex. https://github.com/godxxy1229/clawd-codex-pet",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "codenono--dq02",
     "name": "CodeNoNo",
     "author": "Dqd02",
@@ -318,6 +413,19 @@
     "collections": [],
     "license": "Original submission; permission granted for inclusion in the awesome-codex-pet gallery via issue #9",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "codex-orb--legeling",
+    "name": "codex",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/codex-orb",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A dark circular AI orb with two silver-white oval eyes and a thin continuous rainbow rim.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "codexy--z19t",
@@ -332,6 +440,19 @@
     "collections": [],
     "license": "CC BY-NC 4.0. Original AI-generated artwork independently created and adapted by z19t; non-commercial use only.",
     "description": "An original mint-haired Codex AI assistant with a cursor hair ornament, an attached terminal companion, hardworking task animations, and a complete 16-direction look loop.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "codex-dragon-girl--orient37",
+    "name": "Codex龙娘·居家版",
+    "author": "orient37（AI 辅助制作）",
+    "author_handle": "orient37",
+    "primary_category": "Others",
+    "canonical_key": "original/zipzippipe/codex-dragon-girl",
+    "variant_note": "为社区请求 #246 独立 AI 制作的 V2 居家装演绎，使用白裙、蓝紫蝴蝶结、毛绒拖鞋和淡紫龙尾；不复制现有宠物图集。",
+    "collections": [],
+    "license": "仅限非商业使用。角色创作署名按请求保留为 ZipZipPipe；不宣称拥有原角色或参考图的权利，也不为参考图授予额外许可。",
+    "description": "白色长卷发、淡紫龙角与龙尾的居家裙装伙伴。参考请求提供的角色设定，由 orient37 使用 AI 独立生成和编排 V2 动画。",
     "spriteVersionNumber": 2
   },
   {
@@ -372,7 +493,7 @@
     "slug": "cyrene--lingxiaotian",
     "name": "Cyrene",
     "localized_names": { "en": "Cyrene", "zh": "昔涟" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -403,7 +524,43 @@
     "canonical_key": "brand/deepseek/deepseek-girl",
     "collections": [],
     "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
-    "description": "An original v2 DeepSeek Girl community interpretation: a blue-haired research explorer with nine task animations and sixteen clockwise look directions.",
+    "description": "An original v2 DeepSeek Girl community interpretation: a blue-haired whale girl with head fins, an attached whale tail, an original deep-sea maid outfit, nine task animations, and sixteen clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "deepseek-whalechan--qimi",
+    "name": "DeepSeek Whalechan",
+    "localized_names": {
+      "en": "DeepSeek Whalechan",
+      "zh": "蓝色大肥鱼·Q版女仆"
+    },
+    "author": "qimi",
+    "author_handle": "qishichuan",
+    "author_url": "https://github.com/qishichuan",
+    "primary_category": "Others",
+    "canonical_key": "brand/deepseek/deepseek-girl",
+    "variant_note": "An independent qimi variant of the existing DeepSeek whale-girl entry: a super-deformed blue maid design with a notebook/ChatGPT mark and a distinct running row whose row1 frames are mirrored from row2. The spritesheet is independently generated and byte-distinct from the existing entry.",
+    "collections": [],
+    "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
+    "description": "A super-deformed blue whale-maid community pet with a notebook, whale fins and tail, nine task animations, and sixteen clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "riceball-maid--qishichuan",
+    "name": "DeepSeek钢盆饭团",
+    "localized_names": {
+      "en": "DeepSeek Steel-Bowl Riceball",
+      "zh": "DeepSeek钢盆饭团"
+    },
+    "author": "qishichuan",
+    "author_handle": "qishichuan",
+    "author_url": "https://github.com/qishichuan",
+    "primary_category": "Mascots",
+    "canonical_key": "original/qishichuan/deepseek-steel-bowl-riceball",
+    "variant_note": "独立制作的 v2 版本；包含吃饭团、敲勺子和平底锅、倒置拖动，以及直立慌张掉落 token 等定制动作。",
+    "collections": [],
+    "license": "Independent AI-generated artwork based on user-provided references; personal and repository use only; non-commercial use only.",
+    "description": "蓝色大肥鱼造型的钢盆饭团小女仆：头戴银色钢盆，最爱大口吃白饭，也喜欢偷偷私藏蓝白 token；工作时急切地取出饭团享用，等待时用木勺敲击铜色平底锅，移动或晃动时 token 会不小心掉落，被鼠标拖动时倒置下垂。",
     "spriteVersionNumber": 2
   },
   {
@@ -477,10 +634,24 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "doro--godxxy1229",
+    "name": "Doro",
+    "author": "godxxy1229",
+    "author_handle": "godxxy1229",
+    "author_url": "https://github.com/godxxy1229",
+    "primary_category": "Game Characters",
+    "canonical_key": "nikke/doro",
+    "variant_note": "A separately produced v2 redraw and animation by godxxy1229, with keyboard typing, magnifier review, expressive waiting, repaired face and hair contours, and a complete 16-direction look loop. Distinct from doro--lingxiaotian and doro--vaevie.",
+    "collections": ["nikke"],
+    "license": "Non-commercial use only. Doro / Dorothy and GODDESS OF VICTORY: NIKKE remain the property of their respective rights holders, including SHIFT UP. No affiliation or endorsement. No license to the underlying character rights is asserted.",
+    "description": "An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "doro--lingxiaotian",
     "name": "Doro",
     "localized_names": { "en": "Doro", "zh": "桃乐丝（Doro）" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -544,6 +715,19 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "elber--legeling",
+    "name": "ELBER",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Robots",
+    "canonical_key": "lights-are-off/elber",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A curious spindly experimental robot with a pale oval head, enormous black eyes, a toothy grin and exposed articulated mechanisms. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "ella-wave--sehjk",
     "name": "Ella Wave",
     "author": "sehjk",
@@ -569,6 +753,23 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "evanescia-lunar-blossoming--jasdfgh",
+    "name": "Evanescia · Lunar Blossoming",
+    "localized_names": {
+      "en": "Evanescia · Lunar Blossoming",
+      "zh": "绯英 · 月待花时"
+    },
+    "author": "Jasdfgh",
+    "author_handle": "Jasdfgh",
+    "author_url": "https://github.com/Jasdfgh",
+    "primary_category": "Game Characters",
+    "canonical_key": "fictional/honkai-star-rail/evanescia",
+    "variant_note": "Independent AI-assisted fan-art edition by Jasdfgh featuring Evanescia's Lunar Blossoming outfit. Compact proportions, a restored right long sleeve, controlled 2D animation, nine task states, and sixteen gaze directions distinguish this independently authored v2 spritesheet.",
+    "collections": ["honkai-star-rail"],
+    "license": "CC BY-NC 4.0 for the submitter's licensable contributions; non-commercial use only. Original Honkai: Star Rail / HoYoverse character, outfit, and other third-party intellectual property are excluded. Unofficial fan art; no official affiliation or endorsement.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "fang-yuan--kelleszzz",
     "name": "Fang Yuan",
     "localized_names": { "en": "Fang Yuan", "zh": "方源" },
@@ -587,7 +788,7 @@
     "slug": "feixiao--lingxiaotian",
     "name": "Feixiao",
     "localized_names": { "en": "Feixiao", "zh": "飞霄" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -609,6 +810,19 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "flying-hamster-unicorn--legeling",
+    "name": "Flying Hamster Unicorn",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Fantasy Creatures",
+    "canonical_key": "fantasy/flying-hamster-unicorn",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A cheerful pink flying hamster with a tiny unicorn horn and wings. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "frankie--aygunvarol",
     "name": "Frankie",
     "author": "Aygun Varol",
@@ -623,7 +837,7 @@
     "slug": "frieren--lingxiaotian",
     "name": "Frieren",
     "localized_names": { "en": "Frieren", "zh": "芙莉莲" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Anime Characters",
@@ -635,7 +849,7 @@
     "slug": "furina--lingxiaotian",
     "name": "Furina",
     "localized_names": { "en": "Furina", "zh": "芙宁娜" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -643,6 +857,19 @@
     "license": "CC BY-NC 4.0",
     "description": "A Furina-inspired fan-art Codex pet with a blue-white top hat, theatrical Fontaine styling, and a playful chibi sprite identity.",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "fushi--legeling",
+    "name": "Fushi",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "cosmic-princess-kaguya/fushi",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A cheerful white bunny sea-slug mascot with charcoal ears, gray spots and rosy cheeks. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "ganyu--chenxin-dlut",
@@ -657,6 +884,20 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "genos-pixel--patrickxunuo",
+    "name": "Genos Pixel",
+    "author": "patrickxunuo",
+    "author_handle": "patrickxunuo",
+    "author_url": "https://github.com/patrickxunuo",
+    "primary_category": "Anime Characters",
+    "canonical_key": "one-punch-man/genos",
+    "variant_note": "An independently AI-generated pixel-chibi v2 interpretation with nine animation rows and 16 clockwise look directions.",
+    "collections": [],
+    "license": "Non-commercial use only. Unofficial One-Punch Man fan art; character rights remain with their respective owners.",
+    "description": "A cute Genos fan-art Codex pet with blond hair, amber eyes, a black outfit, compact mechanical arms, nine animations, and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "zhuzhuxia--ryde-play",
     "name": "GG Bond",
     "localized_names": { "en": "GG Bond", "zh": "猪猪侠" },
@@ -668,6 +909,20 @@
     "collections": [],
     "license": "Non-commercial use only. Independently AI-generated fan art; GG Bond / 猪猪侠 and its underlying characters remain the property of their respective rights holders. Not affiliated with or endorsed by any rights holder.",
     "description": "A plush chibi interpretation of GG Bond with a red cap, pink pig face, yellow cuffs, and a pig-nose emblem on the chest.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "glep--legeling",
+    "name": "Glep",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "fictional/smiling-friends/glep",
+    "variant_note": "Independently AI-generated pixel-styled wizard interpretation with a black outline, wand, oversized tea cup, nine standard animations, and sixteen look directions.",
+    "collections": [],
+    "license": "Non-commercial use only. Glep and Smiling Friends belong to their respective creators and rights holders. This fan-art submission does not grant rights to the underlying character or reference artwork.",
+    "description": "Glep fan art from Smiling Friends, independently AI-generated with the OpenAI image tool at legeling's direction. The image supplied in issue #242 was used as a visual reference only and is not included in this package. The requested wizard hat, wand, oversized tea cup, and black outline are retained. The exact final spritesheet was reviewed and approved before submission.",
     "spriteVersionNumber": 2
   },
   {
@@ -697,6 +952,34 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "golden-lamp--legeling",
+    "name": "Golden Lamp",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/149",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only; commercial use is prohibited. Rights in the requester-supplied reference image and any depicted or referenced characters remain with their respective rights holders. This is an unofficial AI-generated community interpretation.",
+    "description": "An AI-generated golden-lamp sprite based on the reference supplied in request #149. Sprite-only lamp interpretation; the intended request subject and remaining request scope are unresolved pending requester confirmation.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "gpt-dragon-girl--legeling",
+    "name": "GPT Dragon Girl",
+    "localized_names": { "en": "GPT Dragon Girl", "zh": "GPT龙娘" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "original/zipzippipe/gpt-dragon-girl",
+    "variant_note": "legeling independently generated this white-and-lavender winged chibi V2 edition, visually approved on 2026-10-07. It uses its own nine action sequences and sixteen look poses; it is distinct from tenghuan123's GPT Dragon Girl edition in PR #253 and orient37's homewear Codex Dragon Girl in PR #252.",
+    "collections": [],
+    "license": "Non-commercial use only. Independently AI-generated unofficial fan art. Character design: ZipZipPipe. Unofficial fan interpretation; character and brand rights remain with their respective owners. No source pixels are copied; this statement does not grant rights to the original character or third-party reference artwork.",
+    "description": "An independently AI-generated chibi interpretation of ZipZipPipe’s white-and-lavender winged dragon girl with nine task animations and sixteen clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "gpt-muse--opask",
     "name": "GPT-muse",
     "author": "opask",
@@ -706,6 +989,21 @@
     "license": "Unknown license; public Codex Pets upload; no explicit repository redistribution license was provided.",
     "description": "A tiny aqua-white Codex companion with silver hair and teal accents.",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "gpt-dragon-girl--tenghuan123",
+    "name": "GPT龙娘",
+    "localized_names": { "en": "GPT Dragon Girl", "zh": "GPT龙娘" },
+    "author": "tenghuan123",
+    "author_handle": "tenghuan123",
+    "author_url": "https://github.com/tenghuan123",
+    "primary_category": "Mascots",
+    "canonical_key": "original/zipzippipe/gpt-dragon-girl",
+    "variant_note": "tenghuan123 独立制作的 V2 Q 版，包含九组动画和 16 个环视方向；与其他作者的版本使用不同的图集。",
+    "collections": [],
+    "license": "仅限非商业使用。最终宠物图集为 AI 辅助制作的同人适配作品；角色原设定及参考图权利仍归原权利人。",
+    "description": "以白发、紫瞳、龙角、龙翼和浅紫色礼服为特征的 GPT 龙娘 Q 版 Codex 宠物，包含九组任务动画和 16 个环视方向。",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "hajimi--zeyuwang1999",
@@ -772,10 +1070,39 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "hanako-kun--legeling",
+    "name": "Hanako-kun",
+    "localized_names": { "en": "Hanako-kun", "zh": "花子君" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "fictional/toilet-bound-hanako-kun/hanako",
+    "variant_note": "Independently AI-generated, lightly pixel-styled chibi v2 interpretation with nine standard animations and sixteen look directions.",
+    "collections": [],
+    "license": "Non-commercial use only. Hanako-kun and Toilet-bound Hanako-kun belong to AidaIro and their respective rights holders. This fan-art submission does not grant rights to the underlying character or reference artwork.",
+    "description": "Hanako-kun fan art from Toilet-bound Hanako-kun (地缚少年花子君), independently AI-generated with the OpenAI image tool at legeling's direction. The image supplied in issue #244 was used as a visual reference only; it is not included in this package. The exact final spritesheet was reviewed and approved before submission.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "holo--james991116",
+    "name": "Holo",
+    "localized_names": { "en": "Holo", "zh": "赫萝" },
+    "author": "James991116",
+    "author_handle": "James991116",
+    "author_url": "https://github.com/James991116",
+    "primary_category": "Anime Characters",
+    "canonical_key": "spice-and-wolf/holo",
+    "collections": [],
+    "license": "Non-commercial use only. This is unofficial independently AI-generated fan art submitted by James991116 for non-commercial repository use. Holo and Spice and Wolf rights remain with their respective owners; no official affiliation or endorsement is implied.",
+    "description": "A chibi Holo from Spice and Wolf with chestnut hair, wolf ears, ruby eyes, a blue-and-charcoal traveling outfit, nine task animations, and 16 look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "hu-tao--lingxiaotian",
     "name": "Hu Tao",
     "localized_names": { "en": "Hu Tao", "zh": "胡桃" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -811,6 +1138,21 @@
     "license": "Non-commercial repository redistribution authorized by the original asset creator; permission confirmed by the repository maintainer on 2026-07-18.",
     "description": "A chibi Ikaros desktop pet inspired by Heaven's Lost Property, with pink hair, teal eyes, small wings, white mechanical outfit, chain collar, clear four-finger chibi hands, and a complete round watermelon prop.",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "inori-yuzuriha--legeling",
+    "name": "Inori Yuzuriha",
+    "localized_names": { "en": "Inori Yuzuriha", "zh": "楪祈" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "fictional/guilty-crown/inori-yuzuriha",
+    "variant_note": "Independently AI-generated chibi interpretation in a crimson-and-white goldfish-inspired dress, with nine standard animations and sixteen look directions.",
+    "collections": [],
+    "license": "Non-commercial use only. Inori Yuzuriha and Guilty Crown belong to GUILTY CROWN COMMITTEE and their respective rights holders. This fan-art submission does not grant rights to the underlying character or reference artwork.",
+    "description": "Inori Yuzuriha fan art from Guilty Crown (罪恶王冠), independently AI-generated with the OpenAI image tool at legeling's direction. The image supplied in issue #229 was used as a visual reference only; its background and watermark are not included in this package. Pink hair, crimson eyes, and a crimson-and-white goldfish-inspired dress preserve the requested character identity. The exact final spritesheet was reviewed and approved before submission.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "iris--yau-427",
@@ -929,7 +1271,7 @@
     "slug": "kamisato-ayaka--lingxiaotian",
     "name": "Kamisato Ayaka",
     "localized_names": { "en": "Kamisato Ayaka", "zh": "神里绫华" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1025,6 +1367,20 @@
     "collections": ["genshin-impact"],
     "license": "Non-commercial use only. Independently AI-generated fan art inspired by Klee from Genshin Impact; no official game artwork is included.",
     "description": "An independently generated non-commercial Klee fan-art variant centered on drawing and working at a wooden desk.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "kurimanju--legeling",
+    "name": "Kurimanju",
+    "localized_names": { "en": "Kurimanju", "zh": "栗子馒头" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "community-request/231",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "AI-generated noncommercial fan-art pet of Kurimanju from Chiikawa, preserving the requester reference, original facial marks and approved base; fulfills requests #231 and #232.",
     "spriteVersionNumber": 2
   },
   {
@@ -1182,7 +1538,7 @@
     "slug": "mahiro--lingxiaotian",
     "name": "Mahiro",
     "localized_names": { "en": "Mahiro", "zh": "绪山真寻" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Anime Characters",
@@ -1239,6 +1595,21 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "maodie--trahex",
+    "name": "Maodie",
+    "localized_names": { "en": "Maodie", "zh": "耄耋" },
+    "author": "Trahex",
+    "author_handle": "Trahex",
+    "author_url": "https://github.com/Trahex",
+    "primary_category": "Memes",
+    "canonical_key": "meme/maodie",
+    "variant_note": "Independently AI-generated photorealistic v2 interpretation by Trahex, distinct from maodie--octane0411. Features a stationary tense hiss for pointer interaction, alternating paws typing on a keyboard during task work, and sixteen look directions. The usual jumping row intentionally contains grounded hissing, as requested by the submitter.",
+    "collections": ["animal-companions"],
+    "license": "Non-commercial use only.",
+    "description": "A photorealistic orange Maodie cat with folded airplane ears, glaring eyes, a fierce grounded hiss, and alternating keyboard paw presses.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "march-7th--chenxin-dlut",
     "name": "March 7th",
     "localized_names": { "en": "March 7th", "zh": "三月七" },
@@ -1263,6 +1634,17 @@
     "collections": ["touhou-project"],
     "license": "Non-commercial use only.",
     "description": "Marisa Kirisame from Touhou Project, with her black witch hat, white bow, blonde braid, and black-and-white outfit. AI-generated fan art assembled and refined by eigentom using Codex, including local frame compositing and alignment. Character belongs to ZUN / Team Shanghai Alice. Non-commercial use only.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "maya-fey--kbz1121",
+    "name": "Maya Fey",
+    "localized_names": { "en": "Maya Fey", "zh": "绫里真宵" },
+    "author": "kbz1121",
+    "primary_category": "Game Characters",
+    "canonical_key": "ace-attorney/maya-fey",
+    "collections": [],
+    "license": "非商业用途；未经 Capcom 授权的同人作品。绫里真宵及《逆转裁判》相关角色和作品权利归其权利人所有。本投稿仅提供 AI 生成的桌宠图集，不包含官方设定图或参考素材。",
     "spriteVersionNumber": 2
   },
   {
@@ -1303,7 +1685,7 @@
     "slug": "mikoto--lingxiaotian",
     "name": "Mikoto",
     "localized_names": { "en": "Mikoto", "zh": "御坂美琴" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Anime Characters",
@@ -1315,7 +1697,7 @@
     "slug": "miku--lingxiaotian",
     "name": "Miku",
     "localized_names": { "en": "Miku", "zh": "初音未来" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Anime Characters",
@@ -1333,6 +1715,19 @@
     "collections": ["animal-companions"],
     "license": "MIT License",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "mini--zhou-jianwen",
+    "name": "Mini",
+    "author": "zhou-jianwen",
+    "author_handle": "zhou-jianwen",
+    "author_url": "https://github.com/zhou-jianwen",
+    "primary_category": "Others",
+    "canonical_key": "animal/domestic-dog/mini",
+    "collections": ["animal-companions"],
+    "license": "Non-commercial use only. Commercial use is prohibited. No rights to the reference photograph are claimed.",
+    "description": "A fluffy black-and-white dog companion named Mini, with nine task animation states and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "minty--somnusochi",
@@ -1401,10 +1796,24 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "my-little-orange-cat--zhou-jianwen",
+    "name": "My Little Orange Cat",
+    "author": "zhou-jianwen",
+    "author_handle": "zhou-jianwen",
+    "author_url": "https://github.com/zhou-jianwen",
+    "primary_category": "Others",
+    "canonical_key": "animal/community-request-179-orange-cat",
+    "variant_note": "An independently AI-generated v2 interpretation of the individual orange-and-white cat pictured in community request #179, with a white facial blaze, chest and paws, orange tabby crown, back and tail, nine animation states and sixteen look directions. No existing catalog sprites were reused.",
+    "collections": ["animal-companions"],
+    "license": "Non-commercial use and redistribution only, with credit to zhou-jianwen for this AI-assisted pet contribution. Commercial use is prohibited. No ownership or license over the submitted reference photograph is asserted or granted.",
+    "description": "A softly illustrated orange-and-white cat based on the photograph supplied in request #179. AI-generated artwork directed and assembled for zhou-jianwen. The request was submitted without a GitHub account; the photographer, owner identity and reference attribution remain unconfirmed. The photograph is a visual reference only and is not redistributed in this package.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "nahida--lingxiaotian",
     "name": "Nahida",
     "localized_names": { "en": "Nahida", "zh": "纳西妲" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1417,7 +1826,7 @@
     "slug": "navia--lingxiaotian",
     "name": "Navia",
     "localized_names": { "en": "Navia", "zh": "娜维娅" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1452,6 +1861,32 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "niu-lai--wynn",
+    "name": "Niu Lai",
+    "author": "wynn",
+    "author_url": "https://github.com/zhou-jianwen",
+    "primary_category": "Anime Characters",
+    "canonical_key": "meme/niulai",
+    "variant_note": "An independently AI-generated version by wynn, distinct from niulai--legeling: a fuzzy orange calf with a broad lilac muzzle and heavy-lidded eyes, restrained thinking and review gestures, nine animation states, and sixteen v2 look directions. No sprites or frames from the existing package were reused.",
+    "collections": [],
+    "license": "Non-commercial use and redistribution only, with credit to wynn, to the extent wynn holds rights in this contribution. The underlying Niu Lai film character and reference imagery remain subject to third-party rights; no permission from their rightsholders is asserted or granted. Unofficial fan art; no affiliation or endorsement. These terms do not establish third-party rights clearance.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "nu-gundam--mzhyui",
+    "name": "Nu Gundam",
+    "localized_names": { "en": "Nu Gundam", "zh": "ν高达" },
+    "author": "mzhyui",
+    "author_handle": "mzhyui",
+    "author_url": "https://github.com/mzhyui",
+    "primary_category": "Robots",
+    "canonical_key": "mobile-suit-gundam/nu-gundam",
+    "collections": [],
+    "license": "Non-commercial use only. Unofficial fan-made adaptation; no affiliation with or authorization from the Gundam rights holders is claimed.",
+    "description": "A compact RX-93 Nu Gundam companion with model-kit-inspired armor, an asymmetric stack of six attached fin funnels, nine task animations, and 16 look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "om-nom--kasyan1337",
     "name": "Om Nom",
     "author": "Kasyan Janci",
@@ -1467,7 +1902,7 @@
     "slug": "paimon--lingxiaotian",
     "name": "Paimon",
     "localized_names": { "en": "Paimon", "zh": "派蒙" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1485,6 +1920,20 @@
     "collections": ["animal-companions"],
     "license": "MIT License",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "peach-cat--legeling",
+    "name": "Peach Cat",
+    "localized_names": { "en": "Peach Cat", "zh": "蜜桃猫" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "peach-and-goma/peach",
+    "collections": [],
+    "license": "Non-commercial use only. Independently AI-generated unofficial fan art. Character design: 不觉晓晓 / Bu Jue Xiao Xiao. Peach and Goma character rights remain with their respective owners. No third-party reference pixels are redistributed. No endorsement or license to the underlying character or third-party reference artwork is implied.",
+    "description": "An independently AI-generated white Peach cat with playful sticker-style task animations and sixteen clockwise look directions.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "phoebe--chenxin-dlut",
@@ -1526,10 +1975,36 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "point-fox--legeling",
+    "name": "Point Fox",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Animals",
+    "canonical_key": "animal/point-fox",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A cheerful orange-and-white pixel fox with oversized pointed ears, a curled fluffy white-tipped tail, expressive task animations, and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "potato--legeling",
+    "name": "Potato",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Objects & Props",
+    "canonical_key": "community-request/182",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+    "description": "A plain ochre pixel potato with a stepped outline and gentle organic movements.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "raiden-shogun--lingxiaotian",
     "name": "Raiden Shogun",
     "localized_names": { "en": "Raiden Shogun", "zh": "雷电将军" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1542,7 +2017,7 @@
     "slug": "reimu--lingxiaotian",
     "name": "Reimu",
     "localized_names": { "en": "Reimu", "zh": "博丽灵梦" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1597,7 +2072,7 @@
     "slug": "robin--lingxiaotian",
     "name": "Robin",
     "localized_names": { "en": "Robin", "zh": "知更鸟" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1644,7 +2119,7 @@
     "slug": "ruan-mei--lingxiaotian",
     "name": "Ruan Mei",
     "localized_names": { "en": "Ruan Mei", "zh": "阮·梅" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1676,19 +2151,31 @@
     "spriteVersionNumber": 1
   },
   {
-    "slug": "saiki-kusuo--yjt0416",
-    "name": "Saiki Kusuo",
-    "localized_names": { "en": "Saiki Kusuo", "zh": "齐木楠雄" },
-    "author": "yjt0416",
-    "author_handle": "yjt0416",
-    "author_url": "https://github.com/yjt0416",
-    "primary_category": "Anime Characters",
-    "canonical_key": "the-disastrous-life-of-saiki-k/saiki-kusuo",
-    "variant_note": "An independently AI-generated V1 pixel-art adaptation by yjt0416, with original sprite pixels and a custom nine-row animation set.",
+    "slug": "sae-itoshi--legeling",
+    "name": "Sae Itoshi",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/sae-itoshi",
     "collections": [],
-    "license": "Non-commercial use only. Independently AI-generated fan art; Saiki Kusuo and The Disastrous Life of Saiki K. remain the property of their respective rights holders.",
-    "description": "yjt0416 independently created this unofficial V1 pixel-art fan pet of Saiki Kusuo, featuring nine standard animation rows and a clean transparent atlas for non-commercial use only.",
-    "spriteVersionNumber": 1
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A Sae Itoshi interpretation with burgundy hair, turquoise eyes and the white U20 number 10 uniform. Introduction line: \"Only those who can keep up with me, will get to see what comes next\".",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "saitama-pixel--patrickxunuo",
+    "name": "Saitama Pixel",
+    "author": "patrickxunuo",
+    "author_handle": "patrickxunuo",
+    "author_url": "https://github.com/patrickxunuo",
+    "primary_category": "Anime Characters",
+    "canonical_key": "one-punch-man/saitama",
+    "variant_note": "An independently AI-generated pixel-chibi v2 interpretation with its own nine animation rows and 16 look directions; visually distinct from the submitter's separate 3D toy version.",
+    "collections": [],
+    "license": "Non-commercial use only. Unofficial One-Punch Man fan art; character rights remain with their respective owners.",
+    "description": "A pixel-chibi Saitama fan-art Codex pet with an oversized bald head, deadpan expression, yellow hero suit, white cape, nine animations, and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "sakamoto--zpzjzj",
@@ -1759,7 +2246,7 @@
   {
     "slug": "serge-le-lapin--legeling",
     "name": "Serge le Lapin",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Mascots",
@@ -1810,7 +2297,7 @@
     "slug": "silver-wolf--lingxiaotian",
     "name": "Silver Wolf",
     "localized_names": { "en": "Silver Wolf", "zh": "银狼" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1848,7 +2335,7 @@
     "slug": "sparkle--lingxiaotian",
     "name": "Sparkle",
     "localized_names": { "en": "Sparkle", "zh": "花火" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -1869,6 +2356,18 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "st-tibo-reset--wynn",
+    "name": "St. Tibo Reset",
+    "author": "wynn",
+    "primary_category": "Memes",
+    "canonical_key": "memes/saint-tibo",
+    "variant_note": "An independently generated, seated v2 interpretation with a green-and-gold robe, a physical red RESET button, nine standard animation states, and sixteen look directions.",
+    "collections": [],
+    "license": "Non-commercial use and redistribution only, with credit to wynn, to the extent the contributor holds rights in this work. Reference imagery and the depicted person's rights remain with their respective rightsholders and are not licensed by this submission. Unofficial fan art; no affiliation or endorsement is claimed. These terms do not establish third-party rights clearance. Please contact the contributor or maintainers with rights concerns so the submission can be reviewed, revised, or removed.",
+    "description": "A serene, cross-legged Tibo in green and gold robes, ready to press his big red RESET button and give your work a fresh start. Independently AI-generated from a user-supplied public Saint Tibo meme reference; the reference was used for visual guidance only and is not included in this package.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "starcorn--alterhq",
     "name": "Starcorn",
     "author": "Alter",
@@ -1884,7 +2383,7 @@
     "slug": "sunny-retriever--legeling",
     "name": "Sunny Retriever",
     "localized_names": { "en": "Sunny Retriever", "zh": "暖阳金毛" },
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Animals",
@@ -1950,14 +2449,16 @@
   },
   {
     "slug": "teddy--danieloleary",
-    "name": "Teddy",
+    "name": "Teddy 5.0",
     "author": "Daniel O'Leary",
     "author_handle": "danieloleary",
     "author_url": "https://github.com/danieloleary",
     "primary_category": "Animals",
+    "canonical_key": "original/danieloleary/teddy",
+    "variant_note": "Teddy 5.0 updates the existing author package with anime-inspired eyes, new animation artwork, and the Codex v2 directional atlas.",
     "collections": ["animal-companions"],
     "license": "Original; permission granted for inclusion in the awesome-codex-pet gallery",
-    "spriteVersionNumber": 1
+    "spriteVersionNumber": 2
   },
   {
     "slug": "templar-knight--jorge-cuevas90003",
@@ -1988,7 +2489,7 @@
     "slug": "tingyun--lingxiaotian",
     "name": "Tingyun",
     "localized_names": { "en": "Tingyun", "zh": "停云" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2216,10 +2717,23 @@
     "author_url": "https://github.com/legeling",
     "primary_category": "Others",
     "canonical_key": "honkai-star-rail/march-7th",
-    "variant_note": "An independently produced v2 community interpretation with new pink-and-blue chibi artwork, nine animation states, and sixteen look directions; it does not reuse the existing chenxin-dlut v1 spritesheet.",
+    "variant_note": "An independently regenerated v2 community interpretation of March 7th's classic Preservation appearance, with nine animation states and sixteen look directions; it does not reuse the existing chenxin-dlut v1 spritesheet.",
     "collections": [],
     "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
     "description": "An independent v2 community interpretation of March 7th from Honkai: Star Rail, with nine task animations and sixteen clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "uesugi-erii--ricardo-2005",
+    "name": "上杉绘梨衣codex宠物",
+    "author": "Ricardo-2005",
+    "author_handle": "Ricardo-2005",
+    "author_url": "https://github.com/Ricardo-2005",
+    "primary_category": "Anime Characters",
+    "canonical_key": "dragon-raja/uesugi-erii",
+    "collections": [],
+    "license": "CC BY-NC 4.0；仅限非商业使用。非官方 AI 同人作品，不代表或暗示获得原作品权利方授权；角色及商标权利归其权利人所有。",
+    "description": "上杉绘梨衣的非官方 AI 同人 Codex 桌面宠物，包含完整的 v2 动画与 16 个观察方向。",
     "spriteVersionNumber": 2
   },
   {
@@ -2247,7 +2761,7 @@
   {
     "slug": "yuanbao--legeling",
     "name": "元宝",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Animals",
@@ -2261,7 +2775,7 @@
     "slug": "yae-miko--legeling",
     "name": "八重神子",
     "localized_names": { "en": "Yae Miko", "zh": "八重神子" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2269,6 +2783,50 @@
     "collections": ["genshin-impact"],
     "license": "CC BY-NC 4.0",
     "description": "An original non-commercial chibi pixel-art interpretation inspired by Yae Miko. The public character reference was used only to preserve recognizable traits; the source artwork, logos, and text were not reproduced.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "qieli--legeling",
+    "name": "切莉",
+    "localized_names": { "en": "Qieli", "zh": "切莉" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/qieli",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A white floppy-eared cartoon rabbit with pink cherry ornaments and a blue fan.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "liuboer--legeling",
+    "name": "刘波儿",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Animals",
+    "canonical_key": "community-request/190",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+    "description": "A slim black Devon Rex with enormous triangular ears, yellow-green eyes and a short rippled coat.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "miku-sea--legeling",
+    "name": "初音未来·海色",
+    "localized_names": {
+      "en": "Hatsune Miku · Sea Colors",
+      "zh": "初音未来·海色"
+    },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "community-request/221",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "忠实于请求者六帧海色初稿的初音未来夏装同人宠物：草帽、画面右侧白蝴蝶结、白蓝裙装、青色双马尾和赤脚。AI 生成，非官方作品。",
     "spriteVersionNumber": 2
   },
   {
@@ -2283,6 +2841,46 @@
     "collections": [],
     "license": "Non-commercial use only. Independently AI-generated community fan art of Nangong Wan inspired by the animated A Record of a Mortal's Journey to Immortality; the submitter confirms permission to include this asset in this repository.",
     "description": "独立 AI 生成的《凡人修仙传》动画版南宫婉像素 Q 版社区再创作：飞遁动作不采用地面跑步，左右飞遁逐帧严格镜像且双腿保持收拢；含修炼、突破与朱雀环施法，仅限非商业使用。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "kalandra-mirror--legeling",
+    "name": "卡兰德的魔镜",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Objects & Props",
+    "canonical_key": "path-of-exile/kalandra-mirror",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A hovering dark-fantasy hand mirror with an ornate silver frame, pointed crest, carved handle and cool reflective glass. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "dingding-devil--legeling",
+    "name": "叮叮恶魔",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "roco-kingdom/dingding-devil",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A mischievous floating little devil with golden claws, orange ruff and tiny bat wings. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "ye-shunguang-bangboo--huanghan",
+    "name": "叶瞬光邦布",
+    "author": "huanghan",
+    "author_handle": "hanhuang22",
+    "author_url": "https://github.com/hanhuang22",
+    "primary_category": "Game Characters",
+    "canonical_key": "zenless-zone-zero/ye-shunguang-bangboo",
+    "variant_note": "Independently generated v2 fan-concept edition with nine standard animation rows and 16 look directions.",
+    "collections": ["zenless-zone-zero"],
+    "license": "Non-commercial use only. Zenless Zone Zero and related intellectual property belong to miHoYo/HoYoverse.",
+    "description": "根本没有这种邦布！",
     "spriteVersionNumber": 2
   },
   {
@@ -2320,6 +2918,19 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "gege-basketball--legeling",
+    "name": "哥哥",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/gege-basketball",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A Cai Xukun basketball meme interpretation in the requested black KUN23 uniform, with one compression sleeve and a hand-held basketball.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "zenitsu-agatsuma--wangfan002",
     "name": "善逸 Q版 丰富动作",
     "localized_names": { "en": "Zenitsu Agatsuma", "zh": "我妻善逸" },
@@ -2329,6 +2940,34 @@
     "collections": ["demon-slayer"],
     "license": "Source author terms; personal non-commercial use only",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "kita-ikuyo--legeling",
+    "name": "喜多郁代",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "bocchi-the-rock/kita-ikuyo",
+    "collections": ["bocchi-the-rock"],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "An upbeat chibi red-haired girl in a black and white frilled maid outfit with a cheerful smile. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "lumei--legeling",
+    "name": "噜妹",
+    "localized_names": { "en": "Lumei", "zh": "噜妹" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "original/dagwbl/lumei",
+    "variant_note": "A separate maintainer-directed interpretation of request #142 based on approved concept art, with independently generated v2 animation. The existing lumei--dagwbl package and its original assets remain unchanged.",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A golden companion in a pink romper and white frilled bonnet, topped with a tiny green sprout.",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "tuantuan--jbbom",
@@ -2341,6 +2980,20 @@
     "license": "MIT License",
     "description": "A soft, friendly orange-and-white shorthair kitten for Codex.",
     "spriteVersionNumber": 1
+  },
+  {
+    "slug": "virtuosa--legeling",
+    "name": "塑心阿尔图罗",
+    "localized_names": { "en": "Virtuosa / Arturia", "zh": "塑心阿尔图罗" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "community-request/178",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "按社区参考制作的《明日方舟》塑心阿尔图罗同人宠物，保留黑发、金眼、黑金碎片光环和翼状构造。AI 生成，脚靴补全已获制作审核认可，非官方作品。",
+    "spriteVersionNumber": 2
   },
   {
     "slug": "duodong--froggie",
@@ -2366,6 +3019,19 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "dashu--legeling",
+    "name": "大鼠",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "community-request/181",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+    "description": "Da Shu from 大鼠与美叽, with a broad gray face, pink ears, a cheerful toothy smile and a tiny body.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "dnf-female-ammo--qunboo",
     "name": "女弹药Q",
     "author": "QunBoo",
@@ -2386,6 +3052,20 @@
     "collections": ["animal-companions"],
     "license": "MIT License",
     "description": "A yellow pear-shaped pixel companion that laughs when hovered.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "vyron--legeling",
+    "name": "威龙",
+    "localized_names": { "en": "Vyron", "zh": "威龙" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "delta-force/vyron",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "An AI-generated, weapon-free community interpretation of Vyron from Delta Force, based on the Issue #234 reference. The specific game skin is unverified.",
     "spriteVersionNumber": 2
   },
   {
@@ -2414,7 +3094,7 @@
   {
     "slug": "xiaoda--legeling",
     "name": "小达",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Robots",
@@ -2433,6 +3113,33 @@
     "collections": ["animal-companions"],
     "license": "Unknown license; public Codex Pets upload; no explicit repository redistribution license was provided.",
     "description": "小麦（XiaoMai），一只绿眼睛、粉鼻子、狸花纹、白脸白胸和白袜子的家猫；不工作时会蜷着睡觉。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "little-black-cat--legeling",
+    "name": "小黑猫",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Animals",
+    "canonical_key": "community-request/175",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+    "description": "A fuzzy brush-painted black cat with slanted golden eyes, a blue nose and an inquisitive gaze.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "iuno--legeling",
+    "name": "尤诺",
+    "localized_names": { "en": "Iuno", "zh": "尤诺" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "community-request/176",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "对应社区请求 #176 与 #177 的《鸣潮》尤诺同人宠物，蓝色双马尾、白金服装和手持蓝金圆环。AI 生成，非官方作品。",
     "spriteVersionNumber": 2
   },
   {
@@ -2466,7 +3173,7 @@
     "slug": "kuromi--legeling",
     "name": "库洛米",
     "localized_names": { "en": "Kuromi", "zh": "库洛米" },
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Others",
@@ -2494,7 +3201,7 @@
     "slug": "wo-de-dao-dun--legeling",
     "name": "我的刀盾",
     "localized_names": { "en": "Wo De Dao Dun", "zh": "我的刀盾" },
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Others",
@@ -2502,6 +3209,20 @@
     "collections": [],
     "license": "Non-commercial use only. Independently AI-generated community meme interpretation; no source pixels copied.",
     "description": "An independently AI-generated Wo De Dao Dun community pet combining a Cheems-like face, round frog body, sword and shield, nine standard task animations, and a complete 16-direction look loop.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "wo-de-dao-dun--yamengzzz",
+    "name": "我的刀盾狗",
+    "author": "YamengZZZ",
+    "author_handle": "YamengZZZ",
+    "author_url": "https://github.com/YamengZZZ",
+    "primary_category": "Memes",
+    "canonical_key": "meme/wo-de-dao-dun",
+    "variant_note": "YamengZZZ 独立 AI 生成并适配的 V2 柴犬版本：完整金色柴犬身体、三角耳朵和毛茸茸的椭圆爪子，保留刀盾，校正各动作身体尺寸、中心与落地基线。不同于 legeling 版的 Cheems 面部与圆蛙身体组合，未复用其运行时图集像素。",
+    "collections": [],
+    "license": "仅限非商业使用，禁止商用 / Non-commercial use only. 最终动画适配署名 YamengZZZ；原始角色及参考图权利归各自权利人，不声称拥有其权利或获得其认可。",
+    "description": "圆滚滚的金色柴犬勇士，右爪握刀、左爪持盾；包含九种任务动作与十六方向环视。",
     "spriteVersionNumber": 2
   },
   {
@@ -2543,6 +3264,19 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "xuxu-baobao--legeling",
+    "name": "旭旭宝宝",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Human Avatars",
+    "canonical_key": "community-request/115",
+    "collections": [],
+    "license": "CC BY-NC 4.0 for this AI-generated sprite asset; non-commercial use only. Commercial use is prohibited. Rights in the depicted person's identity and supplied reference photograph remain with their respective rights holders.",
+    "description": "An AI-generated miniature avatar based on the reference supplied with request #115, with nine animation states and sixteen look directions. The accepted scope is the V2 sprite package; custom desktop interaction and voice features are outside this delivery.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "hance-woniu--korn",
     "name": "旱厕蜗牛",
     "author": "korn",
@@ -2565,10 +3299,25 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "asuka--masashitoda1",
+    "name": "明日香",
+    "localized_names": { "en": "Asuka — Chibi (v2)", "zh": "明日香·Q版（v2）" },
+    "author": "MasashiToda1",
+    "author_handle": "MasashiToda1",
+    "author_url": "https://github.com/MasashiToda1",
+    "primary_category": "Anime Characters",
+    "canonical_key": "evangelion/asuka",
+    "variant_note": "由 MasashiToda1 通过 Codex / ImageGen 根据文字描述独立生成的 Q 版红色驾驶服版本。与 asuka--maxg24 的 v1 素材独立制作；本版本使用 v2 图集，包含九种动作与十六方向视线，未复用其他作者的精灵图。",
+    "collections": ["evangelion"],
+    "license": "仅限非商业使用，禁止商用。允许本仓库收录、展示及分发此独立 AI 生成的同人宠物及预览；非官方作品，不代表获得角色权利方授权。角色及商标权利归各自权利人所有。",
+    "description": "橙红长发、红色驾驶服的 Q 版明日香，包含九种动作与十六方向视线。 根据文字角色描述独立生成的《新世纪福音战士》同人作品，未直接使用官方图片或其他作者的精灵素材。",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "xingxingren--legeling",
     "name": "星星人",
     "localized_names": { "en": "Star Person", "zh": "星星人" },
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Others",
@@ -2593,7 +3342,7 @@
   {
     "slug": "lin-pianpian-first-meeting--legeling",
     "name": "林翩翩（初遇）",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2607,7 +3356,7 @@
   {
     "slug": "lin-pianpian-date--legeling",
     "name": "林翩翩（约会）",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2621,7 +3370,7 @@
   {
     "slug": "lin-pianpian-flower-street--legeling",
     "name": "林翩翩（花街）",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2635,7 +3384,7 @@
   {
     "slug": "lin-pianpian-courtesan--legeling",
     "name": "林翩翩（花魁）",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2657,6 +3406,21 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "hikari-seated--masashitoda1",
+    "name": "橘光",
+    "localized_names": { "en": "Hikari — Seated", "zh": "橘光·坐姿" },
+    "author": "MasashiToda1",
+    "author_handle": "MasashiToda1",
+    "author_url": "https://github.com/MasashiToda1",
+    "primary_category": "Game Characters",
+    "canonical_key": "blue-archive/hikari",
+    "variant_note": "由 MasashiToda1 通过 Codex / ImageGen 独立制作的 v2 坐姿版本；角色坐在小转椅上，以滑行动作表现左右移动，以连椅轻跳表现 jumping。",
+    "collections": [],
+    "license": "仅限非商业使用，禁止商用。允许本仓库收录、展示及分发此独立 AI 生成的同人宠物及预览；非官方作品，不代表获得角色权利方授权。角色及商标权利归各自权利人所有。",
+    "description": "《碧蓝档案》橘光的 Q 版坐姿宠物：列车制服、小转椅、自然翘腿，包含九种任务动画和十六方向视线。 成品由 Codex / ImageGen 根据官方角色外观参考独立生成，官方图片仅作参考，未直接裁切或粘贴进图集。",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "capybara-lulu--jiushu",
     "name": "水豚噜噜",
     "author": "jiushu",
@@ -2671,7 +3435,7 @@
   {
     "slug": "shen-xinghui--legeling",
     "name": "沈星回",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2693,6 +3457,62 @@
     "collections": [],
     "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
     "description": "A small, cute v2 community interpretation of Izumi Konata from Lucky Star, with nine task animations and sixteen clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "paimon-best-companion--makashibata",
+    "name": "派蒙-最好的伙伴",
+    "localized_names": {
+      "en": "Paimon - Bestest Companion",
+      "zh": "派蒙-最好的伙伴"
+    },
+    "author": "makashibata",
+    "primary_category": "Game Characters",
+    "canonical_key": "genshin-impact/paimon",
+    "variant_note": "独立 AI 生成并适配的精细 v2 版本，形象参考七圣召唤卡牌《最好的伙伴》，包含左右悬浮飞行及 16 向环视。不同于已有作者的 v1 版本。",
+    "collections": ["genshin-impact"],
+    "license": "仅限非商业使用 / Non-commercial use only.",
+    "description": "白发星披风的小伙伴，陪你一起完成每个任务。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "otama--legeling",
+    "name": "海贼王小玉",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "community-request/217",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "AI-generated noncommercial fan-art pet based on the requester's One Piece Otama anime reference and the coordinator-approved base. Character and original-work rights belong to their respective rights holders. Non-commercial use only; fulfills request #217.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "tushan-susu--legeling",
+    "name": "涂山苏苏",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "fox-spirit-matchmaker/tushan-susu",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A sweet chibi fox girl with golden hair and eyes, fluffy fox ears and tail, pink-white robes and red ribbons. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "neptune--legeling",
+    "name": "涅普缇努",
+    "localized_names": { "en": "Neptune", "zh": "涅普缇努" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "community-request/152",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "按社区请求制作的涅普缇努普通形态像素风同人宠物，白紫连帽外套、方向键发夹和紫色鞋。AI 生成，非官方作品。",
     "spriteVersionNumber": 2
   },
   {
@@ -2721,6 +3541,19 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "aimisi--legeling",
+    "name": "爱弥斯",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "wuthering-waves/aimisi",
+    "collections": ["wuthering-waves"],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A hopeful floating pink-haired girl with golden eyes, white futuristic clothing and icy blue ribbon accents. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "niumou--jarvis-2",
     "name": "牛哞",
     "author": "Jarvis",
@@ -2735,7 +3568,7 @@
   {
     "slug": "niulai--legeling",
     "name": "牛来",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Memes",
@@ -2775,6 +3608,20 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "little-v--legeling",
+    "name": "电子宠物小v",
+    "localized_names": { "en": "Little V", "zh": "电子宠物小v" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/little-v",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A soft cream companion with closed smiling eyes, rosy cheeks, and a small belly mark.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "chillet--legeling",
     "name": "疾旋鼬",
     "localized_names": { "en": "Chillet", "zh": "疾旋鼬" },
@@ -2786,6 +3633,34 @@
     "collections": [],
     "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
     "description": "An original cartoon community interpretation of Chillet from Palworld, preserving a cute blue-white long weasel-dragon silhouette, gentle side-to-side energy, nine standard task animations, and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "aventurine-plush-bird--legeling",
+    "name": "砂金毛绒鸟",
+    "localized_names": { "en": "Aventurine Plush Bird", "zh": "砂金毛绒鸟" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "community-request/aventurine-plush-bird",
+    "collections": ["honkai-star-rail"],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A round Aventurine-inspired plush bird with golden glasses and a teal feather crest.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "gift--legeling",
+    "name": "礼物 / Gift",
+    "localized_names": { "en": "Gift", "zh": "礼物" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Animals",
+    "canonical_key": "community-request/154",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+    "description": "A round tabby-white cat with green-yellow eyes, white paws and a thick ringed tail.",
     "spriteVersionNumber": 2
   },
   {
@@ -2815,7 +3690,7 @@
   {
     "slug": "luo-xiaohei--legeling",
     "name": "罗小黑",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Anime Characters",
@@ -2826,9 +3701,36 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "luo-xiaohei--makashibata",
+    "name": "罗小黑",
+    "localized_names": { "en": "Luo Xiaohei", "zh": "罗小黑" },
+    "author": "makashibata",
+    "primary_category": "Anime Characters",
+    "canonical_key": "the-legend-of-luo-xiaohei/luo-xiaohei",
+    "variant_note": "独立 AI 生成并适配的精细 v2 版本，参考《罗小黑战记2》电影造型，采用黑发、绿夹克、黑上衣及白色长裤，区别于已有蓝色衣装版本。",
+    "collections": [],
+    "license": "仅限非商业使用 / Non-commercial use only.",
+    "description": "黑发绿眼的小黑，穿着绿夹克陪你工作。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "meituan-kangaroo--xiaoyu0103",
+    "name": "美团袋鼠",
+    "localized_names": { "en": "Meituan Kangaroo", "zh": "美团袋鼠" },
+    "author": "xiaoYu0103",
+    "author_handle": "xiaoYu0103",
+    "author_url": "https://github.com/xiaoYu0103",
+    "primary_category": "Mascots",
+    "canonical_key": "meituan/kangaroo",
+    "collections": [],
+    "license": "Non-commercial use only. Independently AI-generated fan art inspired by the Meituan kangaroo mascot; the original mascot design and trademarks remain with Meituan.",
+    "description": "An independently AI-generated yellow flocked kangaroo mascot with nine task animations and 16 look directions; its working animation howls at the sky.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "xiang-an--legeling",
     "name": "翔安",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Human Avatars",
@@ -2851,9 +3753,22 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "rourou--zhou-jianwen",
+    "name": "肉肉",
+    "localized_names": { "en": "Rourou", "zh": "肉肉" },
+    "author": "zhou-jianwen",
+    "author_handle": "zhou-jianwen",
+    "primary_category": "Others",
+    "canonical_key": "original/request-220/rourou-pug",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. No ownership of or license to the reference photograph is asserted.",
+    "description": "An illustrated v2 interpretation of 肉肉, a round fawn pug with a black mask, dark folded ears, forehead wrinkles, short legs, sleepy eyes, restrained gestures, and 16 look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "longying--legeling",
     "name": "胧萤",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Others",
@@ -2899,6 +3814,33 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "nijika--amia",
+    "name": "虹夏",
+    "localized_names": { "en": "Nijika Ijichi", "zh": "虹夏" },
+    "author": "Amiaね",
+    "author_handle": "amiaverse",
+    "author_url": "https://github.com/amiaverse",
+    "primary_category": "Anime Characters",
+    "canonical_key": "bocchi-the-rock/nijika-ijichi",
+    "collections": ["bocchi-the-rock"],
+    "license": "Non-commercial use and redistribution with attribution to Amiaね; original character and design rights remain with their respective owners.",
+    "description": "由 Amiaね 制作的「孤独摇滚！」角色 伊地知虹夏 Codex 桌宠。下北泽大天使！",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "hongmao--legeling",
+    "name": "虹猫少侠",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "community-request/215",
+    "collections": [],
+    "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+    "description": "A young orange cat swordsman in white martial clothing, a yellow scarf and an orange cape, holding his orange-red sword.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "shinobu-kocho--wangfan002",
     "name": "蝴蝶忍 Q版 华丽动作",
     "localized_names": { "en": "Shinobu Kocho", "zh": "蝴蝶忍" },
@@ -2910,10 +3852,37 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "cockroach--legeling",
+    "name": "蟑螂",
+    "localized_names": { "en": "Cockroach", "zh": "蟑螂" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Animals",
+    "canonical_key": "animal/cockroach",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A realistic brown cockroach with six crawling legs and two long exploring antennae.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "beatrice--legeling",
+    "name": "贝阿朵莉丝",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "re-zero/beatrice",
+    "collections": ["re-zero"],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A proud chibi girl with blonde spiral twin tails, butterfly-patterned blue eyes and a pink-red frilled dress. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "bond-forger--legeling",
     "name": "邦德·福杰",
     "localized_names": { "en": "Bond Forger", "zh": "邦德·福杰" },
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Others",
@@ -2926,7 +3895,7 @@
   {
     "slug": "jinmao--legeling",
     "name": "金毛",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Animals",
@@ -2951,9 +3920,36 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "shanshenbu--logan",
+    "name": "閃身步",
+    "author": "Logan",
+    "author_handle": "iml885203",
+    "author_url": "https://github.com/iml885203",
+    "primary_category": "Memes",
+    "canonical_key": "meme/shanshenbu",
+    "variant_note": "Logan 獨立製作的 Q 版舞蹈老師 V2 修訂版：閃身步採快速側跨出腳與收腳；浪子踢球身體側身朝移動方向、臉朝正面，由微蹲接後勾腳、前踢伸腿、停頓與落腳回收，起手無交叉步；狗熊哆嗦毛包含寬站及交叉腳合掌、整個軀幹失衡側晃與展臂回穩的循環，保留 16 個環視方向。",
+    "collections": [],
+    "license": "僅限非商業使用。Non-commercial use only.",
+    "description": "Q版舞蹈老師：工作時快速側跨閃身步，左右移動時浪子踢球，等待回覆時狗熊哆嗦毛。 最終寵物像素由 AI 獨立生成，由 Logan 製作與適配；原舞蹈影片僅作動作參考，未裁剪、描摹、清晰化或復用影片像素。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "alphonse--legeling",
+    "name": "阿尔冯斯",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "fullmetal-alchemist/alphonse",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A gentle blue armored guardian cradling a tiny panda, with a pointed helmet, pale eyes and a trailing white tassel. Includes nine standard animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "arona--legeling",
     "name": "阿罗那",
-    "author": "Legeling",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Game Characters",
@@ -2961,6 +3957,20 @@
     "collections": [],
     "license": "CC BY-NC 4.0；仅限非商业使用。非官方 AI 同人作品，不代表或暗示获得《碧蓝档案》权利方授权；角色及商标权利归其权利人所有。",
     "description": "以《碧蓝档案》阿罗那为灵感独立生成的 Q 版 Codex 宠物，包含九组任务动画与完整 16 方向环视动作。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "snow-emperor--legeling",
+    "name": "雪皇",
+    "localized_names": { "en": "Snow Emperor", "zh": "雪皇" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/snow-emperor",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A silver-haired snow monarch with a blue crown, red cape, and ice-cream-topped staff.",
     "spriteVersionNumber": 2
   },
   {
@@ -2977,6 +3987,33 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "han-li-nascent-soul--legeling",
+    "name": "韩立元婴",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "anime/a-record-of-a-mortals-journey-to-immortality/han-li-nascent-soul",
+    "collections": [],
+    "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
+    "description": "A soft 3D community interpretation of Han Li's child-shaped nascent soul from A Record of a Mortal's Journey to Immortality, with nine task animations and16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "dont-starve-pigman--legeling",
+    "name": "饥荒猪人",
+    "localized_names": { "en": "Don't Starve Pigman", "zh": "饥荒猪人" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Others",
+    "canonical_key": "community-request/dont-starve-pigman",
+    "collections": [],
+    "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+    "description": "A friendly Pigman companion inspired by Don’t Starve Together.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "youmu--ai-generated",
     "name": "魂魄妖梦",
     "author": "AI 生成（Gemini）",
@@ -2988,10 +4025,37 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "zayne--legeling",
+    "name": "黎深",
+    "localized_names": { "en": "Zayne", "zh": "黎深" },
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Game Characters",
+    "canonical_key": "community-request/153",
+    "collections": [],
+    "license": "CC BY-NC 4.0",
+    "description": "按社区礼服参考制作的《恋与深空》黎深 3D Q版同人宠物，保留绿眼、雪花胸针与细链。AI 生成，非官方作品。",
+    "spriteVersionNumber": 2
+  },
+  {
+    "slug": "classic-wukong--legeling",
+    "name": "齐天大圣孙悟空",
+    "author": "legeling",
+    "author_handle": "legeling",
+    "author_url": "https://github.com/legeling",
+    "primary_category": "Anime Characters",
+    "canonical_key": "journey-to-the-west/classic-sun-wukong",
+    "collections": [],
+    "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
+    "description": "A vintage flat-color community interpretation of Sun Wukong, with yellow sleeves, an opera-style monkey mask and red-gold staff, nine task animations and 16 clockwise look directions.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "bocchi--lingxiaotian",
     "name": "Bocchi",
     "localized_names": { "en": "Bocchi", "zh": "后藤独" },
-    "author": "Lingxiaotian",
+    "author": "legeling",
     "author_handle": "legeling",
     "author_url": "https://github.com/legeling",
     "primary_category": "Anime Characters",

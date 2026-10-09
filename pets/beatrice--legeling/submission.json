@@ -1,0 +1,37 @@
+{
+  "slug": "beatrice--legeling",
+  "pet_slug": "beatrice",
+  "author_slug": "legeling",
+  "name": "贝阿朵莉丝",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "re-zero/beatrice",
+  "collections": ["re-zero"],
+  "tags": [
+    "community-request",
+    "re-zero",
+    "chibi",
+    "spiral-twin-tails",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/146",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Beatrice from Re:Zero, based on the request's uploaded reference and approved chibi concept art, retaining her distinctive spiral twin tails and butterfly-patterned eyes.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A proud chibi girl with blonde spiral twin tails, butterfly-patterned blue eyes and a pink-red frilled dress. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/beatrice--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/beatrice--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/beatrice--legeling/gifs"
+  },
+  "spritesheet_sha256": "c0be381d32a8f7c9b5559a4b3af210b4b2727ffff18edbf7f1ebba27d4e9a660"
+}

@@ -1,0 +1,32 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from the community request and its character references. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "The request refers to Don’t Starve Together by Klei Entertainment. The reference artist and redistribution rights were not independently verified; this package does not claim ownership of the character or original game artwork.",
+  "pet_slug": "dont-starve-pigman",
+  "name": "饥荒猪人",
+  "localized_names": {
+    "en": "Don't Starve Pigman",
+    "zh": "饥荒猪人"
+  },
+  "primary_category": "Others",
+  "canonical_key": "community-request/dont-starve-pigman",
+  "description": "A friendly Pigman companion inspired by Don’t Starve Together.",
+  "slug": "dont-starve-pigman--legeling",
+  "tags": ["community-request", "dont-starve-together", "pigman"],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/210",
+  "preview_image": "../../assets/previews/dont-starve-pigman--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/dont-starve-pigman--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/dont-starve-pigman--legeling/gifs"
+  },
+  "spritesheet_sha256": "bdf359cc14afd54f8f3ca57c81c48c032719e465d9bbb12220669512ce703a03"
+}

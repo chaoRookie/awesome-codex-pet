@@ -1,0 +1,24 @@
+{
+  "slug": "iuno--legeling",
+  "pet_slug": "iuno",
+  "canonical_key": "community-request/176",
+  "author_slug": "legeling",
+  "name": "尤诺",
+  "localized_names": {
+    "en": "Iuno",
+    "zh": "尤诺"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Game Characters",
+  "tags": ["community-request", "wuthering-waves", "iuno"],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/176",
+  "license": "CC BY-NC 4.0",
+  "description": "对应社区请求 #176 与 #177 的《鸣潮》尤诺同人宠物，蓝色双马尾、白金服装和手持蓝金圆环。AI 生成，非官方作品。",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

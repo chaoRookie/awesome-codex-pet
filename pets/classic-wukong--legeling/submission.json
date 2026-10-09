@@ -1,0 +1,36 @@
+{
+  "slug": "classic-wukong--legeling",
+  "pet_slug": "classic-wukong",
+  "author_slug": "legeling",
+  "name": "齐天大圣孙悟空",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "journey-to-the-west/classic-sun-wukong",
+  "tags": [
+    "sun-wukong",
+    "journey-to-the-west",
+    "classic-animation",
+    "flat-vector",
+    "community-request",
+    "v2"
+  ],
+  "collections": [],
+  "source_type": "independent-ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/117",
+  "asset_note": "The runtime spritesheet was independently AI-generated and assembled with Codex Hatch Pet v2. No reference pixels are included directly.",
+  "reference_note": "Issue #117 requester reference and the SHA-approved base define a classic flat-color Sun Wukong with yellow sleeves, opera-style monkey mask, pink tiger-spotted skirt, green ribbons, red trousers, curled brown tail and red-gold staff. This community interpretation does not claim to be an official film asset.",
+  "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
+  "description": "A vintage flat-color community interpretation of Sun Wukong, with yellow sleeves, an opera-style monkey mask and red-gold staff, nine task animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/classic-wukong--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/classic-wukong--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/classic-wukong--legeling/gifs"
+  },
+  "spritesheet_sha256": "3d93fb05452d0a56617f586fe7601e94e41444ae6a3d18259a4f7e383b14951c"
+}

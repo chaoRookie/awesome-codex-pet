@@ -152,22 +152,18 @@ npm run lint
 
 本仓库的对外安装方式优先是远程直装，而不是要求用户 clone 仓库。
 
-当前主安装方式：
+当前主安装方式（Node.js 20+，macOS / Linux / Windows 通用）：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.sh | bash -s -- <pet-id>
+npx --yes @legeling/codex-pet install <pet-id>
 ```
 
-Windows 对应：
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.ps1 | iex; Install-CodexPet <pet-id>"
-```
+无参数 `npx @legeling/codex-pet` 进入交互菜单；可选全局安装 `npm install -g @legeling/codex-pet` 后使用 `cpet`。完整命令见 `docs/cli.md`。先发布并验证 npm 包，再部署使用它的网站。旧 Bash/PowerShell 脚本仅保留兼容已有链接。
 
 因此：
 
 - 新增 pet 后必须保证 `pets.json` 同步更新
-- README 中单 pet 的安装命令应使用远程安装脚本
+- README 和网站安装命令应使用共用的 `scripts/install-command.mjs` npm 模板
 - 修改安装逻辑时，需同时检查 bash 与 PowerShell 两条链路
 
 ## 8. 许可证与收录边界

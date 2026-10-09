@@ -1,0 +1,37 @@
+{
+  "slug": "fushi--legeling",
+  "pet_slug": "fushi",
+  "author_slug": "legeling",
+  "name": "Fushi",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "cosmic-princess-kaguya/fushi",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "cosmic-princess-kaguya",
+    "bunny-sea-slug",
+    "mascot",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/145",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Fushi, the white bunny sea-slug mascot requested from 超时空辉夜姬. The character is not Fushi from To Your Eternity. Based on the uploaded reference and approved concept art.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A cheerful white bunny sea-slug mascot with charcoal ears, gray spots and rosy cheeks. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/fushi--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/fushi--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/fushi--legeling/gifs"
+  },
+  "spritesheet_sha256": "8bf03000c07232eee596e479c0fcadff559eee8d104d05876e59c4b41f2fda52"
+}

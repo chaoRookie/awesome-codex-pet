@@ -36,9 +36,11 @@ const warnings = [];
 
 function gitChangedPaths() {
   try {
-    if (process.env.GITHUB_BASE_REF) {
-      const output = execSync(
-        `git diff --name-only --diff-filter=AMR origin/${process.env.GITHUB_BASE_REF}...HEAD`,
+    const baseRevision = process.env.BASE_SHA?.trim();
+    if (baseRevision) {
+      const output = execFileSync(
+        "git",
+        ["diff", "--name-only", "--diff-filter=AMR", `${baseRevision}...HEAD`],
         {
           cwd: repoRoot,
           encoding: "utf8",
@@ -68,15 +70,23 @@ const changedPaths = requireGeneratedAssets ? new Set() : gitChangedPaths();
 function gitAddedPaths() {
   if (requireGeneratedAssets) return new Set();
   try {
-    const diffCommand = process.env.GITHUB_BASE_REF
-      ? `git diff --name-only --diff-filter=A origin/${process.env.GITHUB_BASE_REF}...HEAD`
-      : "git diff --name-only --diff-filter=A HEAD";
-    const added = execSync(diffCommand, {
-      cwd: repoRoot,
-      encoding: "utf8",
-      stdio: ["ignore", "pipe", "ignore"],
-    });
-    const untracked = process.env.GITHUB_BASE_REF
+    const baseRevision = process.env.BASE_SHA?.trim();
+    const added = baseRevision
+      ? execFileSync(
+          "git",
+          ["diff", "--name-only", "--diff-filter=A", `${baseRevision}...HEAD`],
+          {
+            cwd: repoRoot,
+            encoding: "utf8",
+            stdio: ["ignore", "pipe", "ignore"],
+          },
+        )
+      : execSync("git diff --name-only --diff-filter=A HEAD", {
+          cwd: repoRoot,
+          encoding: "utf8",
+          stdio: ["ignore", "pipe", "ignore"],
+        });
+    const untracked = baseRevision
       ? ""
       : execSync("git ls-files --others --exclude-standard", {
           cwd: repoRoot,

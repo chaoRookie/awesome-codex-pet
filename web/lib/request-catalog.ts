@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { isOpenRequest } from "@/lib/request-display";
 
 export type RequestStatus =
   | "triage"
@@ -69,10 +70,5 @@ export function getRequestCategories(requests: PetRequest[]) {
 }
 
 export function getOpenRequests(requests = getAllRequests()) {
-  return requests.filter(
-    (request) =>
-      request.state === "open" &&
-      request.status !== "completed" &&
-      request.status !== "declined",
-  );
+  return requests.filter(isOpenRequest);
 }

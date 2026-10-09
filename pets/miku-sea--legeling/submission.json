@@ -1,0 +1,24 @@
+{
+  "slug": "miku-sea--legeling",
+  "pet_slug": "miku-sea",
+  "canonical_key": "community-request/221",
+  "author_slug": "legeling",
+  "name": "初音未来·海色",
+  "localized_names": {
+    "en": "Hatsune Miku · Sea Colors",
+    "zh": "初音未来·海色"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "tags": ["community-request", "hatsune-miku", "summer"],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/221",
+  "license": "CC BY-NC 4.0",
+  "description": "忠实于请求者六帧海色初稿的初音未来夏装同人宠物：草帽、画面右侧白蝴蝶结、白蓝裙装、青色双马尾和赤脚。AI 生成，非官方作品。",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

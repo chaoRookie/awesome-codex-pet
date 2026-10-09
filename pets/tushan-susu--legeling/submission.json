@@ -1,0 +1,37 @@
+{
+  "slug": "tushan-susu--legeling",
+  "pet_slug": "tushan-susu",
+  "author_slug": "legeling",
+  "name": "涂山苏苏",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "fox-spirit-matchmaker/tushan-susu",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "fox-spirit-matchmaker",
+    "fox-girl",
+    "chibi",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/169",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Tushan Susu from 狐妖小红娘, based on the Issue description and approved concept art. The supplied Duitang link was a webpage rather than a usable direct image; an unseen original image was not treated as verified.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A sweet chibi fox girl with golden hair and eyes, fluffy fox ears and tail, pink-white robes and red ribbons. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/tushan-susu--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/tushan-susu--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/tushan-susu--legeling/gifs"
+  },
+  "spritesheet_sha256": "3e3f62c8417cd1f6e41eeaf0e2cc25d166613815dfd29917c64d1d6cd6d0246e"
+}

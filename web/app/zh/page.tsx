@@ -258,7 +258,7 @@ export default function ChineseCodexPetsPage() {
           <ChineseStep
             index="02"
             title="选择适合自己的安装方式"
-            description="可以交给 ChatGPT 中的 Codex 安装，也可以复制 Bash 或 PowerShell 命令。"
+            description="可以交给 ChatGPT 中的 Codex 安装，也可以在 Node.js 20+ 环境复制运行 npm 命令。"
           />
           <ChineseStep
             index="03"

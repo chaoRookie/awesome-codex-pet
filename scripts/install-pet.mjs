@@ -32,7 +32,7 @@ const petsDir = join(repoRoot, "pets");
 function usage() {
   console.log(`Usage:
   npm run install:pet -- <pet-slug--author-slug>
-  npx awesome-codex-pet <pet-slug--author-slug>
+  npx @legeling/codex-pet install <pet-slug--author-slug>
 
 Options:
   --codex-home <path>  Install into a custom Codex home directory

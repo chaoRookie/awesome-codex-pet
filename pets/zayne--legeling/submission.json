@@ -1,0 +1,24 @@
+{
+  "slug": "zayne--legeling",
+  "pet_slug": "zayne",
+  "canonical_key": "community-request/153",
+  "author_slug": "legeling",
+  "name": "黎深",
+  "localized_names": {
+    "en": "Zayne",
+    "zh": "黎深"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Game Characters",
+  "tags": ["community-request", "love-and-deepspace", "chibi-3d"],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/153",
+  "license": "CC BY-NC 4.0",
+  "description": "按社区礼服参考制作的《恋与深空》黎深 3D Q版同人宠物，保留绿眼、雪花胸针与细链。AI 生成，非官方作品。",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

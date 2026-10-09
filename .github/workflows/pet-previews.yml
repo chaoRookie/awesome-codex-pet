@@ -7,6 +7,7 @@ permissions:
 
 on:
   pull_request:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -15,13 +16,14 @@ on:
 
 concurrency:
   group: pet-previews-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   previews:
     outputs:
       catalog-changed: ${{ steps.commit-generated.outputs.catalog-changed }}
       generated-commit: ${{ steps.commit-generated.outputs.generated-commit }}
+      validated-sha: ${{ steps.commit-generated.outputs.validated-sha }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,21 +31,31 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10.28.2
+
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
           node-version: 24
-          cache: npm
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install repository dependencies
-        run: npm ci
+        if: github.event_name == 'pull_request'
+        run: pnpm install --frozen-lockfile
 
       - name: Generate repository listings
+        if: github.event_name == 'pull_request'
         run: |
           npm run readmes
 
       - name: Validate pull request payload
         if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           npm run validate:pr
           npm run lint
@@ -88,43 +100,10 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-      - name: Validate generated listings on main
-        if: github.event_name == 'push'
-        run: npm run lint
-
       - name: Commit generated files on main
         id: commit-generated
-        if: github.event_name == 'push'
-        run: |
-          git fetch origin main
-          if [ "$(git rev-parse origin/main)" != "$GITHUB_SHA" ]; then
-            echo "main moved ahead while this run was executing; skip generated commit from stale run."
-            echo "catalog-changed=false" >> "$GITHUB_OUTPUT"
-            echo "generated-commit=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            README.md \
-            docs/zh-CN/README.md \
-            docs/ko/README.md \
-            docs/ja/README.md \
-            docs/es/README.md \
-            pets.json \
-            install-manifest.json
-          catalog_changed=false
-          if git diff --cached --name-only | grep -Fxq pets.json; then
-            catalog_changed=true
-          fi
-          generated_commit=false
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: update generated previews and readmes"
-            git push
-            generated_commit=true
-          fi
-          echo "catalog-changed=$catalog_changed" >> "$GITHUB_OUTPUT"
-          echo "generated-commit=$generated_commit" >> "$GITHUB_OUTPUT"
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: node scripts/publish-generated-snapshot.mjs listings
 
   web-quality:
     if: github.event_name == 'pull_request'
@@ -163,13 +142,13 @@ jobs:
         working-directory: web
 
   deploy-stats:
-    if: github.event_name == 'push' && needs.previews.outputs.catalog-changed == 'true'
+    if: github.event_name != 'pull_request' && needs.previews.outputs.catalog-changed == 'true'
     needs: previews
     uses: ./.github/workflows/deploy-stats.yml
     secrets: inherit
 
   deploy-web:
-    if: github.event_name == 'push' && needs.previews.outputs.generated-commit != 'true'
+    if: github.event_name != 'pull_request' && needs.previews.outputs.validated-sha != ''
     needs: previews
     runs-on: ubuntu-latest
     env:
@@ -178,10 +157,15 @@ jobs:
       NEXT_PUBLIC_SITE_URL: "https://codexpet.top"
 
     steps:
-      - name: Checkout latest main
+      - name: Checkout validated catalog snapshot
         uses: actions/checkout@v7
         with:
-          ref: main
+          ref: ${{ needs.previews.outputs.validated-sha }}
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 10.28.2
 
       - name: Setup Node.js
         uses: actions/setup-node@v7

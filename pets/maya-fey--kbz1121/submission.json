@@ -1,0 +1,21 @@
+{
+  "slug": "maya-fey--kbz1121",
+  "pet_slug": "maya-fey",
+  "author_slug": "kbz1121",
+  "name": "Maya Fey",
+  "localized_names": {
+    "en": "Maya Fey",
+    "zh": "绫里真宵"
+  },
+  "author": "kbz1121",
+  "primary_category": "Game Characters",
+  "canonical_key": "ace-attorney/maya-fey",
+  "tags": ["ace-attorney", "maya-fey", "fan-art"],
+  "source_type": "fan-art",
+  "license": "非商业用途；未经 Capcom 授权的同人作品。绫里真宵及《逆转裁判》相关角色和作品权利归其权利人所有。本投稿仅提供 AI 生成的桌宠图集，不包含官方设定图或参考素材。",
+  "preview_image": "../../assets/previews/maya-fey--kbz1121/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

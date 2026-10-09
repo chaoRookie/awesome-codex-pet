@@ -8,42 +8,42 @@ import { CopyCommandButton } from "@/components/copy-command-button";
 import { useLocale } from "@/components/locale-provider";
 import { buildChatGPTUrl, getInstallGuidePrompt } from "@/lib/codex-links";
 import {
-  BASH_INSTALL_COMMAND,
-  LOCAL_INSTALL_COMMAND,
-  POWERSHELL_INSTALL_COMMAND,
+  NPM_INSTALL_COMMAND,
+  GLOBAL_INSTALL_COMMAND,
+  INTERACTIVE_COMMAND,
 } from "@/lib/install";
 
-type InstallMethod = "bash" | "powershell" | "local";
+type InstallMethod = "npm" | "interactive" | "global";
 
 export function InstallPageContent() {
   const { locale, t } = useLocale();
-  const [method, setMethod] = useState<InstallMethod>("bash");
+  const [method, setMethod] = useState<InstallMethod>("npm");
   const methods = [
     {
-      id: "bash" as const,
+      id: "npm" as const,
       marker: ">_",
-      label: t("installBashLabel"),
-      tip: t("installBashTip"),
-      command: BASH_INSTALL_COMMAND,
-      copyLabel: t("copyBashInstall"),
+      label: t("installNpmLabel"),
+      tip: t("installNpmTip"),
+      command: NPM_INSTALL_COMMAND,
+      copyLabel: t("copyNpmInstall"),
       recommended: true,
     },
     {
-      id: "powershell" as const,
-      marker: "PS",
-      label: t("installPwshLabel"),
-      tip: t("installPwshTip"),
-      command: POWERSHELL_INSTALL_COMMAND,
-      copyLabel: t("copyPowerShell"),
+      id: "interactive" as const,
+      marker: "?",
+      label: t("installMenuLabel"),
+      tip: t("installMenuTip"),
+      command: INTERACTIVE_COMMAND,
+      copyLabel: t("installMenuLabel"),
       recommended: false,
     },
     {
-      id: "local" as const,
-      marker: "JS",
-      label: t("installNodeLabel"),
-      tip: t("installNodeTip"),
-      command: LOCAL_INSTALL_COMMAND,
-      copyLabel: t("installNodeLabel"),
+      id: "global" as const,
+      marker: "npm",
+      label: t("installGlobalLabel"),
+      tip: t("installGlobalTip"),
+      command: GLOBAL_INSTALL_COMMAND,
+      copyLabel: t("installGlobalLabel"),
       recommended: false,
     },
   ];

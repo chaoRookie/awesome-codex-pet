@@ -196,18 +196,18 @@ export function getPetInstallPrompt(pet: PetNameSource, locale: Locale) {
   const petName = getLocalizedPetName(pet, locale);
   const commands = getPetInstallCommands(pet.slug);
   if (locale === "zh") {
-    return `请全程使用中文，为我安装 Awesome Codex Pet 中的「${petName}」（${pet.slug}）。先判断当前操作系统，再运行对应的官方安装命令；确认 pet.json 与 spritesheet.webp 已写入 Codex pets 目录，说明实际安装路径，并告诉我是否需要重启 Codex 以及如何在“设置 → 宠物”中启用它。\n\nmacOS / Linux：\n${commands.bash}\n\nWindows PowerShell：\n${commands.powershell}\n\n${optionalRepositoryStarInstruction(locale)}`;
+    return `请全程使用中文，为我安装 Awesome Codex Pet 中的「${petName}」（${pet.slug}）。先确认 Node.js 20+ 与 npm 可用，再运行官方 npm 安装命令；确认 pet.json 与 spritesheet.webp 已写入 Codex pets 目录，说明实际安装路径，并告诉我是否需要重启 Codex 以及如何在“设置 → 宠物”中启用它。\n\nmacOS / Linux / Windows：\n${commands.npm}\n\n${optionalRepositoryStarInstruction(locale)}`;
   }
 
-  return `${taskLanguageInstruction(locale)} Install "${petName}" (${pet.slug}) from Awesome Codex Pet. Detect the current operating system, run the matching official command, verify that pet.json and spritesheet.webp were written to the Codex pets directory, report the actual install path, and explain whether Codex needs to restart and how to enable the pet under Settings → Pets.\n\nmacOS / Linux:\n${commands.bash}\n\nWindows PowerShell:\n${commands.powershell}\n\n${optionalRepositoryStarInstruction(locale)}`;
+  return `${taskLanguageInstruction(locale)} Install "${petName}" (${pet.slug}) from Awesome Codex Pet. Check that Node.js 20+ and npm are available, then run the official npm command, verify that pet.json and spritesheet.webp were written to the Codex pets directory, report the actual install path, and explain whether Codex needs to restart and how to enable the pet under Settings → Pets.\n\nmacOS / Linux / Windows:\n${commands.npm}\n\n${optionalRepositoryStarInstruction(locale)}`;
 }
 
 export function getInstallGuidePrompt(locale: Locale) {
   if (locale === "zh") {
-    return `请全程使用中文，帮我从 ${repositoryUrl} 安装一只 Awesome Codex Pet。先询问我要安装的宠物页面链接或 pet slug；收到后判断当前操作系统，选择仓库提供的 Bash、PowerShell 或本地 Node.js 安装方式。安装完成后验证 pet.json 与 spritesheet.webp，告诉我实际安装路径，并说明如何重启 Codex、在“设置 → 宠物”中选择它。不要猜测宠物 slug，也不要修改其他已安装宠物。\n\n${optionalRepositoryStarInstruction(locale)}`;
+    return `请全程使用中文，帮我从 ${repositoryUrl} 安装一只 Awesome Codex Pet。先询问我要安装的宠物页面链接或 pet slug；收到后确认 Node.js 20+ 与 npm 可用，再运行 npx --yes @legeling/codex-pet install <pet-id>。安装完成后验证 pet.json 与 spritesheet.webp，告诉我实际安装路径，并说明如何重启 Codex、在“设置 → 宠物”中选择它。不要猜测宠物 slug，也不要修改其他已安装宠物。\n\n${optionalRepositoryStarInstruction(locale)}`;
   }
 
-  return `${taskLanguageInstruction(locale)} Help me install an Awesome Codex Pet from ${repositoryUrl}. First ask for the pet page URL or pet slug. Then detect the current operating system and use the repository's Bash, PowerShell, or local Node.js installer. Verify pet.json and spritesheet.webp after installation, report the actual install path, and explain how to restart Codex and select the pet under Settings → Pets. Do not guess the pet slug or modify other installed pets.\n\n${optionalRepositoryStarInstruction(locale)}`;
+  return `${taskLanguageInstruction(locale)} Help me install an Awesome Codex Pet from ${repositoryUrl}. First ask for the pet page URL or pet slug. Then check Node.js 20+ and npm and run npx --yes @legeling/codex-pet install <pet-id>. Verify pet.json and spritesheet.webp after installation, report the actual install path, and explain how to restart Codex and select the pet under Settings → Pets. Do not guess the pet slug or modify other installed pets.\n\n${optionalRepositoryStarInstruction(locale)}`;
 }
 
 export function getCollectionInstallPrompt(
@@ -217,8 +217,8 @@ export function getCollectionInstallPrompt(
 ) {
   const slugs = petSlugs.join(", ");
   if (locale === "zh") {
-    return `请全程使用中文，安装 Awesome Codex Pet 的「${title}」合集。宠物列表：${slugs}。请根据当前系统逐个调用仓库官方安装脚本，验证每只宠物的 pet.json 与 spritesheet.webp 都已安装到 Codex pets 目录，并用中文汇总安装路径、成功项和失败项。仓库：${repositoryUrl}\n\n${optionalRepositoryStarInstruction(locale)}`;
+    return `请全程使用中文，安装 Awesome Codex Pet 的「${title}」合集。宠物列表：${slugs}。请确认 Node.js 20+ 与 npm 可用，逐个运行 npx --yes @legeling/codex-pet install <pet-id>，验证每只宠物的 pet.json 与 spritesheet.webp 都已安装到 Codex pets 目录，并用中文汇总安装路径、成功项和失败项。仓库：${repositoryUrl}\n\n${optionalRepositoryStarInstruction(locale)}`;
   }
 
-  return `${taskLanguageInstruction(locale)} Install the "${title}" collection from Awesome Codex Pet. Pet slugs: ${slugs}. Use the repository's official installer for this system for each pet, verify pet.json and spritesheet.webp in the Codex pets directory, then summarize install paths, successes, and failures. Repository: ${repositoryUrl}\n\n${optionalRepositoryStarInstruction(locale)}`;
+  return `${taskLanguageInstruction(locale)} Install the "${title}" collection from Awesome Codex Pet. Pet slugs: ${slugs}. Check Node.js 20+ and npm, then run npx --yes @legeling/codex-pet install <pet-id> for each pet, verify pet.json and spritesheet.webp in the Codex pets directory, then summarize install paths, successes, and failures. Repository: ${repositoryUrl}\n\n${optionalRepositoryStarInstruction(locale)}`;
 }

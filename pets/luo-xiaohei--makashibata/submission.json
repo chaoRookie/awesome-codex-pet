@@ -1,0 +1,30 @@
+{
+  "author_slug": "makashibata",
+  "author": "makashibata",
+  "source_type": "ai-generated fan art",
+  "source_url": "",
+  "license": "仅限非商业使用 / Non-commercial use only.",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "slug": "luo-xiaohei--makashibata",
+  "pet_slug": "luo-xiaohei",
+  "name": "罗小黑",
+  "localized_names": {
+    "en": "Luo Xiaohei",
+    "zh": "罗小黑"
+  },
+  "primary_category": "Anime Characters",
+  "canonical_key": "the-legend-of-luo-xiaohei/luo-xiaohei",
+  "collections": [],
+  "tags": ["luo-xiaohei", "anime", "ai-generated", "v2", "look-directions"],
+  "description": "黑发绿眼的小黑，穿着绿夹克陪你工作。",
+  "localized_descriptions": {
+    "en": "Black-haired, green-eyed Xiaohei in an olive jacket, keeping you company.",
+    "zh": "黑发绿眼的小黑，穿着绿夹克陪你工作。"
+  },
+  "variant_note": "独立 AI 生成并适配的精细 v2 版本，参考《罗小黑战记2》电影造型，采用黑发、绿夹克、黑上衣及白色长裤，区别于已有蓝色衣装版本。",
+  "source_notes": "最终宠物图集由 AI 独立生成，并由 makashibata 制作、适配。角色来自《罗小黑战记》，服装参考《罗小黑战记2》电影造型；用户提供的两张角色图片仅作参考，未随投稿上传，未直接裁剪或复用其像素，也未将参考图作者冒充为宠物作者。对生成图集进行了尺寸适配、注册与透明边缘处理。非官方同人制作，仅限非商业使用。",
+  "preview_image": "../../assets/previews/luo-xiaohei--makashibata/gifs/idle.gif"
+}

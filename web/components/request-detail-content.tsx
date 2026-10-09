@@ -9,6 +9,7 @@ import { RequestVisual } from "@/components/request-visual";
 import {
   formatRequestDate,
   getRequestCategoryLabel,
+  getRequestDisplayText,
   getRequestStatusLabel,
 } from "@/lib/request-display";
 import type { PetRequest } from "@/lib/request-catalog";
@@ -47,8 +48,7 @@ const content = {
     details: "请求说明",
     source: "来源与使用说明",
     discussion: "打开 GitHub 讨论",
-    claimNote:
-      "可以交给 Codex 按当前请求制作，也可以把已有成品手动提交为 PR。",
+    claimNote: "可以交给 Codex 按当前请求制作，也可以把已有成品手动提交为 PR。",
     noReference: "这个请求暂未提供公开参考链接。",
     comments: "条讨论",
     completed: "这个社区制作请求已经变成了正式收录的小宠物。",
@@ -167,7 +167,7 @@ export function RequestDetailContent({ request }: { request: PetRequest }) {
           </h1>
           {request.franchise ? (
             <p className="mt-4 text-lg text-text-secondary">
-              {request.franchise}
+              {getRequestDisplayText(request.franchise, locale)}
             </p>
           ) : null}
 
@@ -283,7 +283,7 @@ export function RequestDetailContent({ request }: { request: PetRequest }) {
       </header>
 
       <TextSection
-        body={request.visualDirection}
+        body={getRequestDisplayText(request.visualDirection, locale)}
         id="direction"
         title={text.direction}
       />
@@ -325,11 +325,7 @@ export function RequestDetailContent({ request }: { request: PetRequest }) {
         id="details"
         title={text.details}
       />
-      <TextSection
-        body={request.attribution}
-        id="source"
-        title={text.source}
-      />
+      <TextSection body={request.attribution} id="source" title={text.source} />
     </main>
   );
 }

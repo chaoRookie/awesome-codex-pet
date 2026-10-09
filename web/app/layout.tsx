@@ -135,7 +135,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      className="notranslate"
+      lang="en"
+      suppressHydrationWarning
+      translate="no"
+    >
       <body className="font-sans antialiased text-text bg-bg">
         <script
           type="text/javascript"

@@ -1,0 +1,37 @@
+{
+  "slug": "han-li-nascent-soul--legeling",
+  "pet_slug": "han-li-nascent-soul",
+  "author_slug": "legeling",
+  "name": "韩立元婴",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "anime/a-record-of-a-mortals-journey-to-immortality/han-li-nascent-soul",
+  "tags": [
+    "han-li",
+    "nascent-soul",
+    "donghua",
+    "chibi",
+    "3d-toy",
+    "community-request",
+    "v2"
+  ],
+  "collections": [],
+  "source_type": "independent-ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/227",
+  "asset_note": "The runtime spritesheet was independently AI-generated and assembled with Codex Hatch Pet v2. No reference pixels are included directly.",
+  "reference_note": "Issue #227 requester reference and the SHA-approved base define Han Li's small child-shaped nascent soul, teal-and-gold robe, swept-back long dark hair and pendant. The approved base minimally continues the cropped lower robe to the ankles and adds plain dark cloth shoes; this is distinct from adult Han Li.",
+  "license": "Independent AI-generated community interpretation; non-commercial use only. Commercial use is prohibited.",
+  "description": "A soft 3D community interpretation of Han Li's child-shaped nascent soul from A Record of a Mortal's Journey to Immortality, with nine task animations and16 clockwise look directions.",
+  "preview_image": "../../assets/previews/han-li-nascent-soul--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/han-li-nascent-soul--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/han-li-nascent-soul--legeling/gifs"
+  },
+  "spritesheet_sha256": "747cd8b5736944035824e816138b94212048d99b454c85a301cc9ae31e1e9fea"
+}

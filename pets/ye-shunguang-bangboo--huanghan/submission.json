@@ -1,0 +1,34 @@
+{
+  "slug": "ye-shunguang-bangboo--huanghan",
+  "pet_slug": "ye-shunguang-bangboo",
+  "author_slug": "huanghan",
+  "name": "叶瞬光邦布",
+  "author": "huanghan",
+  "author_handle": "hanhuang22",
+  "author_url": "https://github.com/hanhuang22",
+  "primary_category": "Game Characters",
+  "canonical_key": "zenless-zone-zero/ye-shunguang-bangboo",
+  "variant_note": "Independently generated v2 fan-concept edition with nine standard animation rows and 16 look directions.",
+  "tags": [
+    "game",
+    "anime",
+    "zenless-zone-zero",
+    "bangboo",
+    "ye-shunguang",
+    "fan-concept",
+    "codex-v2",
+    "look-directions"
+  ],
+  "collections": ["zenless-zone-zero"],
+  "source_type": "independently-ai-generated-fan-art",
+  "source_url": "",
+  "source_notes": "The final pet spritesheet was independently AI-generated and adapted by huanghan with Codex Hatch Pet v2 from a private user-supplied reference depicting a community-created Ye Shunguang-inspired Bangboo. The reference was used only for character appearance and is not included in the submission; no reference-image pixels were directly cropped, traced, upscaled, or reused. Zenless Zone Zero and related intellectual property belong to miHoYo/HoYoverse.",
+  "license": "Non-commercial use only. Zenless Zone Zero and related intellectual property belong to miHoYo/HoYoverse.",
+  "description": "根本没有这种邦布！",
+  "preview_image": "../../assets/previews/ye-shunguang-bangboo--huanghan/gifs/idle.gif",
+  "spritesheet_sha256": "02a8bc5c84981addfc5cf1360e20f7ec9f4061c74171967223845592e5084188",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "golden-lamp--legeling",
+  "pet_slug": "golden-lamp",
+  "author_slug": "legeling",
+  "name": "Golden Lamp",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Others",
+  "canonical_key": "community-request/149",
+  "tags": ["gold-lamp", "ai-generated", "v2"],
+  "collections": [],
+  "source_type": "ai-generated-community-interpretation",
+  "asset_note": "Sprite pixels were generated with OpenAI Codex built-in image generation, directed by legeling using the requester-supplied lamp image as lamp-object identity and silhouette reference, then assembled and registered with the Hatch Pet v2 workflow. This package preserves the coordinator-approved WebP bytes.",
+  "reference_note": "The gold-lamp image supplied in request #149 was used as visual grounding for the lamp-object interpretation; its source background and watermark are not included in the sprite pixels. The requester has not confirmed whether the intended subject is the lamp, Aladdin, or the Genie.",
+  "license": "CC BY-NC 4.0. Non-commercial use only; commercial use is prohibited. Rights in the requester-supplied reference image and any depicted or referenced characters remain with their respective rights holders. This is an unofficial AI-generated community interpretation.",
+  "description": "An AI-generated golden-lamp sprite based on the reference supplied in request #149. Sprite-only lamp interpretation; the intended request subject and remaining request scope are unresolved pending requester confirmation.",
+  "preview_image": "../../assets/previews/golden-lamp--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/golden-lamp--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/golden-lamp--legeling/gifs"
+  },
+  "spritesheet_sha256": "bad38befd0eaccf0ce9f96adfc08eced1a1cd9d865317dffbdc40efb51539024"
+}

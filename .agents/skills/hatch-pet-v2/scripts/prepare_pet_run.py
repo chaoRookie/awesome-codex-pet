@@ -80,7 +80,6 @@ STATE_REQUIREMENTS = {
     "jumping": [
         "Show the jump through pose and vertical body position only: anticipation, lift, airborne peak, descent, settle.",
         "Do not draw ground shadows, contact shadows, drop shadows, oval shadows, landing marks, dust, smears, bounce pads, or motion marks under the pet.",
-        "Keep the canvas outside the pet fully transparent, or perfectly flat fallback chroma when native alpha is unavailable.",
     ],
     "failed": [
         "Show failure through slumped pose, drooping ears/limbs, closed or sad eyes, and lower body position.",
@@ -519,9 +518,10 @@ def background_contract(args: argparse.Namespace) -> str:
         )
     if args.background_mode == "transparent":
         return (
-            "Return a real RGBA image with a fully transparent background outside "
-            "the sprite. Preserve clean antialiased alpha at the silhouette edge; "
-            "do not draw a checkerboard or bake any matte color into transparent pixels."
+            "REQUIRED: return a real RGBA image with a fully transparent background "
+            "outside every sprite pose. Preserve clean antialiased alpha at the "
+            "silhouette edge. Do not draw a green, magenta, or other solid-color "
+            "background, a checkerboard, or any baked matte. An opaque output is invalid."
         )
     return (
         "Prefer a real RGBA image with a fully transparent background outside the "
@@ -1030,10 +1030,10 @@ def main() -> None:
     parser.add_argument(
         "--background-mode",
         choices=("auto", "transparent", "chroma"),
-        default="auto",
+        default="transparent",
         help=(
-            "Prefer native transparent image output in auto mode, require it in "
-            "transparent mode, or force the legacy chroma-key workflow."
+            "Require native transparency by default; auto permits legacy chroma "
+            "fallback, and chroma forces the legacy key-color workflow."
         ),
     )
     parser.add_argument("--force", action="store_true")

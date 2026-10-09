@@ -1,0 +1,26 @@
+{
+  "slug": "otama--legeling",
+  "pet_slug": "otama",
+  "canonical_key": "community-request/217",
+  "author_slug": "legeling",
+  "name": "海贼王小玉",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "tags": ["community-request", "one-piece", "otama"],
+  "collections": [],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/217",
+  "license": "CC BY-NC 4.0",
+  "description": "AI-generated noncommercial fan-art pet based on the requester's One Piece Otama anime reference and the coordinator-approved base. Character and original-work rights belong to their respective rights holders. Non-commercial use only; fulfills request #217.",
+  "preview_image": "../../assets/previews/otama--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/otama--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/otama--legeling/gifs"
+  }
+}

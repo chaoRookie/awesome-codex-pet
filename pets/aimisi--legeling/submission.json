@@ -1,0 +1,37 @@
+{
+  "slug": "aimisi--legeling",
+  "pet_slug": "aimisi",
+  "author_slug": "legeling",
+  "name": "爱弥斯",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Game Characters",
+  "canonical_key": "wuthering-waves/aimisi",
+  "collections": ["wuthering-waves"],
+  "tags": [
+    "community-request",
+    "wuthering-waves",
+    "pink-hair",
+    "floating",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/148",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "爱弥斯, requested as a Wuthering Waves-inspired character. The original reference download was incomplete; production followed the Issue description and approved concept art, without claiming verification of the unavailable original image.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A hopeful floating pink-haired girl with golden eyes, white futuristic clothing and icy blue ribbon accents. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/aimisi--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/aimisi--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/aimisi--legeling/gifs"
+  },
+  "spritesheet_sha256": "eec5c8af36c9a4a521ec52d5c383e898fc772e7bc8d7e3a46b63015392a1825c"
+}

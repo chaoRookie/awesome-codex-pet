@@ -1,15 +1,50 @@
 import type { Locale } from "@/lib/i18n";
-import type { RequestStatus } from "@/lib/request-catalog";
+import type { PetRequest, RequestStatus } from "@/lib/request-catalog";
+
+export function isOpenRequest(request: Pick<PetRequest, "state" | "status">) {
+  return (
+    request.state === "open" &&
+    request.status !== "completed" &&
+    request.status !== "declined"
+  );
+}
+
+const defaultFieldLabels: Record<string, Record<Locale, string>> = {
+  "Not provided": {
+    en: "Not provided",
+    zh: "未提供",
+    ko: "제공되지 않음",
+    ja: "未提供",
+    es: "No se proporcionó",
+  },
+  "Let the community maker decide.": {
+    en: "Let the community maker decide.",
+    zh: "由社区制作者决定。",
+    ko: "커뮤니티 제작자에게 맡깁니다.",
+    ja: "コミュニティの制作者にお任せします。",
+    es: "A elección del creador de la comunidad.",
+  },
+};
+
+export function getRequestDisplayText(value: string, locale: Locale) {
+  return defaultFieldLabels[value]?.[locale] ?? value;
+}
 
 const statusLabels: Record<RequestStatus, Record<Locale, string>> = {
   triage: {
-    en: "Under review",
-    zh: "待审核",
-    ko: "검토 대기",
-    ja: "確認中",
-    es: "En revisión",
+    en: "Awaiting production",
+    zh: "待制作",
+    ko: "제작 대기",
+    ja: "制作待ち",
+    es: "Pendiente de producción",
   },
-  open: { en: "Open", zh: "待认领", ko: "모집 중", ja: "募集中", es: "Abierta" },
+  open: {
+    en: "Open",
+    zh: "待认领",
+    ko: "모집 중",
+    ja: "募集中",
+    es: "Abierta",
+  },
   "in-progress": {
     en: "In production",
     zh: "制作中",

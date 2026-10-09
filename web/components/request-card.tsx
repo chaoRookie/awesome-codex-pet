@@ -8,6 +8,7 @@ import { RequestVisual } from "@/components/request-visual";
 import {
   formatRequestDate,
   getRequestCategoryLabel,
+  getRequestDisplayText,
   getRequestStatusLabel,
   requestExcerpt,
 } from "@/lib/request-display";
@@ -88,7 +89,7 @@ export function RequestCard({
           aria-hidden={request.franchise ? undefined : true}
           className="mt-1 h-5 truncate text-sm text-muted"
         >
-          {request.franchise || "\u00a0"}
+          {getRequestDisplayText(request.franchise, locale) || "\u00a0"}
         </p>
         {!compact ? (
           <p
@@ -96,7 +97,9 @@ export function RequestCard({
             className="mt-3 h-[4.5rem] overflow-hidden text-sm leading-6 text-text-secondary [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:3]"
           >
             {request.visualDirection
-              ? requestExcerpt(request.visualDirection)
+              ? requestExcerpt(
+                  getRequestDisplayText(request.visualDirection, locale),
+                )
               : "\u00a0"}
           </p>
         ) : (

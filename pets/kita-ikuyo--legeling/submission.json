@@ -1,0 +1,37 @@
+{
+  "slug": "kita-ikuyo--legeling",
+  "pet_slug": "kita-ikuyo",
+  "author_slug": "legeling",
+  "name": "喜多郁代",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "bocchi-the-rock/kita-ikuyo",
+  "collections": ["bocchi-the-rock"],
+  "tags": [
+    "community-request",
+    "bocchi-the-rock",
+    "maid",
+    "chibi",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/160",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Kita Ikuyo from Bocchi the Rock, wearing the maid outfit from the request's uploaded reference and approved concept art.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "An upbeat chibi red-haired girl in a black and white frilled maid outfit with a cheerful smile. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/kita-ikuyo--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/kita-ikuyo--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/kita-ikuyo--legeling/gifs"
+  },
+  "spritesheet_sha256": "2ab4c0820ff034b74a7f2e550134175e8a884d8a63974cb08596a34e7f469ac4"
+}

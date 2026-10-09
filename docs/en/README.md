@@ -13,16 +13,16 @@ English documentation for Awesome Codex Pet.
 
 ## Common Commands
 
-Install a pet without cloning this repository:
+Requires Node.js 20+ and npm. Install a pet without cloning this repository:
 
 ```bash
-curl -fsSL --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.sh | bash -s -- --raw-base https://raw.githubusercontent.com/legeling/awesome-codex-pet/main mikoto--lingxiaotian
+npx --yes @legeling/codex-pet install mikoto--lingxiaotian
 ```
 
 List available pets:
 
 ```bash
-curl -fsSL --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.sh | bash -s -- --raw-base https://raw.githubusercontent.com/legeling/awesome-codex-pet/main --list
+npx --yes @legeling/codex-pet list
 ```
 
 Repository maintenance commands:

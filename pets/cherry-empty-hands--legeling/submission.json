@@ -1,0 +1,24 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the community request reference. The requester did not identify the original reference artist; this package does not claim ownership of the referenced character.",
+  "pet_slug": "cherry-empty-hands",
+  "name": "cherry切粒",
+  "primary_category": "Others",
+  "canonical_key": "community-request/cherry-empty-hands",
+  "description": "A white floppy-eared Cherry mascot with pink cherry ornaments, heart eye highlights and empty hands.",
+  "slug": "cherry-empty-hands--legeling",
+  "tags": ["community-request", "flat-vector", "cherry"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/186",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "63f7bd8c841303006138d879add3e867e19f99aec009d152620be38180893468"
+}

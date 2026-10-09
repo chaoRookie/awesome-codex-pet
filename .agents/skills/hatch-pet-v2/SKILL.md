@@ -131,7 +131,7 @@ Any style is acceptable when it remains pet-safe:
 
 - compact whole-body silhouette readable inside a `192x208` cell
 - consistent face, proportions, material, palette, and props across all rows
-- real transparent alpha background, with a clean removable chroma-key fallback
+- real transparent alpha background for every newly generated image
 - details large enough to read at pet size
 - no text, labels, UI, or readable logos unless the user explicitly provides approved reference art and asks for them
 
@@ -139,9 +139,11 @@ Non-pixel styles are first-class. Plush, clay, sticker, vector, 3D toy, painterl
 
 ## Transparency And Effects
 
-Pet rows are processed into transparent `192x208` cells. Request real RGBA transparency from `$imagegen` by default and preserve its alpha. The prepared prompts allow a flat selected chroma key only as a compatibility fallback when native alpha is unavailable. Prefer pose, expression, and silhouette changes over decorative effects.
+Pet rows are processed into transparent `192x208` cells. For new v2 pets, require real RGBA transparency from `$imagegen` for the base, every standard row, the cardinal strip, and both look rows. The default `--background-mode transparent` rejects opaque outputs; never silently switch to green/magenta chroma or clean an opaque generation into compliance. Retry an opaque visual source with a stronger transparent-background prompt, then report a blocker if native alpha remains unavailable. Prefer pose, expression, and silhouette changes over decorative effects.
 
-The deterministic raster pipeline owns background detection and transparency invariants. In `auto` mode it preserves native alpha whenever the source contains both a visible sprite and a meaningfully transparent canvas; it runs color removal only for an opaque legacy/fallback source. The detected mode is recorded per row and propagated into the final atlas manifest. Native-alpha cleanup clears hidden RGB under fully transparent pixels without changing any visible color. Chroma cleanup retains the existing single edge-local spill-suppression pass. Never run chroma suppression on an all-native-alpha atlas because a legitimate pet color may match the fallback key.
+For every new visual job, call the built-in `image_gen` tool with `transparent_background: true` and a prompt requiring real transparency. If an explicitly approved API/CLI path is used, set `background=transparent` and output PNG or WebP. In either path, verify the returned image's alpha before accepting it; the parameter is a request, not proof of a valid source. `--background-mode auto` (transparent preferred, chroma allowed) and `--background-mode chroma` exist only for an explicitly chosen legacy/source-compatibility run.
+
+The deterministic raster pipeline owns background detection and transparency invariants. In strict `transparent` mode it rejects any source without usable native alpha. In explicit legacy `auto` mode it preserves native alpha when present and runs color removal only for an opaque source. The detected mode is recorded per row and propagated into the final atlas manifest. Native-alpha cleanup clears hidden RGB under fully transparent pixels without changing any visible color. Legacy chroma cleanup retains the existing single edge-local spill-suppression pass. Never run chroma suppression on an all-native-alpha atlas because a legitimate pet color may match the fallback key.
 
 For chroma rows only, when visual QA confirms opaque key-colored residue inside the silhouette or negative-space openings, use `--reject-key-similarity` on the pre-despill atlas. This deliberately clears matching pixels and reports `alpha_preserved: false` plus the rejected count. Mixed atlases retain native-alpha rows unchanged.
 
@@ -231,10 +233,11 @@ Never use the time target to skip blind direction QA, labeled semantics, continu
 
 ## Default Workflow
 
-1. Prepare a pet run folder and imagegen job manifest:
+1. From the repository root, prepare a pet run folder and imagegen job manifest:
 
 ```bash
-SKILL_DIR="${CODEX_HOME:-$HOME/.codex}/skills/hatch-pet"
+SKILL_DIR="$(pwd -P)/.agents/skills/hatch-pet-v2"
+BACKGROUND_MODE=transparent
 "$PYTHON" "$SKILL_DIR/scripts/prepare_pet_run.py" \
   --pet-name "<Name>" \
   --description "<one sentence>" \
@@ -247,11 +250,11 @@ SKILL_DIR="${CODEX_HOME:-$HOME/.codex}/skills/hatch-pet"
   --brand-source "https://example.com/source" \
   --style-preset auto \
   --style-notes "<optional freeform style notes>" \
-  --background-mode auto \
+  --background-mode "$BACKGROUND_MODE" \
   --force
 ```
 
-All arguments above are optional except any flags needed to express user constraints. `--background-mode auto` is the default: prompts request true transparent RGBA output and name the selected chroma key only as a fallback. Use `--background-mode transparent` to reject any opaque result, or `--background-mode chroma` only for legacy/tooling compatibility. For text-only requests, pass the concept through `--pet-notes` and omit `--reference`; `prepare_pet_run.py` will infer a name, description, fallback chroma key, and output directory as needed.
+The script defaults to `--background-mode transparent` even when the flag is omitted. Keep `BACKGROUND_MODE=transparent` through every generation and extraction command. Set it to `auto` or `chroma` only when the user explicitly requests a legacy key-color workflow; record that choice in the run. For text-only requests, pass the concept through `--pet-notes` and omit `--reference`; `prepare_pet_run.py` will infer a name, description, compatibility chroma key, and output directory as needed.
 For brand-only requests, run the discovery worker first, save the markdown brief, then pass the brief path through `--brand-discovery-file`, `avatar_seed` through `--pet-notes`, `brand_name` through `--brand-name`, `brand_brief` through `--brand-brief`, and each source URL through repeated `--brand-source`.
 
 2. Inspect `imagegen-jobs.json` for the next ready `$imagegen` jobs. A job is ready when its `status` is not `complete` and every id in `depends_on` is already complete. Prefer reading the manifest directly with `jq` or the editor instead of adding helper scripts for status display:
@@ -273,20 +276,23 @@ jq '.jobs[] | {id, kind, status, depends_on, prompt_file, retry_prompt_file, inp
 
 Keep up to three generation workers active whenever three independent jobs are ready and worker capacity permits. Backfill an available slot immediately instead of waiting for a fixed wave to finish. Use two or one worker when the dependency graph exposes fewer ready jobs. Do not exceed three generation workers without explicit user direction.
 
-For each ready visual job, invoke `$imagegen` with the prompt file listed in `imagegen-jobs.json`, every listed input image with its role label, and the default built-in `image_gen` path unless `$imagegen` itself routes otherwise. The parent agent must keep its own image handling minimal: do not open every generated base or row in the parent rollout. Workers return only the selected source path and a one-sentence QA note; the parent records the selected source path in the manifest.
+For each ready visual job, invoke `$imagegen` with the prompt file listed in `imagegen-jobs.json`, every listed input image with its role label, and the default built-in `image_gen` path unless `$imagegen` itself routes otherwise. Set `transparent_background: true` on every built-in call in a strict run, including repairs and retries. The parent agent must keep its own image handling minimal: do not open every generated base or row in the parent rollout. Workers return only the selected source path and a one-sentence QA note; the parent records the selected source path in the manifest.
 
 `prepare_pet_run.py` creates matching layout guides under `references/layout-guides/` for the nine standard rows, two look rows, and four-cardinal strip, and both look rows. Visual jobs attach the matching guide as a layout-only input so the model can follow the correct frame count, spacing, centering, and safe padding. Treat these guides as invisible construction references: generated strips must not include visible boxes, borders, center marks, labels, guide colors, or the guide background.
 
 When generating row strips, keep the identity lock in the row prompt authoritative. Preserve the same style, face, markings, palette, materials, prop design, body proportions, and silhouette from the canonical base. Row jobs attach the layout guide and canonical base by default; the decoded base is kept in the run folder for deterministic processing rather than sent as a redundant generation input.
 
-If `$imagegen` returns a transport-level `Bad Request` for a row, retry that same row once with its generated `retry_prompt_file`. The retry prompt preserves the row id, frame count, transparent-background preference, chroma fallback, canonical-base identity, and state action. Keep the canonical base attached. If the retry still fails, stop and report the failing row and prompt paths instead of switching to any other generation path.
+If `$imagegen` returns a transport-level `Bad Request` for a row, retry that same row once with its generated `retry_prompt_file`. The retry prompt preserves the row id, frame count, required native transparency, canonical-base identity, and state action. Keep the canonical base attached. If the retry still fails, stop and report the failing row and prompt paths instead of switching to any other generation path.
 
-4. After selecting a generated output for a job, copy it into the decoded output path. For `base`, also create the canonical identity reference:
+4. Before copying any generated base, row, or cardinal image, verify that the source has a real transparent canvas in strict mode. If verification fails, reject the image and regenerate that job with the same references; do not key out its background or mark the job complete. Legacy `auto`/`chroma` runs use their explicit background mode instead. After verification, copy the selected output into the decoded output path. For `base`, also create the canonical identity reference:
 
 ```bash
 RUN_DIR=/absolute/path/to/run
 JOB_ID=<job-id>
 SOURCE=/absolute/path/to/generated-output.png
+if [ "$BACKGROUND_MODE" = transparent ]; then
+  "$PYTHON" "$SKILL_DIR/scripts/verify_native_alpha.py" "$SOURCE" || exit 1
+fi
 OUTPUT_REL=$(jq -r --arg id "$JOB_ID" '.jobs[] | select(.id == $id) | .output_path' "$RUN_DIR/imagegen-jobs.json")
 mkdir -p "$(dirname "$RUN_DIR/$OUTPUT_REL")"
 cp "$SOURCE" "$RUN_DIR/$OUTPUT_REL"
@@ -304,7 +310,7 @@ ROW_QA_DIR="$RUN_DIR/qa/rows/$JOB_ID"
   --decoded-dir "$RUN_DIR/decoded" \
   --output-dir "$ROW_QA_DIR/frames" \
   --states "$JOB_ID" \
-  --background-mode auto \
+  --background-mode "$BACKGROUND_MODE" \
   --method auto
 "$PYTHON" "$SKILL_DIR/scripts/inspect_frames.py" \
   --frames-root "$ROW_QA_DIR/frames" \
@@ -313,7 +319,7 @@ ROW_QA_DIR="$RUN_DIR/qa/rows/$JOB_ID"
   --require-components
 ```
 
-Treat errors as an immediate repair request. Inspect warnings before accepting the row; do not defer a known clipping, component, or extraction problem to final atlas QA. Confirm each row's detected `background_mode` in `frames-manifest.json`. Native alpha must remain untouched; chroma cleanup belongs to the deterministic post-assembly fallback pass and must not trigger row regeneration. If the only failure is component extraction and the source strip itself has stable scale and placement, use the existing `stable-slots` correction with `--allow-stable-slots` instead of regenerating imagery.
+Treat errors as an immediate repair request. Inspect warnings before accepting the row; do not defer a known clipping, component, or extraction problem to final atlas QA. In strict mode, confirm each row's detected `background_mode` is `transparent` in `frames-manifest.json`; a chroma result is a failed source, not an acceptable fallback. Native alpha must remain untouched. In an explicitly chosen legacy run, chroma cleanup belongs to the deterministic post-assembly pass. If the only failure is component extraction and the source strip itself has stable scale and placement, use the existing `stable-slots` correction with `--allow-stable-slots` instead of regenerating imagery.
 
 For `look-cardinals`, extract and validate all four anchors before marking the job complete:
 
@@ -322,7 +328,7 @@ CHROMA_KEY=$(jq -r '.chroma_key.hex' "$RUN_DIR/pet_request.json")
 "$PYTHON" "$SKILL_DIR/scripts/extract_cardinal_anchors.py" \
   --strip "$RUN_DIR/decoded/look-cardinals.png" \
   --output-dir "$RUN_DIR/decoded/look-anchors" \
-  --background-mode auto \
+  --background-mode "$BACKGROUND_MODE" \
   --chroma-key "$CHROMA_KEY" \
   --json-out "$RUN_DIR/qa/cardinal-anchors.json"
 "$PYTHON" "$SKILL_DIR/scripts/compose_cardinal_anchor_strip.py" \
@@ -376,7 +382,12 @@ mkdir -p "$RUN_DIR/final" "$RUN_DIR/qa"
   --decoded-dir "$RUN_DIR/decoded" \
   --output-dir "$RUN_DIR/frames" \
   --states all \
+  --background-mode "$BACKGROUND_MODE" \
   --method auto
+if [ "$BACKGROUND_MODE" = transparent ]; then
+  jq -e '.background_mode == "transparent" and all(.rows[]; .background_mode == "transparent")' \
+    "$RUN_DIR/frames/frames-manifest.json" >/dev/null || exit 1
+fi
 ```
 
 ```bash
@@ -412,6 +423,7 @@ If the preview GIFs show size popping or baseline jumps caused by per-frame fit-
   --decoded-dir "$RUN_DIR/decoded" \
   --output-dir "$RUN_DIR/frames" \
   --states all \
+  --background-mode "$BACKGROUND_MODE" \
   --method stable-slots
 ```
 
@@ -440,7 +452,7 @@ run/
   qa/review.json
 ```
 
-Inspect `qa/contact-sheet.png` and `qa/previews/*.gif` before generating look rows. `qa/review.json` plus visual motion review are the intermediate gates. An all-native-alpha standard contact sheet is already color-final. A row detected as chroma may still show key-color fringe before the one final fallback cleanup pass; that fringe alone is not a regeneration reason. Block progress if any standard row changes identity, style, prop handedness, or silhouette, or if playback pops, reverses cadence, faces the wrong direction, or is visually inert. Do not package or clean up yet.
+Inspect `qa/contact-sheet.png` and `qa/previews/*.gif` before generating look rows. `qa/review.json` plus visual motion review are the intermediate gates. In strict mode, all standard rows must have native alpha and are already color-final; reject any row recorded as chroma. In an explicit legacy run, a chroma row may show key-color fringe before final cleanup. Block progress if any standard row changes identity, style, prop handedness, or silhouette, or if playback pops, reverses cadence, faces the wrong direction, or is visually inert. Do not package or clean up yet.
 
 ## Required V2 Look-Direction Stage
 
@@ -455,7 +467,7 @@ After copying row 9 into `decoded/look-row-9.png`, register and edge-check it wi
   --base-atlas "$RUN_DIR/final/spritesheet.webp" \
   --look-row-9 "$RUN_DIR/decoded/look-row-9.png" \
   --neutral-cell "$RUN_DIR/frames/idle/00.png" \
-  --background-mode auto \
+  --background-mode "$BACKGROUND_MODE" \
   --chroma-key "$CHROMA_KEY" \
   --chroma-threshold 96 \
   --registered-row-output "$RUN_DIR/qa/look-row-9-registered.png" \
@@ -519,13 +531,13 @@ Before accepting the v2 atlas, create a focused direction QA sheet showing the n
 
 Perform an explicit semantic review for every direction and record `pass`, `warning`, or `fail`, plus separate visible evidence for its horizontal and vertical axes. A warning may accept blind-review uncertainty for an intermediate pose when labeled normal-size review confirms the intended axes and the ordered loop remains coherent. It may not waive a wrong or ambiguous cardinal, a labeled wrong-quadrant pose, or a visible reversal. If a direction receives `fail`, strengthen the containing row's instructions and resynthesize that complete coherent row. Never replace the final normalized cell directly.
 
-Look rows must have transparent backgrounds after assembly. Do not accept or install the pet if `qa/look-directions.png` or `qa/contact-sheet-extended.png` shows opaque panels behind any look cell. Native-alpha rows must preserve their visible colors exactly. If a fallback chroma row contains slight key-color lighting variation, rerun assembly with a wider `--chroma-threshold` instead of packaging the opaque key color. Validation must pass without opaque-background errors.
+Look rows must have transparent backgrounds after assembly. Do not accept or install the pet if `qa/look-directions.png` or `qa/contact-sheet-extended.png` shows opaque panels behind any look cell. Native-alpha rows must preserve their visible colors exactly. In an explicitly chosen legacy run, a chroma row with slight key-color variation may need a wider `--chroma-threshold`. Validation must pass without opaque-background errors.
 
 Extended look cells must also keep the same practical scale and body registration as the neutral/default pet. Do not accept a direction set where neutral/default is noticeably larger than the look cells, where the look cells appear to float above the baseline, or where the pet slides left/right within its 192x208 cell while only changing gaze. Extended assembly recovers each pose group from the complete original-resolution row and computes one shared scale from height plus every pose's left and right extents around the shared lower-body anchor, so asymmetric poses remain inside the final cell after alignment. It resizes each original crop exactly once and never enlarges an already-resampled cell. The neutral frame supplies the target body height, lower-body anchor, and baseline. Pass `--neutral-cell` when an external neutral frame is available; otherwise the assembler falls back to the populated neutral/default slot or first visible idle frame in the base atlas. If the focused QA sheet still shows scale or placement drift, repair before packaging.
 
 Assemble the extended atlas from two generated row strips:
 
-Use `--background-mode auto` for every generated source. It preserves real alpha and only uses the run's selected chroma key when a source is opaque. Pass the standard `frames-manifest.json` into final assembly so the atlas records whether cleanup must be native-alpha-only, chroma, or mixed.
+Use `--background-mode "$BACKGROUND_MODE"` for every generated source. Strict mode rejects an opaque source instead of color-keying it. Pass the standard `frames-manifest.json` into final assembly so the atlas records the source background mode and selects native-alpha-only cleanup for an all-transparent run.
 
 ```bash
 CHROMA_KEY=$(jq -r '.chroma_key.hex' "$RUN_DIR/pet_request.json")
@@ -540,13 +552,17 @@ Extended assembly reuses the approved registered row-9 cells and persisted scale
   --row-9-registration "$RUN_DIR/qa/look-row-9-registration.json" \
   --look-row-10 "$RUN_DIR/decoded/look-row-10.png" \
   --neutral-cell "$RUN_DIR/frames/idle/00.png" \
-  --background-mode auto \
+  --background-mode "$BACKGROUND_MODE" \
   --base-background-manifest "$RUN_DIR/frames/frames-manifest.json" \
   --chroma-key "$CHROMA_KEY" \
   --chroma-threshold 96 \
   --output "$RUN_DIR/final/spritesheet-extended.png" \
   --webp-output "$RUN_DIR/final/spritesheet-extended.webp" \
   --manifest-output "$RUN_DIR/final/spritesheet-extended.json"
+if [ "$BACKGROUND_MODE" = transparent ]; then
+  jq -e '.backgroundMode == "transparent" and .cleanupMode == "native-alpha" and all(.rowBackgroundModes[]; . == "transparent")' \
+    "$RUN_DIR/final/spritesheet-extended.json" >/dev/null || exit 1
+fi
 ```
 
 For repair or upgrade of a user-provided 16-cell source that was already approved as one coherent set, individual-cell assembly remains available. Do not use this path for newly generated repair cells:
@@ -556,7 +572,7 @@ For repair or upgrade of a user-provided 16-cell source that was already approve
   --base-atlas "$RUN_DIR/final/spritesheet.webp" \
   --look-cells-dir /absolute/path/to/look-cells \
   --neutral-cell "$RUN_DIR/frames/idle/00.png" \
-  --background-mode auto \
+  --background-mode "$BACKGROUND_MODE" \
   --base-background-manifest "$RUN_DIR/frames/frames-manifest.json" \
   --chroma-key "$CHROMA_KEY" \
   --chroma-threshold 96 \
@@ -722,7 +738,7 @@ Row worker responsibilities:
 - handle exactly one row job
 - read the row prompt and use all listed input images
 - use `$imagegen` only; do not draw, edit, tile, or synthesize sprites locally
-- perform a quick visual sanity check for frame count, identity, transparent or flat fallback background, spacing, clipping, and detached effects
+- perform a quick visual sanity check for frame count, identity, real transparency, spacing, clipping, and detached effects
 - enforce the row prompt's transparency and effects rules, including no detached effects, no wave marks for `waving`, no speed lines or dust for directional running rows, no literal foot-running for the non-directional `running` row, and only attached opaque sprite-like tears/smoke/stars when allowed by the state prompt
 - for a `look-row-strip`, synthesize the complete row as one coherent family from the approved cardinals and never independently restyle individual cells
 - for a `look-row-strip`, verify the output contains eight separated pose groups in the required order with no overlap or outer-canvas clipping; deterministic assembly owns exact cell cropping, one shared scale and baseline, recentering, and final-cell edge validation
@@ -762,7 +778,7 @@ Prompt file: <absolute base prompt file>
 Input images:
 - <absolute path> — <role>
 
-Use $imagegen only. Read the base prompt and attach every listed input image. If the prompt contains brand inspiration, use it only as broad mascot-safe guidance; do not copy logos, readable marks, UI screenshots, slogans, or text. Before returning, visually check that the result is one centered full-body pet on true transparent RGBA as requested, or on the exact flat fallback chroma only when native alpha was unavailable, with no text, scenery, shadows, or detached effects.
+Use $imagegen only. Read the base prompt and attach every listed input image. For a strict run, set `transparent_background: true` on the built-in image tool call. If the prompt contains brand inspiration, use it only as broad mascot-safe guidance; do not copy logos, readable marks, UI screenshots, slogans, or text. Before returning, visually check that the result is one centered full-body pet on true transparent RGBA, with no text, scenery, shadows, or detached effects. An opaque image is failed, even when its background is a flat key color.
 
 Do not edit manifests, copy into decoded, mark jobs complete, generate rows, run image-processing scripts, repair, package, or open unrelated files.
 Do not include Markdown image previews, base64, or extra attachments in the final response.
@@ -805,9 +821,9 @@ Input images:
 - <absolute path> — <role>
 - <absolute path> — <role>
 
-Use $imagegen only. Read the row prompt and attach every listed input image. For a `look-row-strip` job, also read and obey `qa/look-mechanics.md`; use the approved cardinal strip for direction meaning and draw all eight cells together as one coherent family with even intermediate steps. Never paste, reuse, or independently restyle individual cells. If imagegen returns Bad Request, retry once with the retry prompt and the same input images.
+Use $imagegen only. Read the row prompt and attach every listed input image. For a strict run, set `transparent_background: true` on the built-in image tool call, including retries and repairs. For a `look-row-strip` job, also read and obey `qa/look-mechanics.md`; use the approved cardinal strip for direction meaning and draw all eight cells together as one coherent family with even intermediate steps. Never paste, reuse, or independently restyle individual cells. If imagegen returns Bad Request, retry once with the retry prompt and the same input images.
 
-Before returning, visually check: exact frame count, same pet identity as canonical base, true transparent RGBA or the exact flat fallback chroma, complete separated unclipped poses, and no detached effects or guide marks. For a `look-row-strip`, verify there are eight separated pose groups in the required left-to-right order, neighboring poses do not overlap, no foreground is cropped at the outer canvas edge, and the generated family keeps a consistent scale and baseline. Exact cell cropping, shared-scale normalization, recentering, and final-cell edge validation happen deterministically after generation. The prompt's transparency and effects rules are mandatory: no detached effects, no wave marks for `waving`, no speed lines or dust for directional running rows, no literal foot-running for the non-directional `running` row, and only attached opaque sprite-like tears/smoke/stars when allowed by the state prompt.
+Before returning, visually check: exact frame count, same pet identity as canonical base, true transparent RGBA, complete separated unclipped poses, and no detached effects or guide marks. An opaque image is failed in strict mode, even when its background is a flat key color. For a `look-row-strip`, verify there are eight separated pose groups in the required left-to-right order, neighboring poses do not overlap, no foreground is cropped at the outer canvas edge, and the generated family keeps a consistent scale and baseline. Exact cell cropping, shared-scale normalization, recentering, and final-cell edge validation happen deterministically after generation. The prompt's transparency and effects rules are mandatory: no detached effects, no wave marks for `waving`, no speed lines or dust for directional running rows, no literal foot-running for the non-directional `running` row, and only attached opaque sprite-like tears/smoke/stars when allowed by the state prompt.
 
 Do not edit manifests, copy into decoded, mark jobs complete, mirror rows, run image-processing scripts, repair, package, or open unrelated files.
 Do not include Markdown image previews, base64, or extra attachments in the final response.
@@ -899,7 +915,7 @@ If frame inspection or final visual QA fails, read `qa/review.json`, regenerate 
 - Only mark a visual job complete after its selected output has been copied into the decoded output path.
 - Never mark a failed coherent row, diagnostic iteration, or one-off repair cell as packaging eligible.
 - Do not rely on generated images for exact atlas geometry; use this skill's deterministic image scripts.
-- Prefer native alpha and keep `--background-mode auto` unless the user or source contract explicitly requires transparent-only or legacy chroma. Use the fallback chroma key stored in `pet_request.json`; never force a fixed green screen.
+- For every new pet, require native alpha and keep `--background-mode transparent` from preparation through final assembly. Do not silently fall back to chroma or a globally installed older skill. Use `auto` or `chroma` only for an explicitly selected legacy/source-compatibility run.
 - Keep the pet's silhouette, face, materials, palette, style, and props consistent across all rows.
 - Treat visual identity or style drift as a blocker even when deterministic validation has no errors.
 - Treat a contact sheet that shows cropped references, repeated tiles, white cell backgrounds, or non-sprite fragments as failed.
@@ -921,7 +937,7 @@ If frame inspection or final visual QA fails, read `qa/review.json`, regenerate 
 ## Acceptance Criteria
 
 - Final atlas is PNG or WebP, exactly `1536x2288`, and based on `192x208` cells. The `1536x1872` standard atlas is intermediate-only.
-- `pet.json` contains `spriteVersionNumber: 2`, the final cleanup report has `ok: true`, and the packaged spritesheet passes `validate_atlas.py --require-v2`. An all-native-alpha atlas uses no chroma-key validator argument and preserves visible key-like pet colors; chroma/mixed input validates against the run's fallback key.
+- `pet.json` contains `spriteVersionNumber: 2`, the final cleanup report has `ok: true`, and the packaged spritesheet passes `validate_atlas.py --require-v2`. Every source in a new run is recorded as `transparent`, the final atlas uses native-alpha cleanup without a chroma-key validator argument, and visible key-like pet colors are preserved. Explicit legacy chroma/mixed input validates against the run's key.
 - Used cells are non-empty and unused cells are fully transparent.
 - Atlas follows the row/frame counts in `references/animation-rows.md`.
 - The four-cardinal strip has been deterministically extracted, its clipping report passes, and all four anchors are semantically approved before look-row generation.

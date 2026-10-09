@@ -1,0 +1,37 @@
+{
+  "slug": "point-fox--legeling",
+  "pet_slug": "point-fox",
+  "author_slug": "legeling",
+  "name": "Point Fox",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Animals",
+  "canonical_key": "animal/point-fox",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "fox",
+    "pixel-art",
+    "orange",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/195",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the community request reference. The requester did not identify the original reference artist; this package does not claim ownership of the referenced character.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A cheerful orange-and-white pixel fox with oversized pointed ears, a curled fluffy white-tipped tail, expressive task animations, and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/point-fox--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/point-fox--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/point-fox--legeling/gifs"
+  },
+  "spritesheet_sha256": "89b30a473d10a244e801d0a75275da51529dfbe1e8124640254400d591c02422"
+}

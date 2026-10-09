@@ -1,0 +1,29 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+  "asset_note": "Newly generated V2 runtime poses from the exact coordinator-approved canonical base, using the local Hatch Pet v2 workflow. This package contains metadata and the final runtime spritesheet.",
+  "reference_note": "Based on the requester pixel potato reference; no game origin is asserted.",
+  "pet_slug": "potato",
+  "slug": "potato--legeling",
+  "name": "Potato",
+  "primary_category": "Objects & Props",
+  "canonical_key": "community-request/182",
+  "description": "A plain ochre pixel potato with a stepped outline and gentle organic movements.",
+  "tags": ["community-request", "v2"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/182",
+  "preview_image": "../../assets/previews/potato--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/potato--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/potato--legeling/gifs"
+  },
+  "spritesheet_sha256": "48531925a56a4808f822cccfe6b6e91ec0a4bdc0c70f5270d935e98f273c5d98"
+}

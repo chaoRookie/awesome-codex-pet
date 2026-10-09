@@ -1,0 +1,33 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the community request reference. The requester did not identify the original reference artist; this package does not claim ownership of the referenced character.",
+  "pet_slug": "qieli",
+  "name": "切莉",
+  "localized_names": {
+    "en": "Qieli",
+    "zh": "切莉"
+  },
+  "primary_category": "Others",
+  "canonical_key": "community-request/qieli",
+  "description": "A white floppy-eared cartoon rabbit with pink cherry ornaments and a blue fan.",
+  "slug": "qieli--legeling",
+  "tags": ["community-request", "flat-vector", "rabbit"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/114",
+  "preview_image": "../../assets/previews/qieli--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/qieli--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/qieli--legeling/gifs"
+  },
+  "spritesheet_sha256": "b248ef22b45f0cec7b73235876cea5802959062970e43b68ac66c76e7fffea32"
+}

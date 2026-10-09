@@ -33,10 +33,7 @@ for (const [directory, htmlLang] of Object.entries(localeDirectories)) {
   ];
   for (const path of pages) {
     const html = await readFile(path, "utf8");
-    const localized = html.replace(
-      '<html lang="en">',
-      `<html lang="${htmlLang}">`,
-    );
+    const localized = html.replace(' lang="en"', ` lang="${htmlLang}"`);
     if (localized === html) {
       throw new Error(`${path}: expected an English root language to localize`);
     }

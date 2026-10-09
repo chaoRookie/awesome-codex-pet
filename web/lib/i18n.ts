@@ -60,9 +60,10 @@ export function localeFromPathname(pathname: string): Locale | null {
     .split("/")
     .filter(Boolean)[0]
     ?.replace(/\.html$/, "");
-  return supportedLocales.find(
-    (locale) => locale !== "en" && locale === segment,
-  ) ?? null;
+  return (
+    supportedLocales.find((locale) => locale !== "en" && locale === segment) ??
+    null
+  );
 }
 
 export const translations = {
@@ -233,10 +234,8 @@ export const translations = {
     slug: "Slug",
     tags: "Tags",
     installCommands: "Installation methods",
-    copyBashInstall: "Copy Bash Install",
-    copyPowerShell: "Copy PowerShell",
-    bashInstallDesc: "For macOS and Linux terminals.",
-    powerShellInstallDesc: "For Windows PowerShell.",
+    copyNpmInstall: "Copy npm command",
+    npmInstallDesc: "Node.js 20+ · macOS / Linux / Windows",
     installGuideDesc: "Compare every platform method and troubleshoot setup.",
     source: "Source",
     openInCodex: "Open in ChatGPT",
@@ -279,7 +278,7 @@ export const translations = {
     installPageEyebrow: "Install and activate",
     installPageTitle: "Bring a pet into Codex",
     installPageSubtitle:
-      "Choose a selected pet, let ChatGPT install it or use the script for your system, then enable it from Codex Settings. The installer never touches your other pets.",
+      "Choose a pet, install it with npm or ChatGPT, then enable it in Codex Settings. Node.js 20+ is required.",
     installQuickTitle: "The shortest path",
     installQuickDesc:
       "Every pet detail page already knows the exact pet id and prepares the right installation task for you.",
@@ -292,20 +291,21 @@ export const translations = {
       "Open a detail page and preview the full action set before installing.",
     installStep2Title: "2. Pick a method",
     installStep2Desc:
-      "Use Open in ChatGPT, Bash, PowerShell, or the installer from a local clone.",
+      "Use ChatGPT or the same npm command on macOS, Linux, and Windows.",
     installStep3Title: "3. Enable the pet",
     installStep3Desc:
       "Restart Codex if it is open, then select the new pet under Settings → Pets.",
-    installMethodTitle: "Choose the method for your system",
+    installMethodTitle: "Choose how to use the CLI",
     installMethodDesc:
       "The installer downloads only pet.json and spritesheet.webp, verifies the repository manifest and SHA-256 hashes, then activates the package atomically. Replace the sample id with the exact id shown on the pet page.",
     installRecommended: "Recommended",
-    installBashLabel: "macOS / Linux",
-    installPwshLabel: "Windows PowerShell",
-    installNodeLabel: "Local repository",
-    installBashTip: "Requires curl and bash.",
-    installPwshTip: "Run as a normal user, no admin rights needed.",
-    installNodeTip: "For contributors who already cloned this repository.",
+    installNpmLabel: "Install with npm",
+    installMenuLabel: "Interactive menu",
+    installGlobalLabel: "Global CLI",
+    installNpmTip: "Requires Node.js 20+ and npm on any platform.",
+    installMenuTip: "Browse, search, download, or contribute in your terminal.",
+    installGlobalTip:
+      "After installation, use cpet list or cpet install <pet-id>.",
     installMethodCheckTitle: "Confirm the pet id",
     installMethodCheckDesc:
       "Use the complete pet-slug--author-slug value. The author suffix lets different versions of the same character coexist.",
@@ -336,10 +336,10 @@ export const translations = {
       "Pets are stored in ~/.codex/pets/<pet-id>/ on macOS and Linux, or %USERPROFILE%\\.codex\\pets\\<pet-id> on Windows.",
     installManageCustomTitle: "Custom Codex home",
     installManageCustomDesc:
-      "Set CODEX_HOME before the command, or pass --codex-home to the Bash and local Node.js installers.",
+      "Set CODEX_HOME before the command, or pass --codex-home to the CLI.",
     installManageUpdateTitle: "Update or reinstall",
     installManageUpdateDesc:
-      "Run the same command again with --force (or -Force in PowerShell) to replace that id atomically. Other pet folders are left alone.",
+      "Run the install command with --force to replace the same pet atomically. Other pets are left alone.",
     installManageRemoveTitle: "Uninstall",
     installManageRemoveDesc:
       "Quit Codex, remove only that pet's folder, then reopen Codex. No registry or system files are created.",
@@ -512,15 +512,13 @@ export const translations = {
     github: "GitHub",
     submitPet: "申请 / 投稿",
     requestPetWithAI: "使用 Codex 提交制作请求",
-    requestPetWithAIDesc:
-      "让 Codex 整理内容并创建 GitHub Issue。",
+    requestPetWithAIDesc: "让 Codex 整理内容并创建 GitHub Issue。",
     submitPetWithAI: "使用 Codex 制作并投稿",
     submitPetWithAIDesc:
       "让 Codex 准备宠物文件，并创建一个聚焦的 Pull Request。",
     copyPromptShort: "复制提示词",
     advancedPullRequest: "去 GitHub 提交 PR",
-    advancedPullRequestDesc:
-      "打开 GitHub，为已有宠物提交 Pull Request。",
+    advancedPullRequestDesc: "打开 GitHub，为已有宠物提交 Pull Request。",
     submissionGuide: "投稿教程",
     submissionGuideDesc: "查看版本、质量、署名与投稿要求。",
     switchToLightMode: "切换到浅色模式",
@@ -662,10 +660,8 @@ export const translations = {
     slug: "标识符",
     tags: "标签",
     installCommands: "安装方式",
-    copyBashInstall: "复制 Bash 命令",
-    copyPowerShell: "复制 PowerShell",
-    bashInstallDesc: "适用于 macOS 与 Linux 终端。",
-    powerShellInstallDesc: "适用于 Windows PowerShell。",
+    copyNpmInstall: "复制 npm 命令",
+    npmInstallDesc: "Node.js 20+ · macOS / Linux / Windows",
     installGuideDesc: "比较各平台安装方法，并查看常见问题。",
     source: "源码",
     openInCodex: "在 ChatGPT 中打开",
@@ -707,7 +703,7 @@ export const translations = {
     installPageEyebrow: "安装与启用",
     installPageTitle: "把喜欢的宠物带进 Codex",
     installPageSubtitle:
-      "先挑选经过筛选的精品宠物，再交给 ChatGPT 中的 Codex 或当前系统的安装脚本，最后到 Codex 设置中启用。安装过程不会碰其他宠物。",
+      "挑选宠物，通过 npm 或 ChatGPT 安装，再到 Codex 设置中启用。需要 Node.js 20+。",
     installQuickTitle: "最快的安装路径",
     installQuickDesc:
       "每只宠物的详情页都已经带上准确的宠物标识符，会自动生成对应的安装任务与命令。",
@@ -719,21 +715,20 @@ export const translations = {
     installStep1Desc:
       "进入详情页先看完整动作，确认造型、动作和版本都符合预期。",
     installStep2Title: "2. 选择安装方式",
-    installStep2Desc:
-      "可以直接在 ChatGPT 中打开，也可以复制 Bash、PowerShell，或从本地仓库安装。",
+    installStep2Desc: "可以交给 ChatGPT，也可以在任意系统执行同一条 npm 命令。",
     installStep3Title: "3. 在 Codex 中启用",
     installStep3Desc:
       "如果 Codex 正在运行，请重启，然后到“设置 → 宠物”选择新宠物。",
-    installMethodTitle: "选择适合当前系统的方式",
+    installMethodTitle: "选择 CLI 使用方式",
     installMethodDesc:
       "安装器只下载 pet.json 与 spritesheet.webp，会先校验仓库清单和 SHA-256，再原子切换到 Codex 主目录。请把示例标识符替换成详情页显示的完整值。",
     installRecommended: "推荐",
-    installBashLabel: "macOS / Linux",
-    installPwshLabel: "Windows PowerShell",
-    installNodeLabel: "本地代码仓",
-    installBashTip: "需要本地有 curl 和 bash。",
-    installPwshTip: "无需管理员权限，普通用户即可执行。",
-    installNodeTip: "适合已经克隆本仓库的贡献者。",
+    installNpmLabel: "npm 一键安装",
+    installMenuLabel: "交互菜单",
+    installGlobalLabel: "全局安装 CLI",
+    installNpmTip: "所有系统均需 Node.js 20+ 和 npm。",
+    installMenuTip: "在终端浏览、搜索、下载或参与贡献。",
+    installGlobalTip: "安装后使用 cpet list 或 cpet install <pet-id>。",
     installMethodCheckTitle: "确认完整标识符",
     installMethodCheckDesc:
       "使用完整的 pet-slug--author-slug。作者后缀可以让同一角色的不同作者版本同时存在。",
@@ -764,10 +759,10 @@ export const translations = {
       "macOS 与 Linux 位于 ~/.codex/pets/<pet-id>/；Windows 位于 %USERPROFILE%\\.codex\\pets\\<pet-id>。",
     installManageCustomTitle: "自定义 Codex 主目录",
     installManageCustomDesc:
-      "运行命令前设置 CODEX_HOME；Bash 与本地 Node.js 安装器也支持 --codex-home 参数。",
+      "运行命令前设置 CODEX_HOME，或向 CLI 传入 --codex-home 参数。",
     installManageUpdateTitle: "更新或重新安装",
     installManageUpdateDesc:
-      "使用同一标识符再次运行命令，并添加 --force（PowerShell 使用 -Force）才能原子替换，不会影响其他宠物目录。",
+      "在安装命令后添加 --force，原子替换同一只宠物，其他宠物不受影响。",
     installManageRemoveTitle: "卸载宠物",
     installManageRemoveDesc:
       "退出 Codex，只删除对应宠物文件夹，再重新打开 Codex。安装器不会写注册表或系统目录。",

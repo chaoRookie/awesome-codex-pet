@@ -115,7 +115,7 @@ function Install-CodexPet {
     $listPath = Join-Path ([IO.Path]::GetTempPath()) ("codex-pets-list-" + [guid]::NewGuid().ToString("N") + ".json")
     try {
       Download-CodexPetFile -Uri "$RawBase/pets.json" -Destination $listPath -MaxBytes 1000000
-      $catalog = Get-Content -LiteralPath $listPath -Raw | ConvertFrom-Json
+      $catalog = Get-Content -LiteralPath $listPath -Raw -Encoding UTF8 | ConvertFrom-Json
       foreach ($pet in $catalog) {
         $version = if ($null -eq $pet.spriteVersionNumber) { 1 } else { $pet.spriteVersionNumber }
         "{0} - {1} (v{2})" -f $pet.slug, $pet.name, $version
@@ -146,7 +146,7 @@ function Install-CodexPet {
   try {
     $manifestPath = Join-Path $tempRoot "install-manifest.json"
     Download-CodexPetFile -Uri "$RawBase/install-manifest.json" -Destination $manifestPath -MaxBytes 1000000
-    $manifest = Get-Content -LiteralPath $manifestPath -Raw | ConvertFrom-Json
+    $manifest = Get-Content -LiteralPath $manifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
     if ($manifest.schemaVersion -ne 1 -or $null -eq $manifest.pets) {
       throw "Invalid install manifest schema"
     }
@@ -184,7 +184,7 @@ function Install-CodexPet {
     if ((Get-Sha256 $spritesheetPath) -ne $expectedSpritesheetSha) { throw "spritesheet.webp failed SHA-256 verification" }
     Assert-Webp $spritesheetPath
 
-    $petJson = Get-Content -LiteralPath $petJsonPath -Raw | ConvertFrom-Json
+    $petJson = Get-Content -LiteralPath $petJsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
     if ($petJson.id -ne $PetId) { throw "pet.json id does not match the requested pet id" }
     if ($petJson.spritesheetPath -ne "spritesheet.webp") { throw "pet.json spritesheetPath must be spritesheet.webp" }
 

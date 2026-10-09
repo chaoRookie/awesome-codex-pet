@@ -1,0 +1,37 @@
+{
+  "author_slug": "makashibata",
+  "author": "makashibata",
+  "source_type": "ai-generated fan art",
+  "source_url": "",
+  "license": "仅限非商业使用 / Non-commercial use only.",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "slug": "paimon-best-companion--makashibata",
+  "pet_slug": "paimon-best-companion",
+  "name": "派蒙-最好的伙伴",
+  "localized_names": {
+    "en": "Paimon - Bestest Companion",
+    "zh": "派蒙-最好的伙伴"
+  },
+  "primary_category": "Game Characters",
+  "canonical_key": "genshin-impact/paimon",
+  "collections": ["genshin-impact"],
+  "tags": [
+    "genshin-impact",
+    "paimon",
+    "anime",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "description": "白发星披风的小伙伴，陪你一起完成每个任务。",
+  "localized_descriptions": {
+    "en": "A white-haired, star-caped companion for every task.",
+    "zh": "白发星披风的小伙伴，陪你一起完成每个任务。"
+  },
+  "variant_note": "独立 AI 生成并适配的精细 v2 版本，形象参考七圣召唤卡牌《最好的伙伴》，包含左右悬浮飞行及 16 向环视。不同于已有作者的 v1 版本。",
+  "source_notes": "最终宠物图集由 AI 独立生成，并由 makashibata 制作、适配。形象为《原神》的派蒙，参考七圣召唤卡牌《最好的伙伴》；用户提供的角色图片及 HoYoWiki 动作素材仅作参考，未随投稿上传，未直接裁剪或复用其像素，也未将参考图作者冒充为宠物作者。对生成图集进行了尺寸适配、注册与透明边缘处理，并重制环视行。非官方同人制作，仅限非商业使用。",
+  "preview_image": "../../assets/previews/paimon-best-companion--makashibata/gifs/idle.gif"
+}

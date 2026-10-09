@@ -279,7 +279,7 @@ export function PetDetailContent({
           </p>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           <a
             className="group flex min-h-32 flex-col justify-between rounded-lg border border-border bg-bg-elevated p-4 transition-colors hover:border-border-hover hover:bg-surface"
             href={buildChatGPTUrl(getPetInstallPrompt(pet, locale))}
@@ -299,17 +299,10 @@ export function PetDetailContent({
 
           <InstallCopyMethod
             icon=">_"
-            title={t("copyBashInstall")}
-            description={t("bashInstallDesc")}
+            title={t("copyNpmInstall")}
+            description={t("npmInstallDesc")}
             command={pet.installCommand}
           />
-          <InstallCopyMethod
-            icon="PS"
-            title={t("copyPowerShell")}
-            description={t("powerShellInstallDesc")}
-            command={pet.installCommandPowerShell}
-          />
-
           <Link
             className="group flex min-h-32 flex-col justify-between rounded-lg border border-border bg-bg-elevated p-4 transition-colors hover:border-border-hover hover:bg-surface"
             href="/install"

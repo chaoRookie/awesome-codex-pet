@@ -1,0 +1,30 @@
+{
+  "slug": "kurimanju--legeling",
+  "pet_slug": "kurimanju",
+  "canonical_key": "community-request/231",
+  "author_slug": "legeling",
+  "name": "Kurimanju",
+  "localized_names": {
+    "en": "Kurimanju",
+    "zh": "栗子馒头"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "tags": ["community-request", "chiikawa", "kurimanju"],
+  "collections": [],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/231",
+  "license": "CC BY-NC 4.0",
+  "description": "AI-generated noncommercial fan-art pet of Kurimanju from Chiikawa, preserving the requester reference, original facial marks and approved base; fulfills requests #231 and #232.",
+  "preview_image": "../../assets/previews/kurimanju--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/kurimanju--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/kurimanju--legeling/gifs"
+  }
+}

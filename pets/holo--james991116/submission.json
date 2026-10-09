@@ -1,0 +1,36 @@
+{
+  "slug": "holo--james991116",
+  "pet_slug": "holo",
+  "author_slug": "james991116",
+  "name": "Holo",
+  "localized_names": {
+    "en": "Holo",
+    "zh": "赫萝"
+  },
+  "author": "James991116",
+  "author_handle": "James991116",
+  "author_url": "https://github.com/James991116",
+  "primary_category": "Anime Characters",
+  "canonical_key": "spice-and-wolf/holo",
+  "tags": [
+    "anime",
+    "spice-and-wolf",
+    "holo",
+    "wolf-girl",
+    "chibi",
+    "codex-v2",
+    "look-directions"
+  ],
+  "collections": [],
+  "source_type": "independently-ai-generated-fan-art",
+  "source_url": "",
+  "source_notes": "The final spritesheet was independently AI-generated from character references and adapted as a Codex pet by James991116. Reference images remain reference-only and are not included in this package; no reference artist is credited as the author of the final pet pixels.",
+  "license": "Non-commercial use only. This is unofficial independently AI-generated fan art submitted by James991116 for non-commercial repository use. Holo and Spice and Wolf rights remain with their respective owners; no official affiliation or endorsement is implied.",
+  "description": "A chibi Holo from Spice and Wolf with chestnut hair, wolf ears, ruby eyes, a blue-and-charcoal traveling outfit, nine task animations, and 16 look directions.",
+  "preview_image": "../../assets/previews/holo--james991116/gifs/idle.gif",
+  "spritesheet_sha256": "a8924d4f78c0820af2b867376615e868d66c591652d9b5ab5c9a6fdf4216d673",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

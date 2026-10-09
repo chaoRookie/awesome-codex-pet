@@ -1,0 +1,29 @@
+{
+  "slug": "xuxu-baobao--legeling",
+  "pet_slug": "xuxu-baobao",
+  "author_slug": "legeling",
+  "name": "旭旭宝宝",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Human Avatars",
+  "canonical_key": "community-request/115",
+  "tags": ["human-avatar", "ai-generated", "codex-v2", "community-request"],
+  "collections": [],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/115",
+  "spritesheet_sha256": "fee42cb0b3a51735520ba506534b9c78583eea7ac2948fd48332c220806ee9a0",
+  "asset_note": "The sprite pixels were generated with OpenAI Codex built-in image generation, directed by legeling, then assembled and registered with the Hatch Pet v2 workflow. This package uses the approved 8x11 candidate atlas.",
+  "reference_note": "The photo supplied with request #115 was used as a visual reference: https://api.codexpet.top/uploads/reference/references/99385ba28fbe54ef772506badaf2002bdd9e7ccda6c030ceff4c88c936194a9a.png . The photo itself is not included in this package; rights in the depicted person's identity and reference photograph remain with their respective rights holders.",
+  "license": "CC BY-NC 4.0 for this AI-generated sprite asset; non-commercial use only. Commercial use is prohibited. Rights in the depicted person's identity and supplied reference photograph remain with their respective rights holders.",
+  "description": "An AI-generated miniature avatar based on the reference supplied with request #115, with nine animation states and sixteen look directions. The accepted scope is the V2 sprite package; custom desktop interaction and voice features are outside this delivery.",
+  "preview_image": "../../assets/previews/xuxu-baobao--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/xuxu-baobao--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/xuxu-baobao--legeling/gifs"
+  }
+}

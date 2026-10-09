@@ -2,11 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { CopyCommandButton } from "@/components/copy-command-button";
-import {
-  BASH_INSTALL_COMMAND,
-  INSTALL_PLACEHOLDER,
-  POWERSHELL_INSTALL_COMMAND,
-} from "@/lib/install";
+import { NPM_INSTALL_COMMAND, INSTALL_PLACEHOLDER } from "@/lib/install";
 import { withSiteKeywords } from "@/lib/seo-keywords";
 import { siteConfig } from "@/lib/site";
 import { languageAlternates } from "@/lib/localized-route-metadata";
@@ -33,9 +29,9 @@ const faq = [
       "确认宠物目录中同时存在 pet.json 和 spritesheet.webp，检查 pet.json.id 与文件夹名完全一致，然后彻底退出并重启 Codex，再打开“设置 → 宠物”。",
   },
   {
-    question: "安装脚本会覆盖其他宠物吗？",
+    question: "npm 安装器会覆盖其他宠物吗？",
     answer:
-      "不会。安装器只写入目标宠物自己的目录；不同 id 的 V1、V2 宠物可以同时存在。重新安装已有 id 时必须显式添加 --force（PowerShell 使用 -Force）。",
+      "不会。安装器只写入目标宠物自己的目录；不同 id 的 V1、V2 宠物可以同时存在。重新安装已有 id 时必须显式添加 --force。",
   },
 ] as const;
 
@@ -101,7 +97,7 @@ export default function ChineseInstallPage() {
         tool: [
           {
             "@type": "HowToTool",
-            name: "macOS/Linux 终端、Windows PowerShell 或 ChatGPT 中的 Codex",
+            name: "Node.js 20+、npm 和终端，或 ChatGPT 中的 Codex",
           },
         ],
         step: [
@@ -116,7 +112,7 @@ export default function ChineseInstallPage() {
             "@type": "HowToStep",
             position: 2,
             name: "运行官方安装命令",
-            text: "根据操作系统运行详情页提供的 Bash 或 PowerShell 命令。",
+            text: "安装 Node.js 20+，运行详情页提供的 npm 命令，所有系统通用。",
             url: `${pageUrl}#commands`,
           },
           {
@@ -225,7 +221,7 @@ export default function ChineseInstallPage() {
           <InstallStep
             index="02"
             title="运行详情页提供的命令"
-            description="macOS 与 Linux 使用 Bash；Windows 使用 PowerShell。详情页中的命令已经替换好宠物标识符。"
+            description="先安装 Node.js 20+，再运行详情页的 npm 命令。macOS、Linux 与 Windows 通用。"
           />
           <InstallStep
             index="03"
@@ -244,7 +240,7 @@ export default function ChineseInstallPage() {
             macOS、Linux 与 Windows 安装命令
           </h2>
           <p className="mt-4 text-base leading-8 text-text-secondary">
-            下面展示命令格式。请把{" "}
+            需要先安装 Node.js 20+（包含 npm）。下面展示命令格式。请把{" "}
             <code className="font-mono text-sm text-text">
               {INSTALL_PLACEHOLDER}
             </code>{" "}
@@ -253,12 +249,8 @@ export default function ChineseInstallPage() {
         </div>
         <div className="mt-8 grid gap-8">
           <CommandBlock
-            title="macOS / Linux（Bash）"
-            command={BASH_INSTALL_COMMAND}
-          />
-          <CommandBlock
-            title="Windows（PowerShell）"
-            command={POWERSHELL_INSTALL_COMMAND}
+            title="npm（macOS / Linux / Windows）"
+            command={NPM_INSTALL_COMMAND}
           />
         </div>
       </section>

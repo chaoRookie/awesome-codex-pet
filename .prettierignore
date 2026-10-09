@@ -14,6 +14,7 @@ web/public/collections.json
 web/public/llms.txt
 web/public/llms-full.txt
 web/public/pets.json
+web/public/gallery.json
 web/public/requests.json
 
 # IDE

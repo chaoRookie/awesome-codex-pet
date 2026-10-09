@@ -216,10 +216,10 @@ PR 提交后，维护者会检查实际渲染的人物方向、动作语义、�
 
 分享时请保留作者署名与原始收录页。好宠物值得被传播，创作者也应该被看见。
 
-PR 合并后，用户无需克隆仓库即可安装：
+PR 合并后，用户安装 Node.js 20+（包含 npm），无需克隆仓库即可安装：
 
 ```bash
-curl -fsSL --proto '=https' --tlsv1.2 https://raw.githubusercontent.com/legeling/awesome-codex-pet/main/scripts/install-pet.sh | bash -s -- --raw-base https://raw.githubusercontent.com/legeling/awesome-codex-pet/main pet-slug--author-slug
+npx --yes @legeling/codex-pet install pet-slug--author-slug
 ```
 
 安装器会用 `install-manifest.json` 校验两个运行时文件，先准备临时目录再切换，

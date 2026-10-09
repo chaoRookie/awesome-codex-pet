@@ -1,0 +1,37 @@
+{
+  "slug": "alphonse--legeling",
+  "pet_slug": "alphonse",
+  "author_slug": "legeling",
+  "name": "阿尔冯斯",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "canonical_key": "fullmetal-alchemist/alphonse",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "fullmetal-alchemist",
+    "armor",
+    "panda",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/211",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Alphonse from Fullmetal Alchemist, based on the community request and approved concept art showing him cradling a panda.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A gentle blue armored guardian cradling a tiny panda, with a pointed helmet, pale eyes and a trailing white tassel. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/alphonse--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/alphonse--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/alphonse--legeling/gifs"
+  },
+  "spritesheet_sha256": "087afc34e5db292149d6ed2bfdef93ef7618cf88c1866517422c9c82e201abdc"
+}

@@ -1,3 +1,4 @@
+import { npmInstallCommand } from "../../scripts/install-command.mjs";
 export const INSTALL_PLACEHOLDER = "<pet-slug--author-slug>";
 const requestedInstallRef =
   process.env.NEXT_PUBLIC_INSTALL_REF?.trim() || "main";
@@ -8,19 +9,15 @@ if (
   throw new Error("NEXT_PUBLIC_INSTALL_REF contains unsafe characters");
 }
 const installRef = requestedInstallRef;
-const installRawBase = `https://raw.githubusercontent.com/legeling/awesome-codex-pet/${installRef}`;
-
-export const BASH_INSTALL_COMMAND =
-  `curl -fsSL --proto '=https' --tlsv1.2 ${installRawBase}/scripts/install-pet.sh | bash -s -- --raw-base ${installRawBase} ` +
-  INSTALL_PLACEHOLDER;
-
-export const POWERSHELL_INSTALL_COMMAND = `powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedirection 5 -TimeoutSec 120 ${installRawBase}/scripts/install-pet.ps1 | iex; Install-CodexPet ${INSTALL_PLACEHOLDER} -RawBase '${installRawBase}'"`;
-
-export const LOCAL_INSTALL_COMMAND = `npm run install:pet -- ${INSTALL_PLACEHOLDER}`;
+export const NPM_INSTALL_COMMAND = npmInstallCommand(
+  INSTALL_PLACEHOLDER,
+  installRef,
+);
+export const INTERACTIVE_COMMAND = "npx @legeling/codex-pet";
+export const GLOBAL_INSTALL_COMMAND = "npm install -g @legeling/codex-pet";
 
 export function getPetInstallCommands(slug: string) {
   return {
-    bash: BASH_INSTALL_COMMAND.replace(INSTALL_PLACEHOLDER, slug),
-    powershell: POWERSHELL_INSTALL_COMMAND.replace(INSTALL_PLACEHOLDER, slug),
+    npm: npmInstallCommand(slug, installRef),
   };
 }

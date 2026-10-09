@@ -8,6 +8,7 @@ import { RequestCard } from "@/components/request-card";
 import {
   getRequestCategoryLabel,
   getRequestStatusLabel,
+  isOpenRequest,
 } from "@/lib/request-display";
 import {
   type PetRequest,
@@ -28,6 +29,7 @@ const content = {
     status: "Status",
     category: "Category",
     everyStatus: "Every status",
+    active: "Unfinished",
     everyCategory: "Every category",
     visible: "requests",
     noResults: "No requests match these filters.",
@@ -44,6 +46,7 @@ const content = {
     status: "进度",
     category: "分类",
     everyStatus: "全部进度",
+    active: "待完成",
     everyCategory: "全部分类",
     visible: "个请求",
     noResults: "当前筛选条件下没有制作请求。",
@@ -60,6 +63,7 @@ const content = {
     status: "상태",
     category: "카테고리",
     everyStatus: "전체 상태",
+    active: "미완료",
     everyCategory: "전체 카테고리",
     visible: "개 요청",
     noResults: "필터에 맞는 요청이 없습니다.",
@@ -76,6 +80,7 @@ const content = {
     status: "状態",
     category: "カテゴリー",
     everyStatus: "すべての状態",
+    active: "未完了",
     everyCategory: "すべてのカテゴリー",
     visible: "件",
     noResults: "条件に一致するリクエストがありません。",
@@ -92,6 +97,7 @@ const content = {
     status: "Estado",
     category: "Categoría",
     everyStatus: "Todos los estados",
+    active: "Pendientes",
     everyCategory: "Todas las categorías",
     visible: "peticiones",
     noResults: "Ninguna petición coincide con los filtros.",
@@ -115,7 +121,7 @@ export function RequestPlazaContent({
   const { locale } = useLocale();
   const text = content[locale];
   const [view, setView] = useState<"all" | "following">("all");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("active");
   const [category, setCategory] = useState("");
   const [followed, setFollowed] = useState<Set<number>>(new Set());
   const categories = [...new Set(requests.map((request) => request.category))]
@@ -141,7 +147,9 @@ export function RequestPlazaContent({
       requests.filter(
         (request) =>
           (view === "all" || followed.has(request.number)) &&
-          (!status || request.status === status) &&
+          (status === "active"
+            ? isOpenRequest(request)
+            : !status || request.status === status) &&
           (!category || request.category === category),
       ),
     [category, followed, requests, status, view],
@@ -220,6 +228,7 @@ export function RequestPlazaContent({
               onChange={(event) => setStatus(event.target.value)}
               value={status}
             >
+              <option value="active">{text.active}</option>
               <option value="">{text.everyStatus}</option>
               {statuses.map((value) => (
                 <option key={value} value={value}>
@@ -272,7 +281,7 @@ export function RequestPlazaContent({
             className="mt-4 text-sm font-semibold text-accent hover:underline"
             onClick={() => {
               setView("all");
-              setStatus("");
+              setStatus("active");
               setCategory("");
             }}
             type="button"

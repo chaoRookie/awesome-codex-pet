@@ -1,0 +1,37 @@
+{
+  "slug": "dingding-devil--legeling",
+  "pet_slug": "dingding-devil",
+  "author_slug": "legeling",
+  "name": "叮叮恶魔",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Game Characters",
+  "canonical_key": "roco-kingdom/dingding-devil",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "roco-kingdom",
+    "devil",
+    "floating",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/159",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the 洛克王国 character 煎蛋饼（叮叮恶魔） requested by dandiaox-svg, its uploaded reference, and approved concept art.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A mischievous floating little devil with golden claws, orange ruff and tiny bat wings. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/dingding-devil--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/dingding-devil--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/dingding-devil--legeling/gifs"
+  },
+  "spritesheet_sha256": "c056deabb3db11517219e85afacc3998f557695a64386d36de592fd974c9a0da"
+}

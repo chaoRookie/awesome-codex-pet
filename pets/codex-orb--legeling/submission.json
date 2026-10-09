@@ -1,0 +1,24 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Community interpretation of the AI Orb Mascot shown at https://rive.app/marketplace/28088-53050-ai-orb-mascot/. Original author rights remain with the respective owner; no Rive file or original runtime asset is redistributed.",
+  "pet_slug": "codex-orb",
+  "name": "codex",
+  "primary_category": "Others",
+  "canonical_key": "community-request/codex-orb",
+  "description": "A dark circular AI orb with two silver-white oval eyes and a thin continuous rainbow rim.",
+  "slug": "codex-orb--legeling",
+  "tags": ["community-request", "orb"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/213",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "6fe992f79ef9222bea7c6de71350a0f46d4852ad4b13949179e933ff3d69f6e0"
+}

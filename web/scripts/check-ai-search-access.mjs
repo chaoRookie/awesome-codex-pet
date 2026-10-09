@@ -6,7 +6,11 @@ const MAX_ATTEMPTS = 6;
 const checks = [
   {
     path: "/zh/install",
-    expected: ["如何安装 Codex 小宠物", "install-pet.sh", "Install-CodexPet"],
+    expected: [
+      "如何安装 Codex 小宠物",
+      "npx --yes @legeling/codex-pet install",
+      "Node.js 20+",
+    ],
   },
   {
     path: "/zh/request",
@@ -23,7 +27,7 @@ const checks = [
       "/zh/request",
       "how to install a Codex pet",
       "reference image upload or public image link",
-      "install-pet.sh",
+      "npx --yes @legeling/codex-pet install",
     ],
   },
   {

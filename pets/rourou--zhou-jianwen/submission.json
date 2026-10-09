@@ -1,0 +1,41 @@
+{
+  "slug": "rourou--zhou-jianwen",
+  "pet_slug": "rourou",
+  "author_slug": "zhou-jianwen",
+  "name": "肉肉",
+  "localized_names": {
+    "en": "Rourou",
+    "zh": "肉肉"
+  },
+  "author": "zhou-jianwen",
+  "author_handle": "zhou-jianwen",
+  "primary_category": "Others",
+  "collections": [],
+  "canonical_key": "original/request-220/rourou-pug",
+  "tags": [
+    "pug",
+    "dog",
+    "illustration",
+    "fawn",
+    "black-mask",
+    "lazy",
+    "codex-v2",
+    "look-directions"
+  ],
+  "source_type": "original-ai-assisted-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/220",
+  "asset_note": "AI-generated illustrated interpretation produced with Codex image generation and deterministically assembled into a v2 atlas. The author credit identifies the maker and submitter, not the photographer or owner of the reference. The reference photograph is not included in the package.",
+  "reference_note": "Issue #220 supplied https://api.codexpet.top/uploads/reference/references/7e9bf7812d39bb743d477de6c836f8769cc2cccaa8c093f95fae8ad81438e47f.jpg as an appearance reference. The request was submitted without a GitHub account. Original work, reference authorship, and attribution details remain unconfirmed.",
+  "license": "Non-commercial use only. Commercial use is prohibited. No ownership of or license to the reference photograph is asserted.",
+  "description": "An illustrated v2 interpretation of 肉肉, a round fawn pug with a black mask, dark folded ears, forehead wrinkles, short legs, sleepy eyes, restrained gestures, and 16 look directions.",
+  "preview_image": "../../assets/previews/rourou--zhou-jianwen/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/rourou--zhou-jianwen/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/rourou--zhou-jianwen/gifs"
+  },
+  "spritesheet_sha256": "07c354726db9973ad4054ef5a97d45edf728279c5e53015e1d23f1b6eb8daf17"
+}

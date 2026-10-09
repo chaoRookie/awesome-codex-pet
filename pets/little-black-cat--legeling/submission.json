@@ -1,0 +1,29 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+  "asset_note": "Newly generated V2 runtime poses from the exact coordinator-approved canonical base, using the local Hatch Pet v2 workflow. This package contains metadata and the final runtime spritesheet.",
+  "reference_note": "Based on the requester illustration bearing the artist signature 不二马; character and illustration rights remain with their owners.",
+  "pet_slug": "little-black-cat",
+  "slug": "little-black-cat--legeling",
+  "name": "小黑猫",
+  "primary_category": "Animals",
+  "canonical_key": "community-request/175",
+  "description": "A fuzzy brush-painted black cat with slanted golden eyes, a blue nose and an inquisitive gaze.",
+  "tags": ["community-request", "v2"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/175",
+  "preview_image": "../../assets/previews/little-black-cat--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/little-black-cat--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/little-black-cat--legeling/gifs"
+  },
+  "spritesheet_sha256": "71cc9fa9b9f8d581370963e457e924af5e40e02a889b5ea191ba2566fa1d1309"
+}

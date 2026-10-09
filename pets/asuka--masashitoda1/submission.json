@@ -1,0 +1,27 @@
+{
+  "slug": "asuka--masashitoda1",
+  "pet_slug": "asuka",
+  "author_slug": "masashitoda1",
+  "name": "明日香",
+  "localized_names": {
+    "en": "Asuka — Chibi (v2)",
+    "zh": "明日香·Q版（v2）"
+  },
+  "author": "MasashiToda1",
+  "author_handle": "MasashiToda1",
+  "author_url": "https://github.com/MasashiToda1",
+  "primary_category": "Anime Characters",
+  "canonical_key": "evangelion/asuka",
+  "collections": ["evangelion"],
+  "variant_note": "由 MasashiToda1 通过 Codex / ImageGen 根据文字描述独立生成的 Q 版红色驾驶服版本。与 asuka--maxg24 的 v1 素材独立制作；本版本使用 v2 图集，包含九种动作与十六方向视线，未复用其他作者的精灵图。",
+  "tags": ["anime", "evangelion", "asuka", "mecha", "chibi"],
+  "source_type": "ai-generated",
+  "license": "仅限非商业使用，禁止商用。允许本仓库收录、展示及分发此独立 AI 生成的同人宠物及预览；非官方作品，不代表获得角色权利方授权。角色及商标权利归各自权利人所有。",
+  "description": "橙红长发、红色驾驶服的 Q 版明日香，包含九种动作与十六方向视线。 根据文字角色描述独立生成的《新世纪福音战士》同人作品，未直接使用官方图片或其他作者的精灵素材。",
+  "preview_image": "../../assets/previews/asuka--masashitoda1/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "840da877890016d435e1a6fea38bcdee77fc0c7e7df7fd0d127c821665cb399c"
+}

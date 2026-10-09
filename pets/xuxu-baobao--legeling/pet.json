@@ -1,0 +1,7 @@
+{
+  "id": "xuxu-baobao--legeling",
+  "displayName": "旭旭宝宝",
+  "description": "An AI-generated miniature avatar based on the reference supplied with request #115, with nine animation states and sixteen look directions. The accepted scope is the V2 sprite package; custom desktop interaction and voice features are outside this delivery.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

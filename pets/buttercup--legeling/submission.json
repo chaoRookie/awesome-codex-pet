@@ -1,0 +1,30 @@
+{
+  "slug": "buttercup--legeling",
+  "pet_slug": "buttercup",
+  "canonical_key": "community-request/225",
+  "author_slug": "legeling",
+  "name": "Buttercup",
+  "localized_names": {
+    "en": "Buttercup",
+    "zh": "毛毛"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Anime Characters",
+  "tags": ["community-request", "powerpuff-girls", "buttercup"],
+  "collections": [],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/225",
+  "license": "CC BY-NC 4.0",
+  "description": "AI-generated noncommercial fan-art pet of Buttercup from The Powerpuff Girls, preserving the requester reference and approved base.",
+  "preview_image": "../../assets/previews/buttercup--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/buttercup--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/buttercup--legeling/gifs"
+  }
+}

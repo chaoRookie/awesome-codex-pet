@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - "pets/*/submission.json"
+      - ".github/workflows/link-pet-requests.yml"
+      - "scripts/request-linking.mjs"
 
 permissions:
   contents: read
@@ -285,12 +287,15 @@ jobs:
               .filter(
                 (file) =>
                   file.status !== "removed" &&
-                  /^pets\/[^/]+\/submission\.json$/.test(file.filename),
+                  /^pets\/[^/]+\/submission\.json$/.test(file.filename) &&
+                  helpers.submissionChangeMayCompleteRequest(file),
               )
               .map((file) => file.filename);
 
             if (submissionPaths.length === 0) {
-              core.info("No changed pet submission metadata; nothing to complete.");
+              core.info(
+                "No new or request-linking pet submission metadata; nothing to complete.",
+              );
               return;
             }
 

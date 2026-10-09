@@ -1,0 +1,24 @@
+{
+  "slug": "neptune--legeling",
+  "pet_slug": "neptune",
+  "canonical_key": "community-request/152",
+  "author_slug": "legeling",
+  "name": "涅普缇努",
+  "localized_names": {
+    "en": "Neptune",
+    "zh": "涅普缇努"
+  },
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Game Characters",
+  "tags": ["community-request", "neptunia", "pixel-art"],
+  "source_type": "fan-art",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/152",
+  "license": "CC BY-NC 4.0",
+  "description": "按社区请求制作的涅普缇努普通形态像素风同人宠物，白紫连帽外套、方向键发夹和紫色鞋。AI 生成，非官方作品。",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  }
+}

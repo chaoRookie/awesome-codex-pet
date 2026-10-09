@@ -1,0 +1,37 @@
+{
+  "slug": "flying-hamster-unicorn--legeling",
+  "pet_slug": "flying-hamster-unicorn",
+  "author_slug": "legeling",
+  "name": "Flying Hamster Unicorn",
+  "author": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "primary_category": "Fantasy Creatures",
+  "canonical_key": "fantasy/flying-hamster-unicorn",
+  "collections": [],
+  "tags": [
+    "community-request",
+    "hamster",
+    "unicorn",
+    "winged",
+    "ai-generated",
+    "v2",
+    "look-directions"
+  ],
+  "source_type": "ai-generated-community-interpretation",
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/173",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the community request and its uploaded character reference, interpreted through maintainer-approved concept art.",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "description": "A cheerful pink flying hamster with a tiny unicorn horn and wings. Includes nine standard animations and 16 clockwise look directions.",
+  "preview_image": "../../assets/previews/flying-hamster-unicorn--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/flying-hamster-unicorn--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/flying-hamster-unicorn--legeling/gifs"
+  },
+  "spritesheet_sha256": "502af8ab0b9c2b7adef7db2119001ffab31bb5d7435fdd87937969ff2f1c9892"
+}

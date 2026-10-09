@@ -179,7 +179,7 @@ class NativeAlphaPipelineTest(unittest.TestCase):
             ["transparent", "chroma"],
         )
 
-    def test_prepare_defaults_to_transparent_with_chroma_fallback(self) -> None:
+    def test_prepare_requires_native_alpha_by_default(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             run_dir = Path(temporary_directory) / "run"
             subprocess.run(
@@ -200,10 +200,48 @@ class NativeAlphaPipelineTest(unittest.TestCase):
 
             request = json.loads((run_dir / "pet_request.json").read_text())
             prompt = (run_dir / "prompts" / "rows" / "idle.md").read_text()
+            self.assertEqual(request["background_mode"]["requested"], "transparent")
             self.assertEqual(request["background_mode"]["preferred"], "transparent")
-            self.assertEqual(request["background_mode"]["fallback"], "chroma")
-            self.assertIn("Prefer a real RGBA image", prompt)
-            self.assertIn("chroma-key background as the only fallback", prompt)
+            self.assertIsNone(request["background_mode"]["fallback"])
+            self.assertIn("REQUIRED: return a real RGBA image", prompt)
+            self.assertIn("An opaque output is invalid", prompt)
+            self.assertNotIn("chroma-key background as the only fallback", prompt)
+
+    def test_generated_source_verification_rejects_opaque_images(self) -> None:
+        verifier = SCRIPTS / "verify_native_alpha.py"
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            native = root / "native.png"
+            opaque = root / "opaque.png"
+            mostly_opaque = root / "mostly-opaque.png"
+            self.transparent_strip(1, (20, 40, 80, 255)).save(native)
+            Image.new("RGB", (120, 240), "#FF00FF").save(opaque)
+            Image.new("RGBA", (120, 240), (255, 0, 255, 255)).save(mostly_opaque)
+            with Image.open(mostly_opaque) as opened:
+                image = opened.copy()
+            ImageDraw.Draw(image).rectangle((0, 0, 14, 239), fill=(0, 0, 0, 0))
+            image.save(mostly_opaque)
+
+            accepted = subprocess.run(
+                [sys.executable, str(verifier), str(native)],
+                capture_output=True,
+                text=True,
+            )
+            rejected = subprocess.run(
+                [sys.executable, str(verifier), str(opaque)],
+                capture_output=True,
+                text=True,
+            )
+            rejected_partial = subprocess.run(
+                [sys.executable, str(verifier), str(mostly_opaque)],
+                capture_output=True,
+                text=True,
+            )
+
+            self.assertEqual(accepted.returncode, 0, accepted.stderr)
+            self.assertNotEqual(rejected.returncode, 0)
+            self.assertIn("native transparency required", rejected.stderr)
+            self.assertNotEqual(rejected_partial.returncode, 0)
 
     def test_frame_inspection_skips_chroma_color_gate_for_native_alpha_rows(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:

@@ -1,0 +1,33 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+  "asset_note": "Newly generated V2 runtime poses from the exact coordinator-approved canonical base, using the local Hatch Pet v2 workflow. This package contains metadata and the final runtime spritesheet.",
+  "reference_note": "Based on requester-provided public photographs of their real cat Gift; approved lightly chibi reconstruction.",
+  "pet_slug": "gift",
+  "slug": "gift--legeling",
+  "name": "礼物 / Gift",
+  "primary_category": "Animals",
+  "canonical_key": "community-request/154",
+  "description": "A round tabby-white cat with green-yellow eyes, white paws and a thick ringed tail.",
+  "tags": ["community-request", "v2"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/154",
+  "preview_image": "../../assets/previews/gift--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/gift--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/gift--legeling/gifs"
+  },
+  "spritesheet_sha256": "978c742dcdc54d5260ba61a8337491acfe8f5969caa26f0b232d9e9ba5301617",
+  "localized_names": {
+    "en": "Gift",
+    "zh": "礼物"
+  }
+}

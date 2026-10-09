@@ -1,0 +1,29 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "CC BY-NC 4.0. Non-commercial use only. Commercial use is prohibited. Referenced character and illustration rights remain with their respective owners.",
+  "asset_note": "Newly generated V2 runtime poses from the exact coordinator-approved canonical base, using the local Hatch Pet v2 workflow.",
+  "reference_note": "Based on requester-supplied Hongmao references in community issues #215 and #218; character and illustration rights remain with their owners.",
+  "pet_slug": "hongmao",
+  "slug": "hongmao--legeling",
+  "name": "虹猫少侠",
+  "primary_category": "Anime Characters",
+  "canonical_key": "community-request/215",
+  "description": "A young orange cat swordsman in white martial clothing, a yellow scarf and an orange cape, holding his orange-red sword.",
+  "tags": ["community-request", "v2"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/215",
+  "preview_image": "../../assets/previews/hongmao--legeling/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "preview_assets": {
+    "contact_sheet": "../../assets/previews/hongmao--legeling/contact-sheet.png",
+    "gifs_dir": "../../assets/previews/hongmao--legeling/gifs"
+  },
+  "spritesheet_sha256": "4022eb2d77c1641c95d548e033aa496a45376f3facc932accf206e62492ac4aa"
+}

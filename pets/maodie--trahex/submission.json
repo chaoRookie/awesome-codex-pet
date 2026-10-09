@@ -1,0 +1,39 @@
+{
+  "slug": "maodie--trahex",
+  "pet_slug": "maodie",
+  "author_slug": "trahex",
+  "name": "Maodie",
+  "localized_names": {
+    "en": "Maodie",
+    "zh": "耄耋"
+  },
+  "author": "Trahex",
+  "author_handle": "Trahex",
+  "author_url": "https://github.com/Trahex",
+  "primary_category": "Memes",
+  "canonical_key": "meme/maodie",
+  "variant_note": "Independently AI-generated photorealistic v2 interpretation by Trahex, distinct from maodie--octane0411. Features a stationary tense hiss for pointer interaction, alternating paws typing on a keyboard during task work, and sixteen look directions. The usual jumping row intentionally contains grounded hissing, as requested by the submitter.",
+  "collections": ["animal-companions"],
+  "tags": [
+    "maodie",
+    "cat",
+    "orange-cat",
+    "meme",
+    "photorealistic",
+    "keyboard",
+    "codex-v2",
+    "look-directions"
+  ],
+  "source_type": "codex-generated",
+  "source_url": "",
+  "license": "Non-commercial use only.",
+  "description": "A photorealistic orange Maodie cat with folded airplane ears, glaring eyes, a fierce grounded hiss, and alternating keyboard paw presses.",
+  "final_asset_provenance": "Final sprite pixels were independently generated with OpenAI image generation for Trahex, then deterministically extracted, registered, assembled and cleaned. No pixels were copied from another submitted pet. Trahex is credited as the submitter and adapter of the final pet.",
+  "reference_provenance": "User-supplied photographs and a hissing GIF of the viral Chinese internet cat Maodie established likeness and expression. The supplied public GIF URL was https://pic2.zhimg.com/v2-6255d671788cd8c06fb6e29f2a2fa489_1440w.gif. The original photographer/GIF creator is unknown. References are reference-only and are not included in this submission; no claim of ownership of those references is made.",
+  "preview_image": "../../assets/previews/maodie--trahex/gifs/idle.gif",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "65995bf415b5682bc7bfa2b1b6ef6a76f979ff5a3114b9f8bca6831a6d649ec0"
+}

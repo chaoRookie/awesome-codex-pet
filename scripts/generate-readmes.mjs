@@ -10,6 +10,7 @@ import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { join } from "node:path";
 import { format } from "prettier";
+import { npmInstallCommand } from "./install-command.mjs";
 
 const repoRoot = fileURLToPath(new URL("..", import.meta.url));
 const petsDir = join(repoRoot, "pets");
@@ -20,7 +21,6 @@ if (
 ) {
   throw new Error("AWESOME_CODEX_PET_INSTALL_REF contains unsafe characters");
 }
-const rawBase = `https://raw.githubusercontent.com/legeling/awesome-codex-pet/${installRef}`;
 const websiteUrl = "https://codexpet.top";
 const readmeFeatured = readJson(join(repoRoot, "readme-featured.json")).pets;
 
@@ -184,14 +184,6 @@ function authorLink(pet) {
   return `@${handle}`;
 }
 
-function bashInstallCommand(slug) {
-  return `curl -fsSL --proto '=https' --tlsv1.2 ${rawBase}/scripts/install-pet.sh | bash -s -- --raw-base ${rawBase} ${slug}`;
-}
-
-function powershellInstallCommand(slug) {
-  return `powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseB -MaximumRedirection 5 -TimeoutSec 120 ${rawBase}/scripts/install-pet.ps1 | iex; Install-CodexPet ${slug} -RawBase '${rawBase}'"`;
-}
-
 function nodeInstallCommand(slug) {
   return `npm run install:pet -- ${slug}`;
 }
@@ -210,6 +202,9 @@ function installManifest(pets) {
         pet.slug,
         {
           name: pet.name,
+          ...(pet.localized_names
+            ? { localizedNames: pet.localized_names }
+            : {}),
           spriteVersionNumber,
           petJsonSha256: sha256File(petJsonPath),
           petJsonBytes: statSync(petJsonPath).size,
@@ -360,16 +355,17 @@ Both versions remain installable. Use v1 when maintaining an existing 9-row pet;
 
 ## Quick Install
 
-No clone required. Pick the script for your shell:
+Install Node.js 20+ first. No clone required. The same npm command works on every platform:
 
 \`\`\`bash
-# macOS / Linux
-${bashInstallCommand(sampleSlug)}
+# Node.js 20+ · macOS / Linux / Windows
+${npmInstallCommand(sampleSlug, installRef)}
 \`\`\`
 
-\`\`\`powershell
-# Windows PowerShell
-${powershellInstallCommand(sampleSlug)}
+[CLI: list / search / download / contribute](https://github.com/legeling/awesome-codex-pet/blob/main/docs/cli.md)
+
+\`\`\`bash
+npx @legeling/codex-pet
 \`\`\`
 
 \`\`\`bash
@@ -380,7 +376,7 @@ ${nodeInstallCommand(sampleSlug)}
 List available pets:
 
 \`\`\`bash
-curl -fsSL --proto '=https' --tlsv1.2 ${rawBase}/scripts/install-pet.sh | bash -s -- --raw-base ${rawBase} --list
+npx --yes @legeling/codex-pet list
 \`\`\`
 
 Default install locations:
@@ -388,7 +384,7 @@ Default install locations:
 - macOS / Linux: \`~/.codex/pets/<pet-id>/\`
 - Windows: \`%USERPROFILE%\\.codex\\pets\\<pet-id>\\\`
 
-Set \`CODEX_HOME\` to override, or \`AWESOME_CODEX_PET_NO_STATS=1\` to opt out of anonymous install counters. Installers verify the repository manifest and SHA-256 hashes, stage files before activation, and require \`--force\` when replacing an existing package. For reproducible installs, replace \`main\` in both URL positions with an immutable commit or tag.
+Set \`CODEX_HOME\` to override, or \`AWESOME_CODEX_PET_NO_STATS=1\` to opt out of anonymous install counters. Installers verify the repository manifest and SHA-256 hashes, stage files before activation, and require \`--force\` when replacing an existing package. Pin the npm package version and pass \`--raw-base\` with an immutable repository commit for reproducible installs.
 
 ## Upgrade an Existing v1 Pet
 
@@ -545,16 +541,17 @@ pets/<pet-slug>--<author-slug>/
 
 ## 快速安装
 
-无需 clone，按你的系统选一条命令：
+先安装 Node.js 20+，无需 clone，所有系统使用同一条 npm 命令：
 
 \`\`\`bash
-# macOS / Linux
-${bashInstallCommand(sampleSlug)}
+# Node.js 20+ · macOS / Linux / Windows
+${npmInstallCommand(sampleSlug, installRef)}
 \`\`\`
 
-\`\`\`powershell
-# Windows PowerShell
-${powershellInstallCommand(sampleSlug)}
+[CLI: list / search / download / contribute](https://github.com/legeling/awesome-codex-pet/blob/main/docs/cli.md)
+
+\`\`\`bash
+npx @legeling/codex-pet
 \`\`\`
 
 \`\`\`bash
@@ -565,7 +562,7 @@ ${nodeInstallCommand(sampleSlug)}
 列出可安装的宠物：
 
 \`\`\`bash
-curl -fsSL --proto '=https' --tlsv1.2 ${rawBase}/scripts/install-pet.sh | bash -s -- --raw-base ${rawBase} --list
+npx --yes @legeling/codex-pet list
 \`\`\`
 
 默认安装位置：
@@ -573,7 +570,7 @@ curl -fsSL --proto '=https' --tlsv1.2 ${rawBase}/scripts/install-pet.sh | bash -
 - macOS / Linux：\`~/.codex/pets/<pet-id>/\`
 - Windows：\`%USERPROFILE%\\.codex\\pets\\<pet-id>\\\`
 
-可通过 \`CODEX_HOME\` 自定义安装路径，或者设置 \`AWESOME_CODEX_PET_NO_STATS=1\` 关闭匿名安装计数。安装器会校验仓库清单与 SHA-256，先在临时目录准备完整文件再切换；替换已有宠物时需要显式添加 \`--force\`。如需可复现安装，请把两处 URL 中的 \`main\` 替换为不可变的 commit 或 tag。
+可通过 \`CODEX_HOME\` 自定义安装路径，或者设置 \`AWESOME_CODEX_PET_NO_STATS=1\` 关闭匿名安装计数。安装器会校验仓库清单与 SHA-256，先在临时目录准备完整文件再切换；替换已有宠物时需要显式添加 \`--force\`。如需可复现安装，请固定 npm 包版本，并通过 \`--raw-base\` 指定不可变的仓库 commit。
 
 ## 升级已有 v1 宠物
 
@@ -730,16 +727,17 @@ pets/<pet-slug>--<author-slug>/
 
 ## 빠른 설치
 
-저장소를 복제할 필요가 없습니다. 사용하는 셸에 맞는 명령을 선택하세요.
+Node.js 20+가 필요합니다. 저장소 복제 없이 모든 플랫폼에서 같은 npm 명령을 사용하세요.
 
 \`\`\`bash
-# macOS / Linux
-${bashInstallCommand(sampleSlug)}
+# Node.js 20+ · macOS / Linux / Windows
+${npmInstallCommand(sampleSlug, installRef)}
 \`\`\`
 
-\`\`\`powershell
-# Windows PowerShell
-${powershellInstallCommand(sampleSlug)}
+[CLI: list / search / download / contribute](https://github.com/legeling/awesome-codex-pet/blob/main/docs/cli.md)
+
+\`\`\`bash
+npx @legeling/codex-pet
 \`\`\`
 
 \`\`\`bash
@@ -750,7 +748,7 @@ ${nodeInstallCommand(sampleSlug)}
 설치 가능한 펫 목록 보기:
 
 \`\`\`bash
-curl -fsSL --proto '=https' --tlsv1.2 ${rawBase}/scripts/install-pet.sh | bash -s -- --raw-base ${rawBase} --list
+npx --yes @legeling/codex-pet list
 \`\`\`
 
 기본 설치 위치:
@@ -758,7 +756,7 @@ curl -fsSL --proto '=https' --tlsv1.2 ${rawBase}/scripts/install-pet.sh | bash -
 - macOS / Linux: \`~/.codex/pets/<pet-id>/\`
 - Windows: \`%USERPROFILE%\\.codex\\pets\\<pet-id>\\\`
 
-\`CODEX_HOME\`으로 설치 위치를 바꾸거나 \`AWESOME_CODEX_PET_NO_STATS=1\`을 설정해 익명 설치 집계를 끌 수 있습니다. 설치기는 저장소 매니페스트와 SHA-256을 검증하고 임시 디렉터리에서 원자적으로 활성화하며, 기존 펫을 교체할 때는 \`--force\`가 필요합니다. 재현 가능한 설치가 필요하면 두 URL의 \`main\`을 변경할 수 없는 commit 또는 tag로 바꾸세요.
+\`CODEX_HOME\`으로 설치 위치를 바꾸거나 \`AWESOME_CODEX_PET_NO_STATS=1\`을 설정해 익명 설치 집계를 끌 수 있습니다. 설치기는 저장소 매니페스트와 SHA-256을 검증하고 임시 디렉터리에서 원자적으로 활성화하며, 기존 펫을 교체할 때는 \`--force\`가 필요합니다. 재현 가능한 설치에는 npm 버전을 고정하고 \`--raw-base\`로 변경 불가능한 commit을 지정하세요.
 
 ## 기존 v1 펫 업그레이드
 
@@ -888,7 +886,7 @@ const additionalReadmeCopy = {
     v2Use: "標準アニメーションと 16 方向の視線",
     installTitle: "クイックインストール",
     installIntro:
-      "リポジトリのクローンは不要です。利用するシェルに合ったコマンドを選んでください。インストーラーはマニフェストと SHA-256 を検証し、既存のパッケージを置き換える場合は `--force` を要求します。",
+      "リポジトリのクローンは不要です。Node.js 20+ を用意し、全 OS 共通の npm コマンドを実行してください。インストーラーはマニフェストと SHA-256 を検証し、既存のパッケージを置き換える場合は `--force` を要求します。",
     petsTitle: "ペット一覧",
     contributeTitle: "リクエストと投稿",
     contribute:
@@ -926,7 +924,7 @@ const additionalReadmeCopy = {
     v2Use: "Animaciones estándar y 16 direcciones de mirada",
     installTitle: "Instalación rápida",
     installIntro:
-      "No necesitas clonar el repositorio. Elige el comando correspondiente a tu sistema. El instalador verifica el manifiesto y los hashes SHA-256, y exige `--force` para reemplazar un paquete existente.",
+      "No necesitas clonar el repositorio. Instala Node.js 20+ y usa el mismo comando npm en cualquier sistema. El instalador verifica el manifiesto y los hashes SHA-256, y exige `--force` para reemplazar un paquete existente.",
     petsTitle: "Catálogo de mascotas",
     contributeTitle: "Pedir o enviar una mascota",
     contribute:
@@ -989,13 +987,14 @@ ${copy.nameNote}
 ${copy.installIntro}
 
 \`\`\`bash
-# macOS / Linux
-${bashInstallCommand(sampleSlug)}
+# Node.js 20+ · macOS / Linux / Windows
+${npmInstallCommand(sampleSlug, installRef)}
 \`\`\`
 
-\`\`\`powershell
-# Windows PowerShell
-${powershellInstallCommand(sampleSlug)}
+[CLI: list / search / download / contribute](https://github.com/legeling/awesome-codex-pet/blob/main/docs/cli.md)
+
+\`\`\`bash
+npx @legeling/codex-pet
 \`\`\`
 
 ## ${copy.petsTitle}

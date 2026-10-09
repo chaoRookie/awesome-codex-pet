@@ -105,27 +105,16 @@ export function PetInstallMenu({ pet, variant = "card" }: PetInstallMenuProps) {
         className="flex w-full cursor-pointer items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm text-text transition-colors hover:bg-surface"
         type="button"
         role="menuitem"
-        onClick={() => void copyCommand(commands.bash)}
+        onClick={() => void copyCommand(commands.npm)}
       >
         <span className="w-6 text-center font-mono text-muted">&gt;_</span>
         <span>
-          <span className="block font-medium">{t("copyBashInstall")}</span>
-          <span className="block text-xs text-muted">macOS / Linux</span>
+          <span className="block font-medium">{t("copyNpmInstall")}</span>
+          <span className="block text-xs text-muted">
+            Node.js 20+ · macOS / Linux / Windows
+          </span>
         </span>
       </button>
-      <button
-        className="flex w-full cursor-pointer items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm text-text transition-colors hover:bg-surface"
-        type="button"
-        role="menuitem"
-        onClick={() => void copyCommand(commands.powershell)}
-      >
-        <span className="w-6 text-center font-mono text-muted">PS</span>
-        <span>
-          <span className="block font-medium">{t("copyPowerShell")}</span>
-          <span className="block text-xs text-muted">Windows</span>
-        </span>
-      </button>
-
       <div className="my-1 border-t border-border" />
       <Link
         className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-text"

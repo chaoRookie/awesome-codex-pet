@@ -1,0 +1,24 @@
+{
+  "author": "legeling",
+  "author_slug": "legeling",
+  "author_handle": "legeling",
+  "author_url": "https://github.com/legeling",
+  "source_type": "ai-generated-community-interpretation",
+  "license": "Non-commercial use only. Commercial use is prohibited. Character rights remain with their respective owners.",
+  "asset_note": "AI-generated with the Codex Hatch Pet v2 workflow from maintainer-approved concept art. Runtime frames are newly generated; no original reference pixels are copied into the package.",
+  "reference_note": "Based on the community request reference. The requester did not identify the original reference artist; this package does not claim ownership of the referenced character.",
+  "pet_slug": "sae-itoshi",
+  "name": "Sae Itoshi",
+  "primary_category": "Others",
+  "canonical_key": "community-request/sae-itoshi",
+  "description": "A Sae Itoshi interpretation with burgundy hair, turquoise eyes and the white U20 number 10 uniform. Introduction line: \"Only those who can keep up with me, will get to see what comes next\".",
+  "slug": "sae-itoshi--legeling",
+  "tags": ["community-request", "blue-lock"],
+  "collections": [],
+  "source_url": "https://github.com/legeling/awesome-codex-pet/issues/226",
+  "codex_install": {
+    "pet_json": "pet.json",
+    "spritesheet": "spritesheet.webp"
+  },
+  "spritesheet_sha256": "ed6b17c0b5c2606ddda4c2002dd3e674808b8af859d1ef16f915615caee97abb"
+}

@@ -1,17 +1,22 @@
 {
-  "name": "awesome-codex-pet",
+  "name": "@legeling/codex-pet",
   "version": "0.1.0",
   "description": "A curated gallery of community-made Codex pets with one-command install and generated previews.",
   "homepage": "https://codexpet.top",
-  "license": "SEE LICENSE IN LICENSE AND ASSETS-LICENSE.md",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legeling/awesome-codex-pet.git"
+  },
   "type": "module",
   "bin": {
-    "awesome-codex-pet": "scripts/install-pet-remote.mjs"
+    "codex-pet": "scripts/install-pet-remote.mjs",
+    "cpet": "scripts/install-pet-remote.mjs"
   },
   "files": [
     "scripts/install-pet-remote.mjs",
     "scripts/install-utils.mjs",
-    "scripts/install-pet.mjs"
+    "docs/cli.md"
   ],
   "scripts": {
     "format": "prettier --write \"**/*.{md,json}\"",
@@ -23,12 +28,13 @@
     "readmes": "node scripts/generate-readmes.mjs",
     "star-history": "node scripts/generate-star-history.mjs",
     "test:duplicates": "node --test scripts/test/pet-duplicates.test.mjs",
-    "test:install": "node --test scripts/test/install-pet.test.mjs",
+    "test:install": "node --test scripts/test/install-pet.test.mjs scripts/test/cli.test.mjs",
     "test:package": "node --test scripts/test/package-slim.test.mjs",
     "test:request-links": "node --test scripts/test/request-linking.test.mjs",
+    "test:snapshots": "node --test scripts/test/publish-generated-snapshot.test.mjs",
     "validate": "node scripts/validate-pets.mjs --require-generated-assets",
     "validate:site": "node scripts/validate-pets.mjs --require-site-assets",
-    "validate:pr": "npm run test:duplicates && npm run test:install && npm run test:package && npm run test:request-links && node scripts/validate-pets.mjs"
+    "validate:pr": "npm run test:duplicates && npm run test:install && npm run test:package && npm run test:request-links && npm run test:snapshots && node scripts/validate-pets.mjs"
   },
   "devDependencies": {
     "prettier": "^3.5.3"
