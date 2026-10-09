@@ -3758,6 +3758,20 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "nijika--amia",
+    "name": "虹夏",
+    "localized_names": { "en": "Nijika Ijichi", "zh": "虹夏" },
+    "author": "Amiaね",
+    "author_handle": "amiaverse",
+    "author_url": "https://github.com/amiaverse",
+    "primary_category": "Anime Characters",
+    "canonical_key": "bocchi-the-rock/nijika-ijichi",
+    "collections": ["bocchi-the-rock"],
+    "license": "Non-commercial use and redistribution with attribution to Amiaね; original character and design rights remain with their respective owners.",
+    "description": "Amiaね's AI-assisted fan-made pet of Nijika Ijichi, based on a user-provided character reference. Original character rights remain with their respective owners.",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "hongmao--legeling",
     "name": "虹猫少侠",
     "author": "legeling",

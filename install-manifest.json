@@ -3107,6 +3107,17 @@
       "spritesheetWidth": 1536,
       "spritesheetHeight": 2288
     },
+    "nijika--amia": {
+      "name": "虹夏",
+      "localizedNames": { "en": "Nijika Ijichi", "zh": "虹夏" },
+      "spriteVersionNumber": 2,
+      "petJsonSha256": "a59d1e5d10df1a46161c44c94a0d581f6c735d4e6de0475fd1c3cd10ee1f492c",
+      "petJsonBytes": 205,
+      "spritesheetSha256": "85e14504b95e92ea77c362174bb1979a8a067f55a67b1915f33721eaa66451f9",
+      "spritesheetBytes": 2134244,
+      "spritesheetWidth": 1536,
+      "spritesheetHeight": 2288
+    },
     "hongmao--legeling": {
       "name": "虹猫少侠",
       "spriteVersionNumber": 2,
