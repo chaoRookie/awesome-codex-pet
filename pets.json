@@ -3212,6 +3212,20 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "wo-de-dao-dun--yamengzzz",
+    "name": "我的刀盾狗",
+    "author": "YamengZZZ",
+    "author_handle": "YamengZZZ",
+    "author_url": "https://github.com/YamengZZZ",
+    "primary_category": "Memes",
+    "canonical_key": "meme/wo-de-dao-dun",
+    "variant_note": "YamengZZZ 独立 AI 生成并适配的 V2 柴犬版本：完整金色柴犬身体、三角耳朵和毛茸茸的椭圆爪子，保留刀盾，校正各动作身体尺寸、中心与落地基线。不同于 legeling 版的 Cheems 面部与圆蛙身体组合，未复用其运行时图集像素。",
+    "collections": [],
+    "license": "仅限非商业使用，禁止商用 / Non-commercial use only. 最终动画适配署名 YamengZZZ；原始角色及参考图权利归各自权利人，不声称拥有其权利或获得其认可。",
+    "description": "圆滚滚的金色柴犬勇士，右爪握刀、左爪持盾；包含九种任务动作与十六方向环视。",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "koukou-penguin--hoody",
     "name": "扣扣企鹅",
     "author": "hoody",

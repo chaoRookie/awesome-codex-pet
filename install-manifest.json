@@ -2656,6 +2656,16 @@
       "spritesheetWidth": 1536,
       "spritesheetHeight": 2288
     },
+    "wo-de-dao-dun--yamengzzz": {
+      "name": "我的刀盾狗",
+      "spriteVersionNumber": 2,
+      "petJsonSha256": "5cf05f9d7e90423dc5ad1512c2a7b55bfe74c367c397742edc83677f3b0ad5ae",
+      "petJsonBytes": 276,
+      "spritesheetSha256": "0795ab8eb19653875c03163a1cca0935b50b1226b0cb8f86282b22a08a0f1465",
+      "spritesheetBytes": 1960250,
+      "spritesheetWidth": 1536,
+      "spritesheetHeight": 2288
+    },
     "koukou-penguin--hoody": {
       "name": "扣扣企鹅",
       "spriteVersionNumber": 2,
