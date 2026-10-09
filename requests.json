@@ -23,10 +23,10 @@
     "attribution": "Submitted without a GitHub account. Reference and attribution details should be confirmed during triage. Non-commercial use only.",
     "duplicateCheck": "Repository automation or a maintainer should complete the duplicate check during triage.",
     "state": "open",
-    "status": "in-progress",
+    "status": "triage",
     "labels": [
       "type: request",
-      "status: in-progress",
+      "status: triage",
       "version: v2",
       "category: other"
     ],
@@ -37,9 +37,9 @@
     },
     "assignees": [],
     "createdAt": "2026-10-04T13:10:01Z",
-    "updatedAt": "2026-10-08T17:59:55Z",
+    "updatedAt": "2026-10-09T07:34:49Z",
     "closedAt": null,
-    "comments": 1,
+    "comments": 2,
     "reactions": 0,
     "githubUrl": "https://github.com/legeling/awesome-codex-pet/issues/239"
   },
@@ -488,9 +488,9 @@
     },
     "assignees": [],
     "createdAt": "2026-10-06T13:41:28Z",
-    "updatedAt": "2026-10-08T17:59:56Z",
+    "updatedAt": "2026-10-09T07:34:58Z",
     "closedAt": "2026-10-08T09:37:03Z",
-    "comments": 5,
+    "comments": 6,
     "reactions": 0,
     "githubUrl": "https://github.com/legeling/awesome-codex-pet/issues/249"
   },
