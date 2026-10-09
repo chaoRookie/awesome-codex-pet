@@ -620,6 +620,20 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "doro--godxxy1229",
+    "name": "Doro",
+    "author": "godxxy1229",
+    "author_handle": "godxxy1229",
+    "author_url": "https://github.com/godxxy1229",
+    "primary_category": "Game Characters",
+    "canonical_key": "nikke/doro",
+    "variant_note": "A separately produced v2 redraw and animation by godxxy1229, with keyboard typing, magnifier review, expressive waiting, repaired face and hair contours, and a complete 16-direction look loop. Distinct from doro--lingxiaotian and doro--vaevie.",
+    "collections": ["nikke"],
+    "license": "Non-commercial use only. Doro / Dorothy and GODDESS OF VICTORY: NIKKE remain the property of their respective rights holders, including SHIFT UP. No affiliation or endorsement. No license to the underlying character rights is asserted.",
+    "description": "An unofficial Doro companion for Codex. https://github.com/godxxy1229/doro-codex-pet",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "doro--lingxiaotian",
     "name": "Doro",
     "localized_names": { "en": "Doro", "zh": "桃乐丝（Doro）" },

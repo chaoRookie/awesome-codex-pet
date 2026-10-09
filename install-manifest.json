@@ -524,6 +524,16 @@
       "spritesheetWidth": 1536,
       "spritesheetHeight": 1872
     },
+    "doro--godxxy1229": {
+      "name": "Doro",
+      "spriteVersionNumber": 2,
+      "petJsonSha256": "be11aebd66fd08974b13d2b2509ed16631aa30407078da3560b99504aa804fb1",
+      "petJsonBytes": 252,
+      "spritesheetSha256": "a22d84a8836f60c535b7bf418eda5d68ba99ca36338f3816fc8a043b77bf3228",
+      "spritesheetBytes": 702066,
+      "spritesheetWidth": 1536,
+      "spritesheetHeight": 2288
+    },
     "doro--lingxiaotian": {
       "name": "Doro",
       "localizedNames": { "en": "Doro", "zh": "桃乐丝（Doro）" },
