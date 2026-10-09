@@ -415,6 +415,19 @@
     "spriteVersionNumber": 2
   },
   {
+    "slug": "codex-dragon-girl--orient37",
+    "name": "Codex龙娘·居家版",
+    "author": "orient37（AI 辅助制作）",
+    "author_handle": "orient37",
+    "primary_category": "Others",
+    "canonical_key": "original/zipzippipe/codex-dragon-girl",
+    "variant_note": "为社区请求 #246 独立 AI 制作的 V2 居家装演绎，使用白裙、蓝紫蝴蝶结、毛绒拖鞋和淡紫龙尾；不复制现有宠物图集。",
+    "collections": [],
+    "license": "仅限非商业使用。角色创作署名按请求保留为 ZipZipPipe；不宣称拥有原角色或参考图的权利，也不为参考图授予额外许可。",
+    "description": "白色长卷发、淡紫龙角与龙尾的居家裙装伙伴。参考请求提供的角色设定，由 orient37 使用 AI 独立生成和编排 V2 动画。",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "conan--chenxin-dlut",
     "name": "Conan",
     "localized_names": { "en": "Conan Edogawa", "zh": "江户川柯南" },
