@@ -1022,6 +1022,17 @@
       "spritesheetWidth": 1536,
       "spritesheetHeight": 2288
     },
+    "kafka-pocket--chaorookie": {
+      "name": "Kafka Pocket",
+      "localizedNames": { "en": "Kafka Pocket", "zh": "卡芙卡 · 口袋伙伴" },
+      "spriteVersionNumber": 1,
+      "petJsonSha256": "bbf1d2a4420c01747a6c5230b74442f5b4f7d42fdbbd77b351fed1093382f554",
+      "petJsonBytes": 265,
+      "spritesheetSha256": "d42aa92f3e7f3706f8cbfb69376cddaf14eebed2746bf17c51401d90f25e3bef",
+      "spritesheetBytes": 759670,
+      "spritesheetWidth": 1536,
+      "spritesheetHeight": 1872
+    },
     "kaguya-luna--enclairfarron": {
       "name": "Kaguya Luna",
       "localizedNames": { "en": "Kaguya Luna", "zh": "辉夜姬" },
