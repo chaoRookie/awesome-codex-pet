@@ -320,6 +320,16 @@
       "spritesheetWidth": 1536,
       "spritesheetHeight": 1872
     },
+    "clawd--godxxy1229": {
+      "name": "Clawd",
+      "spriteVersionNumber": 2,
+      "petJsonSha256": "01e753332adb54fb0022a3722484c2208b06ce9a6f1e349696fab8c8efef12f0",
+      "petJsonBytes": 266,
+      "spritesheetSha256": "657cc48a74cf3567095f43a1c6d27095759bc7f4139ff9c1c739d9f0ce2363e2",
+      "spritesheetBytes": 32776,
+      "spritesheetWidth": 1536,
+      "spritesheetHeight": 2288
+    },
     "codenono--dq02": {
       "name": "CodeNoNo",
       "spriteVersionNumber": 1,

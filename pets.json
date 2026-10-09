@@ -376,6 +376,20 @@
     "spriteVersionNumber": 1
   },
   {
+    "slug": "clawd--godxxy1229",
+    "name": "Clawd",
+    "author": "godxxy1229",
+    "author_handle": "godxxy1229",
+    "author_url": "https://github.com/godxxy1229",
+    "primary_category": "Mascots",
+    "canonical_key": "anthropic/claude",
+    "variant_note": "A separately produced v2 Clawd interpretation by godxxy1229, with rectangular limbs, keyboard typing, a magnifier review action, and a complete 16-direction look loop. Distinct from the existing claude--xiangking v1 package.",
+    "collections": [],
+    "license": "Non-commercial use only. Clawd character copyright: Anthropic. No affiliation or endorsement. No license to the underlying character rights is asserted.",
+    "description": "An unofficial Claude-inspired companion for Codex. https://github.com/godxxy1229/clawd-codex-pet",
+    "spriteVersionNumber": 2
+  },
+  {
     "slug": "codenono--dq02",
     "name": "CodeNoNo",
     "author": "Dqd02",

@@ -12,7 +12,7 @@
 
 <a href="https://codexpet.top/es"><img src="../../assets/cover/awesome-codex-pet-cover.png" alt="Abrir la galería de Awesome Codex Pet"></a>
 
-![pets: 312](https://img.shields.io/badge/pets-312-2ea44f) ![categories: 11](https://img.shields.io/badge/categories-11-0969da) ![languages: en | zh--CN | ko | ja | es](https://img.shields.io/badge/languages-en%20%7C%20zh--CN%20%7C%20ko%20%7C%20ja%20%7C%20es-8250df) ![code: MIT](https://img.shields.io/badge/code-MIT-111111) ![assets: CC BY--NC 4.0](https://img.shields.io/badge/assets-CC%20BY--NC%204.0-f97316) ![install: one command](https://img.shields.io/badge/install-one%20command-111111) [![Pet previews](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml/badge.svg)](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml)
+![pets: 313](https://img.shields.io/badge/pets-313-2ea44f) ![categories: 11](https://img.shields.io/badge/categories-11-0969da) ![languages: en | zh--CN | ko | ja | es](https://img.shields.io/badge/languages-en%20%7C%20zh--CN%20%7C%20ko%20%7C%20ja%20%7C%20es-8250df) ![code: MIT](https://img.shields.io/badge/code-MIT-111111) ![assets: CC BY--NC 4.0](https://img.shields.io/badge/assets-CC%20BY--NC%204.0-f97316) ![install: one command](https://img.shields.io/badge/install-one%20command-111111) [![Pet previews](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml/badge.svg)](https://github.com/legeling/awesome-codex-pet/actions/workflows/pet-previews.yml)
 
 </div>
 
@@ -69,7 +69,7 @@ npx @legeling/codex-pet
 </table>
 
 <details>
-<summary>Índice completo (solo texto) · 312</summary>
+<summary>Índice completo (solo texto) · 313</summary>
 
 ### Personajes de videojuegos
 
@@ -272,6 +272,7 @@ npx @legeling/codex-pet
 <li><a href="../../pets/bearisbug--huanghan">bearisbug</a> · por <a href="https://github.com/hanhuang22">@hanhuang22</a> · v2</li>
 <li><a href="../../pets/capoo--lan-kehan">Bugcat Capoo</a> · por <a href="https://github.com/lan-kehan">@lan-kehan</a> · v1</li>
 <li><a href="../../pets/claude--xiangking">Claude</a> · por <a href="https://github.com/xiangking">@xiangking</a> · v1</li>
+<li><a href="../../pets/clawd--godxxy1229">Clawd</a> · por <a href="https://github.com/godxxy1229">@godxxy1229</a> · v2</li>
 <li><a href="../../pets/twinkle-twinkle--twinkletwinkle">Dashun&#39;s Twinkle Twinkle</a> · por @twinkletwinkle · v1</li>
 <li><a href="../../pets/riceball-maid--qishichuan">DeepSeek钢盆饭团</a> · por <a href="https://github.com/qishichuan">@qishichuan</a> · v2</li>
 <li><a href="../../pets/diaoyi-baobao--d1a0y1bb">Diaoyi Baobao</a> · por <a href="https://github.com/D1a0y1bb">@D1a0y1bb</a> · v1</li>
