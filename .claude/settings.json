@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(gh *)",
+      "Bash(mkdir *)",
+      "Bash(cp *)",
+      "Bash(mv *)",
+      "Bash(touch *)",
+      "Bash(cd *)",
+      "Bash(sed *)",
+      "Bash(sort *)",
+      "Bash(jq *)",
+      "Bash(diff *)",
+      "Bash(date *)",
+      "Bash(echo *)",
+      "Bash(TZ=Asia/Shanghai date *)",
+      "Edit",
+      "Write"
+    ]
+  }
+}
